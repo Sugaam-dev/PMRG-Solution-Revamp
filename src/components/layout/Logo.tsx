@@ -15,7 +15,15 @@ export function LogoMark({ className }: { className?: string }) {
   );
 }
 
-export function Logo({ className, textClassName }: { className?: string; textClassName?: string }) {
+export function Logo({
+  className,
+  textClassName,
+  scrolled = false,
+}: {
+  className?: string;
+  textClassName?: string;
+  scrolled?: boolean;
+}) {
   return (
     <Link
       href="/"
@@ -28,7 +36,11 @@ export function Logo({ className, textClassName }: { className?: string; textCla
           alt="PMRG Solution"
           width={152}
           height={64}
-          className={cn("h-9 w-auto", textClassName)}
+          className={cn(
+            "w-auto transition-all duration-300",
+            scrolled ? "h-9" : "h-14",
+            textClassName
+          )}
           priority
         />
       </span>

@@ -36,13 +36,6 @@ export function MegaMenu({ items, open }: { items: NavChild[]; open: boolean }) 
                 </Link>
               ))}
             </div>
-            <Link
-              href="/services"
-              className="flex items-center justify-between border-t border-line px-4 py-2.5 text-xs text-fg-muted transition-colors hover:bg-surface-3 hover:text-fg"
-            >
-              <span className="font-mono uppercase tracking-wider">View all</span>
-              <span className="text-accent">→</span>
-            </Link>
           </div>
         </motion.div>
       )}

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { ChevronDown, Menu } from "lucide-react";
 import { NAV_ITEMS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -13,39 +13,54 @@ import MobileNav from "./MobileNav";
 
 export default function Header() {
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+  const handleScroll = useCallback(() => {
+    // Progress 0→1 over the first 120px of scroll
+    const progress = Math.min(window.scrollY / 120, 1);
+    setScrollProgress(progress);
   }, []);
 
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
+
   useEffect(() => setMobileOpen(false), [pathname]);
+
+  const scrolled = scrollProgress > 0.05;
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
+  // Interpolate background opacity for glassmorphism (0 → 0.7)
+  const bgOpacity = (scrollProgress * 0.7).toFixed(2);
+  const blurAmount = (scrollProgress * 16).toFixed(0);
+  const borderOpacity = (scrollProgress * 0.06).toFixed(3);
+
   return (
     <>
       <header
-        className={cn(
-          "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-          scrolled
-            ? "border-b border-white/[0.06] bg-onyx/85 backdrop-blur-xl"
-            : "border-b border-transparent bg-onyx"
-        )}
+        className="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+        style={{
+          backgroundColor: `rgba(10, 10, 10, ${scrolled ? bgOpacity : "1"})`,
+          backdropFilter: scrolled ? `blur(${blurAmount}px)` : "none",
+          WebkitBackdropFilter: scrolled ? `blur(${blurAmount}px)` : "none",
+          borderBottom: `1px solid rgba(255, 255, 255, ${scrolled ? borderOpacity : "0"})`,
+        }}
       >
         <div
           className={cn(
-            "container-pmrg flex items-center justify-between transition-all duration-300",
-            scrolled ? "h-16" : "h-[68px]"
+            "container-pmrg flex items-center justify-between transition-all duration-300"
           )}
+          style={{
+            height: `${80 - scrollProgress * 16}px`,
+          }}
         >
-          <Logo />
+          <Logo scrolled={scrolled} />
 
           <nav className="hidden items-center gap-0.5 lg:flex">
             {NAV_ITEMS.map((item) => {
@@ -97,7 +112,7 @@ export default function Header() {
         </div>
       </header>
 
-      <div aria-hidden className="h-[68px]" />
+      <div aria-hidden className="h-20" />
 
       <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} />
     </>
