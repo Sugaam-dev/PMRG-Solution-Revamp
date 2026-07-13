@@ -17,35 +17,34 @@ export async function generateStaticParams() {
   }));
 }
 
-// ✅ Metadata – 'as any' से 'never' खत्म
+
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const service = SERVICES.find((s) => s.slug === params.slug) as any; // ✅ यहाँ as any डाला
-
+  const service = SERVICES.find((s) => s.slug === params.slug) as any; 
   if (!service) {
     return { title: "Service Not Found" };
   }
 
-  // अब आप चाहें तो description हटा सकते हैं या रख सकते हैं
+
   return {
     title: `${service.title} | PMRG Solution`,
-    description: service.short || service.description, // ✅ description हटा दिया तो सिर्फ short use करें
+    description: service.short || service.description, 
     alternates: {
       canonical: `/services/${service.slug}`,
     },
   };
 }
 
-// ✅ Main Component – यहाँ भी 'as any'
+
 export default function ServiceDetailPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  const service = SERVICES.find((s) => s.slug === params.slug) as any; // ✅ यहाँ as any
+  const service = SERVICES.find((s) => s.slug === params.slug) as any; 
 
   if (!service) {
     notFound();
