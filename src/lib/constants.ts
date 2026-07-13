@@ -567,7 +567,12 @@ export const JOB_LISTINGS = [
 ] as const;
 
 export const BENEFITS = [
-  
+  { icon: "HeartPulse", title: "Health & Wellness", description: "Comprehensive medical, dental, and vision coverage for you and your family." },
+  { icon: "GraduationCap", title: "Learning Budget", description: "Annual learning stipend for courses, conferences, and certifications." },
+  { icon: "Clock", title: "Flexible Hours", description: "Work when you're most productive — we care about outcomes, not hours clocked." },
+  { icon: "Palmtree", title: "Generous PTO", description: "Paid time off plus company-wide recharge days so you can truly disconnect." },
+  { icon: "Laptop", title: "Remote-Friendly", description: "Work from home, our Pune office, or a mix — whatever works best for you." },
+  { icon: "TrendingUp", title: "Growth & Equity", description: "Clear career ladders, regular promotions, and meaningful equity participation." },
 ] as const;
 
 export const BLOG_CATEGORIES = ["All", "AI & ML", "Telecom", "Digital Transformation", "Cloud", "Industry News"] as const;
