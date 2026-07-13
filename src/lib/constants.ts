@@ -6,27 +6,22 @@
 export const COMPANY = {
   name: "PMRG Solution",
   shortName: "PMRG",
-  legalName: "PMRG Solution Pvt. Ltd.",
+  legalName: "PMRG Solution LLP",
   tagline: "AI-Powered Telecom & Enterprise Solutions",
   description:
     "PMRG Solution is an AI-driven business and software services company specializing in Telecom BSS/OSS, CRM platforms, and enterprise digital transformation.",
   foundedYear: 2014,
-  email: "hello@pmrgsolution.com",
-  salesEmail: "sales@pmrgsolution.com",
-  phone: "+1 (415) 555-0192",
-  address: "Tower B, Cyber Greens, DLF Phase III, Gurugram, Haryana 122002, India",
-  hq: "Gurugram, India",
+  email: "admin@pmrgsolution.com",
+  salesEmail: "admin@pmrgsolution.com",
+  phone: "+91 7722017100",
+  address: "E2-103, Sr No-296, Revell Orchid, Porwal Pune City, Pune-411047",
+  hq: "Pune, India",
   offices: [
-    { city: "Gurugram", country: "India", tz: "GMT+5:30" },
-    { city: "Dubai", country: "UAE", tz: "GMT+4" },
-    { city: "Singapore", country: "Singapore", tz: "GMT+8" },
-    { city: "London", country: "UK", tz: "GMT+0" },
+    { city: "Pune", country: "India", tz: "GMT+5:30" },
   ],
   social: {
-    linkedin: "https://www.linkedin.com",
-    twitter: "https://twitter.com",
-    github: "https://github.com",
-    youtube: "https://youtube.com",
+    linkedin: "https://www.linkedin.com/in/pmrg-solution-llp-24532537a/",
+    facebook: "https://www.facebook.com/people/Sugaam-In/pfbid02MDjVo1ZDWVKJBJSR4cvnb5FYV94bXowvYji8nQeKkgez8DnuTQ9w7RE4QoSCjKNcl/",
   },
   url: "https://www.pmrgsolution.com",
 } as const;
@@ -391,7 +386,7 @@ export const CORE_VALUES = [
 ] as const;
 
 export const TIMELINE = [
-  { year: "2014", title: "Founded in Gurugram", description: "PMRG starts as a 4-person BSS consultancy serving regional operators." },
+  { year: "2014", title: "Founded in Pune", description: "PMRG starts as a 4-person BSS consultancy serving regional operators." },
   { year: "2016", title: "First Convergent Billing Launch", description: "We deliver our first end-to-end convergent charging platform for an MVNO." },
   { year: "2018", title: "CRM360 Hits the Market", description: "Our telecom-native CRM ships and crosses 1M subscriber profiles under management." },
   { year: "2020", title: "AI Practice Established", description: "We launch a dedicated AI/ML practice, shipping our first churn-prediction platform." },
@@ -412,26 +407,163 @@ export const LEADERSHIP = [
 
 export const CASE_STUDIES = [
   {
-    slug: "5g-convergent-charging",
-    title: "Cloud-Native 5G Convergent Charging",
+    slug: "mtc-mobile-info-platform",
+    title: "MTC — Mobile Info Platform for MVNO Launch",
     industry: "Telecommunications",
     tag: "BSS/OSS",
-    excerpt: "How we re-platformed a tier-2 operator's billing onto a real-time charging engine — cutting rating latency 80%.",
-    challenge: "A regional operator's legacy billing couldn't keep up with 5G slice-based pricing, with rating latency exceeding 40ms and outages during peak events.",
-    solution: "We designed a cloud-native convergent charging platform on Kubernetes with an in-memory rating engine, Kafka-based mediation, and TMF Open APIs.",
-    results: ["80% reduction in rating latency", "99.99% billing availability", "New 5G plan launched in 11 days"],
-    tech: ["Kubernetes", "Kafka", "Go", "Redis", "PostgreSQL"],
-    testimonial: "PMRG didn't just migrate our billing — they reimagined it for 5G.",
+    excerpt: "How we built a complete BSS stack from scratch for MTC, enabling rapid MVNO launch with automated billing, provisioning, and self-care.",
+    challenge: "MTC needed a fully operational BSS platform to launch as a new MVNO — billing, provisioning, customer management, and compliance — without relying on expensive legacy systems or slow vendor timelines.",
+    solution: "PMRG delivered a ground-up BSS suite with real-time convergent charging, automated invoicing, a cashback loyalty wallet, and a digital self-care portal for subscriber management. The platform was built with MVNE integration out of the box.",
+    results: ["MVNO launched in under 6 months", "Zero-touch automated invoicing from day one", "Self-care portal reduced support tickets by 40%"],
+    tech: ["Node.js", "React", "PostgreSQL", "Docker", "REST APIs"],
+    testimonial: "PMRG gave us a BSS platform that let us compete with established operators from day one.",
   },
-  
+  {
+    slug: "school-buddy-gen-ai",
+    title: "School Buddy — Gen-AI Powered Education App",
+    industry: "Education & AI",
+    tag: "AI & GenAI",
+    excerpt: "A Gen-AI application that personalizes learning experiences, automates assessments, and provides intelligent tutoring for students.",
+    challenge: "Schools needed a scalable solution to provide personalized learning at scale — addressing diverse student needs without proportionally increasing teaching staff or administrative overhead.",
+    solution: "We built School Buddy, a Gen-AI application leveraging large language models for adaptive tutoring, automated quiz generation, and intelligent progress tracking. The platform includes parent dashboards and teacher analytics.",
+    results: ["Personalized learning paths for 10,000+ students", "60% reduction in manual assessment workload", "Teachers freed up 8 hours/week for high-impact activities"],
+    tech: ["Python", "OpenAI API", "React Native", "FastAPI", "MongoDB"],
+    testimonial: "School Buddy didn't replace teachers — it gave them superpowers.",
+  },
+  {
+    slug: "vessel-audit-platform",
+    title: "Vessel Audit — Maritime Compliance Web & App",
+    industry: "Maritime & Logistics",
+    tag: "Web & App Development",
+    excerpt: "A full-stack web and mobile application that digitized vessel audits, replacing paper-based inspections with real-time compliance tracking.",
+    challenge: "Maritime vessel audits relied on paper forms, offline checklists, and manual data entry — leading to delays, compliance gaps, and costly re-inspections across global fleets.",
+    solution: "PMRG developed a cross-platform web and mobile application for real-time vessel audit management. Inspectors capture findings with photos and geo-tags, while fleet managers track compliance status across all vessels from a centralized dashboard.",
+    results: ["Audit turnaround reduced from 2 weeks to 48 hours", "90% elimination of paper-based processes", "Real-time compliance visibility across 200+ vessels"],
+    tech: ["React", "React Native", "Node.js", "PostgreSQL", "AWS S3"],
+    testimonial: "We went from filing cabinets to real-time compliance dashboards. PMRG transformed how we manage audits.",
+  },
+  {
+    slug: "mvno-convergent-billing",
+    title: "Convergent Billing for European MVNO",
+    industry: "Telecommunications",
+    tag: "BSS/OSS",
+    excerpt: "A convergent billing platform with real-time charging, automated invoicing, and cashback loyalty — launched for a European MVNO in 5 months.",
+    challenge: "A European MVNO needed a flexible billing engine that could handle prepaid, postpaid, and hybrid plans with real-time balance management — without the cost and lock-in of legacy BSS vendors.",
+    solution: "We delivered PMRG's convergent billing platform with real-time rating, multi-currency invoicing, cashback loyalty wallets, and a subscriber self-care portal. The system integrates seamlessly with the host MNO's MVNE platform.",
+    results: ["Real-time charging across prepaid and postpaid", "Cashback wallet drove 22% increase in ARPU", "5-month launch timeline from contract to go-live"],
+    tech: ["Go", "Redis", "Kafka", "PostgreSQL", "Kubernetes"],
+    testimonial: "PMRG delivered the billing flexibility we needed to differentiate in a competitive market.",
+  },
+  {
+    slug: "crm-telecom-operator",
+    title: "CRM Transformation for Regional Operator",
+    industry: "Telecommunications",
+    tag: "CRM",
+    excerpt: "Unified CRM with lead tracking, SLA management, and integrated ticketing — replacing 4 disconnected tools for a regional telecom.",
+    challenge: "A regional operator was managing customer relationships across 4 disconnected tools — a CRM, a ticketing system, a call logger, and spreadsheets. Agent productivity was low and customer satisfaction suffered.",
+    solution: "PMRG implemented a unified CRM platform with lead and deal tracking, integrated call/email logging, an SLA management engine, customizable sales pipelines, and performance analytics dashboards for management.",
+    results: ["4 tools consolidated into 1 platform", "Agent handle time reduced by 35%", "CSAT score improved from 3.2 to 4.5"],
+    tech: ["React", "Node.js", "PostgreSQL", "Elasticsearch", "Docker"],
+    testimonial: "Our agents finally have a single view of every customer. The difference in productivity is remarkable.",
+  },
+  {
+    slug: "erp-manufacturing-firm",
+    title: "ERP Implementation for Manufacturing Firm",
+    industry: "Manufacturing",
+    tag: "ERP",
+    excerpt: "End-to-end ERP covering finance, inventory, procurement, and HR — streamlining operations for a 500-employee manufacturer.",
+    challenge: "A mid-sized manufacturer managed finance, inventory, procurement, and payroll on separate legacy systems with manual data transfers. Month-end closing took 12 days and procurement visibility was poor.",
+    solution: "PMRG deployed a comprehensive ERP covering finance & accounting, sales & order management, inventory & procurement, and HR & payroll — with automated workflows and real-time dashboards.",
+    results: ["Month-end closing reduced from 12 days to 3", "Procurement cycle time cut by 45%", "Real-time inventory accuracy improved to 99.2%"],
+    tech: ["React", "Python", "PostgreSQL", "Redis", "Docker"],
+    testimonial: "PMRG didn't just install software — they re-engineered how we run our business.",
+  },
 ] as const;
 
 export const BLOG_POSTS = [
- 
+  {
+    slug: "building-bss-from-scratch-mvno",
+    title: "Building a BSS Platform from Scratch: Lessons from Launching MVNOs",
+    excerpt: "Legacy BSS vendors charge millions and take years. Here's how we build modern billing and provisioning systems that launch operators in months.",
+    category: "Telecom",
+    date: "2026-06-15",
+    readTime: "9 min read",
+  },
+  {
+    slug: "gen-ai-education-personalized-learning",
+    title: "How Gen-AI Is Transforming Personalized Learning in Schools",
+    excerpt: "From adaptive tutoring to automated assessments — a deep dive into building School Buddy and what we learned about AI in education.",
+    category: "AI & ML",
+    date: "2026-06-01",
+    readTime: "10 min read",
+  },
+  {
+    slug: "mvne-integration-guide",
+    title: "MVNE Integration: The Technical Blueprint for Virtual Operators",
+    excerpt: "Connecting your BSS to an MVNE platform involves provisioning APIs, mediation layers, and real-time charging hooks. Here's the complete guide.",
+    category: "Telecom",
+    date: "2026-05-18",
+    readTime: "8 min read",
+  },
+  {
+    slug: "crm-unified-customer-view",
+    title: "The Unified Customer View: Why Your CRM Needs a Single Pane of Glass",
+    excerpt: "Most operators manage customers across 4+ tools. We explain why unified CRM with integrated ticketing and SLA tracking changes everything.",
+    category: "Digital Transformation",
+    date: "2026-05-02",
+    readTime: "7 min read",
+  },
+  {
+    slug: "self-care-portal-reducing-support-costs",
+    title: "Digital Self-Care Portals: Cutting Support Costs by 40%",
+    excerpt: "Subscribers want to check balances, change plans, and raise complaints without calling support. Here's how to build a portal that actually works.",
+    category: "Telecom",
+    date: "2026-04-14",
+    readTime: "6 min read",
+  },
+  {
+    slug: "erp-implementation-lessons",
+    title: "ERP Implementation: 5 Hard Lessons from the Manufacturing Floor",
+    excerpt: "Finance, inventory, procurement, and HR under one roof sounds simple. Getting adoption right is the real challenge — here's what we've learned.",
+    category: "Digital Transformation",
+    date: "2026-03-28",
+    readTime: "8 min read",
+  },
+  {
+    slug: "cashback-loyalty-wallets-telecom",
+    title: "Cashback Loyalty Wallets: Boosting ARPU for Telecom Operators",
+    excerpt: "How integrated cashback and loyalty programs inside BSS platforms drive subscriber engagement and increase average revenue per user.",
+    category: "Telecom",
+    date: "2026-03-10",
+    readTime: "7 min read",
+  },
+  {
+    slug: "digitizing-maritime-compliance",
+    title: "From Paper to Platform: Digitizing Maritime Vessel Audits",
+    excerpt: "Paper-based inspections cost the maritime industry millions in delays. We share how mobile-first audit platforms are changing compliance.",
+    category: "Industry News",
+    date: "2026-02-20",
+    readTime: "6 min read",
+  },
+  {
+    slug: "cloud-migration-enterprise-apps",
+    title: "Cloud Migration for Enterprise Apps: A Practical Playbook",
+    excerpt: "Moving legacy business applications to the cloud isn't a lift-and-shift job. Here's the phased approach that minimizes risk and maximizes ROI.",
+    category: "Cloud",
+    date: "2026-02-05",
+    readTime: "9 min read",
+  },
 ] as const;
 
 export const JOB_LISTINGS = [
-  
+  { title: "Senior Backend Engineer (Go)", department: "Engineering", location: "Pune / Remote", type: "Full-time", description: "Build the charging core of our BSS Suite in Go and Kubernetes." },
+  { title: "AI/ML Engineer — NLP & LLMs", department: "AI & Data", location: "Remote", type: "Full-time", description: "Productionize LLM features across CRM360 and DataIntel." },
+  { title: "Cloud Platform Engineer", department: "Cloud & DevOps", location: "Dubai / Remote", type: "Full-time", description: "Own the CloudOps platform — Kubernetes, GitOps, observability." },
+  { title: "Frontend Engineer (React/Next.js)", department: "Engineering", location: "Pune", type: "Full-time", description: "Craft premium, accessible UIs across our product suite." },
+  { title: "Telecom BSS Solutions Architect", department: "Solutions", location: "Singapore", type: "Full-time", description: "Shape convergent-charging architectures for tier-1 operators." },
+  { title: "DevSecOps Engineer", department: "Cloud & DevOps", location: "London / Remote", type: "Full-time", description: "Embed zero-trust security into CI/CD and platform engineering." },
+  { title: "Product Designer", department: "Design", location: "Pune / Remote", type: "Full-time", description: "Define the design language for enterprise-grade products." },
+  { title: "Technical Program Manager", department: "Delivery", location: "Pune", type: "Full-time", description: "Drive complex, multi-team delivery for enterprise clients." },
 ] as const;
 
 export const BENEFITS = [
@@ -439,7 +571,7 @@ export const BENEFITS = [
 ] as const;
 
 export const BLOG_CATEGORIES = ["All", "AI & ML", "Telecom", "Digital Transformation", "Cloud", "Industry News"] as const;
-export const CASE_STUDY_FILTERS = ["All", "Telecommunications", "Banking & Finance", "Healthcare", "E-Commerce", "Energy & Utilities"] as const;
+export const CASE_STUDY_FILTERS = ["All", "Telecommunications", "Education & AI", "Maritime & Logistics", "Manufacturing"] as const;
 export const SERVICE_INTERESTS = [
   "BSS/OSS Solutions",
   "CRM Platforms",

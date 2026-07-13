@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Linkedin, Twitter, Github, Youtube, ArrowRight } from "lucide-react";
+import { Linkedin, Facebook, ArrowRight } from "lucide-react";
 import { COMPANY, NAV_ITEMS, SERVICES } from "@/lib/constants";
 import { Logo } from "./Logo";
 
@@ -10,9 +10,7 @@ const serviceLinks = SERVICES.slice(0, 6);
 
 const socials = [
   { icon: Linkedin, href: COMPANY.social.linkedin, label: "LinkedIn" },
-  { icon: Twitter, href: COMPANY.social.twitter, label: "Twitter / X" },
-  { icon: Github, href: COMPANY.social.github, label: "GitHub" },
-  { icon: Youtube, href: COMPANY.social.youtube, label: "YouTube" },
+  { icon: Facebook, href: COMPANY.social.facebook, label: "Facebook" },
 ];
 
 export default function Footer() {

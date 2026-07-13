@@ -89,13 +89,13 @@ const organizationJsonLd = {
   telephone: COMPANY.phone,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Tower B, Cyber Greens, DLF Phase III",
-    addressLocality: "Gurugram",
-    addressRegion: "Haryana",
-    postalCode: "122002",
+    streetAddress: "E2-103, Sr No-296, Revell Orchid, Porwal Pune City",
+    addressLocality: "Pune",
+    addressRegion: "Maharashtra",
+    postalCode: "411047",
     addressCountry: "IN",
   },
-  sameAs: [COMPANY.social.linkedin, COMPANY.social.twitter, COMPANY.social.github, COMPANY.social.youtube],
+  sameAs: [COMPANY.social.linkedin, COMPANY.social.facebook],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

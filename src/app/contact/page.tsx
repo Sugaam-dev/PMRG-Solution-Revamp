@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Youtube } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Facebook } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Badge } from "@/components/ui/Badge";
@@ -17,9 +17,7 @@ export const metadata: Metadata = {
 
 const socials = [
   { icon: Linkedin, href: COMPANY.social.linkedin, label: "LinkedIn" },
-  { icon: Twitter, href: COMPANY.social.twitter, label: "Twitter / X" },
-  { icon: Github, href: COMPANY.social.github, label: "GitHub" },
-  { icon: Youtube, href: COMPANY.social.youtube, label: "YouTube" },
+  { icon: Facebook, href: COMPANY.social.facebook, label: "Facebook" },
 ];
 
 export default function ContactPage() {

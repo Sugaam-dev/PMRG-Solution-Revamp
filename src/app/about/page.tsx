@@ -47,7 +47,7 @@ export default function AboutPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-fg-muted">
               <p>
-                PMRG Solution began in {COMPANY.foundedYear} in Gurugram as a small team
+                PMRG Solution began in {COMPANY.foundedYear} in Pune as a small team
                 obsessed with telecom billing systems. What started as a niche BSS
                 consultancy quickly grew as operators asked us to solve harder problems —
                 modernization, CRM, and eventually AI.
