@@ -75,13 +75,13 @@ export default function SolutionsPage() {
                       </div>
 
                       <div className="mt-7 flex flex-wrap items-center gap-4">
-                        {/* ✅ Button – सीधे /contact पर जाएगा, कोई onClick नहीं */}
+                        
                         <Button href="/contact">
                           Request a Demo
                           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Button>
 
-                        {/* ✅ "View Details" Link – Card के detail page पर जाएगा */}
+                       
                         <Link
                           href={`/solutions/${product.slug}`}
                           className="inline-flex items-center gap-1 text-sm font-medium text-accent transition-colors hover:text-accent/80"

@@ -32,7 +32,7 @@ export default function ServicesListingPage() {
         <div className="container-pmrg">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((service) => {
-              // Safe destructuring ताकि TypeScript ना रुके
+             
               const { slug, title, description, icon, stack } = service;
               return (
                 <Reveal key={service.id}>
