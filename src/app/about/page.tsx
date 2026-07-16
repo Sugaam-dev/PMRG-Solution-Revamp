@@ -1,133 +1,192 @@
 import type { Metadata } from "next";
-import { ArrowRight, Target, Eye } from "lucide-react";
+import { ArrowRight, Target, Eye, Heart } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Icon } from "@/components/ui/Icon";
-import { Badge } from "@/components/ui/Badge";
 import { Reveal, RevealGroup, RevealItem } from "@/components/animations/Reveal";
 import GradientOrb from "@/components/animations/GradientOrb";
-import { COMPANY, CORE_VALUES, LEADERSHIP, TIMELINE } from "@/lib/constants";
+import { COMPANY, CORE_VALUES, WHO_WE_ARE_ROLES } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About PMRG Solution | AI-Led Technology & Transformation",
   description:
-    "PMRG Solution empowers enterprises with intelligent, scalable, and future-ready technology. Learn our story, mission, values, and team.",
+    "Learn how PMRG Solution combines AI, governance, domain expertise, and implementation capability to create measurable business and institutional outcomes.",
   alternates: { canonical: "/about" },
 };
+
+/** What we believe — principles from the content strategy. */
+const BELIEFS = [
+  "Capability without governance is an expensive liability. AI delivers intelligence; governance delivers trust, accountability, and measurable business outcomes.",
+  "Transformation must be usable. A solution creates value only when people can adopt it, operate it, and improve it.",
+  "Technology should amplify human judgement. We use AI to support decisions, not remove responsibility.",
+  "Every engagement must create capability. Clients should be stronger, more self-sufficient, and more confident after working with us.",
+  "Outcomes matter more than activity. We define success through business impact, adoption, predictability, efficiency, experience, and growth.",
+];
 
 export default function AboutPage() {
   return (
     <>
+      {/* Hero — light theme */}
       <PageHero
-        eyebrow="Our Story"
+        eyebrow="About PMRG Solution"
         title={
           <>
-            Building the future of{" "}
-            <span className="text-gradient">intelligent enterprise</span> software
+            AI-led transformation for{" "}
+            <span className="text-gradient">businesses &amp; institutions</span>
           </>
         }
-        description="Since 2014, we've helped telecom operators and enterprises turn ambitious technology goals into production reality — one platform at a time."
+        description="PMRG Solution is where AI, governance, domain expertise, and human capability come together to convert complex challenges into scalable outcomes."
       >
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <Badge variant="mint">Founded {COMPANY.foundedYear}</Badge>
-          <Badge>15+ Countries</Badge>
-          <Badge variant="violet">150+ Projects Delivered</Badge>
+          <span className="inline-flex items-center gap-1.5 rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-emerald-600">Founded {COMPANY.foundedYear}</span>
+          <span className="inline-flex items-center gap-1.5 rounded-md border border-brand/30 bg-blue-50 px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-brand">8 Platform Products</span>
+          <span className="inline-flex items-center gap-1.5 rounded-md border border-light-line bg-light-bg-slate px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-fg-dark-muted">150+ Projects Delivered</span>
         </div>
       </PageHero>
 
-      {/* Company story */}
-      <section className="section">
+      {/* About Us — white */}
+      <section data-section-theme="light" className="section-light section">
         <div className="container-pmrg grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <Reveal>
-            <span className="eyebrow">Who We Are</span>
-            <h2 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl">
-              From a 4-person BSS consultancy to a global AI-driven software company
+            <span className="eyebrow-light">About Us</span>
+            <h2 className="mt-4 text-3xl font-bold leading-tight text-fg-dark sm:text-4xl">
+              Helping businesses and institutions become more intelligent, connected, and future-ready
             </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-fg-muted">
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-fg-dark-muted">
               <p>
-                PMRG Solution began in {COMPANY.foundedYear} in Pune as a small team
-                obsessed with telecom billing systems. What started as a niche BSS
-                consultancy quickly grew as operators asked us to solve harder problems —
-                modernization, CRM, and eventually AI.
+                PMRG Solution is an AI-led technology, consulting, and transformation company focused on helping businesses and institutions become more intelligent, connected, accountable, and future-ready.
               </p>
               <p>
-                Today we're a cross-disciplinary team of engineers, data scientists, and
-                designers spanning four global delivery centers, building platforms that
-                power millions of subscribers and billions of transactions.
+                We design and implement practical solutions across AI-assisted governance, agile planning, data center and IT operations, customer lifecycle management, telecom BSS/OSS, enterprise platforms, smart campuses, incubation ecosystems, and structured industry-readiness programs.
               </p>
               <p>
-                But our founding principle hasn't changed: build durable, intelligent
-                software that delivers measurable business outcomes — and treat every
-                client as a long-term partner.
+                Our approach goes beyond software deployment. We combine domain understanding, solution architecture, program governance, product thinking, implementation capability, and stakeholder enablement. This allows us to address the full transformation journey — from defining the problem and designing the operating model to delivering the solution, integrating it into the client environment, and helping teams adopt it successfully.
+              </p>
+              <p>
+                At PMRG Solution, innovation is meaningful only when it improves decisions, simplifies work, strengthens accountability, creates measurable value, and enables people to perform better. That is why our solutions are designed around business outcomes rather than technology alone.
               </p>
             </div>
           </Reveal>
 
           <Reveal className="relative">
             <div className="relative mx-auto grid max-w-md grid-cols-2 gap-4">
-              <GlassCard className="p-6">
+              <GlassCard theme="light" className="p-6">
                 <div className="font-display text-4xl font-extrabold text-gradient">10+</div>
-                <div className="mt-1 text-sm text-fg-muted">Years of telecom expertise</div>
+                <div className="mt-1 text-sm text-fg-dark-muted">Years of expertise</div>
               </GlassCard>
-              <GlassCard className="mt-8 p-6">
-                <div className="font-display text-4xl font-extrabold text-gradient-mint">4</div>
-                <div className="mt-1 text-sm text-fg-muted">Global delivery centers</div>
+              <GlassCard theme="light" className="mt-8 p-6">
+                <div className="font-display text-4xl font-extrabold text-gradient">8</div>
+                <div className="mt-1 text-sm text-fg-dark-muted">Platform products</div>
               </GlassCard>
-              <GlassCard className="p-6">
-                <div className="font-display text-4xl font-extrabold text-gradient">300+</div>
-                <div className="mt-1 text-sm text-fg-muted">Engineers & specialists</div>
+              <GlassCard theme="light" className="p-6">
+                <div className="font-display text-4xl font-extrabold text-gradient">6</div>
+                <div className="mt-1 text-sm text-fg-dark-muted">Industries served</div>
               </GlassCard>
-              <GlassCard className="mt-8 p-6">
-                <div className="font-display text-4xl font-extrabold text-gradient-mint">∞</div>
-                <div className="mt-1 text-sm text-fg-muted">Commitment to outcomes</div>
+              <GlassCard theme="light" className="mt-8 p-6">
+                <div className="font-display text-4xl font-extrabold text-gradient">150+</div>
+                <div className="mt-1 text-sm text-fg-dark-muted">Projects delivered</div>
               </GlassCard>
             </div>
           </Reveal>
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="section">
+      {/* Who We Are — light grey */}
+      <section data-section-theme="light" className="section-light-grey section">
+        <div className="container-pmrg">
+          <SectionHeading
+            theme="light"
+            eyebrow="Who We Are"
+            title={
+              <>
+                A multidisciplinary team built for{" "}
+                <span className="text-gradient">end-to-end delivery</span>
+              </>
+            }
+            description="We are solution architects, technology specialists, program leaders, designers, domain consultants, educators, mentors, and implementation professionals. Together, we bring strategic thinking and hands-on execution into one delivery model."
+          />
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3" stagger={0.06}>
+            {WHO_WE_ARE_ROLES.map((role) => (
+              <RevealItem key={role.title}>
+                <GlassCard theme="light" className="h-full p-7">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-light-line bg-blue-50 text-brand">
+                    <Icon name={role.icon} className="h-5 w-5" />
+                  </span>
+                  <h3 className="mt-5 text-base font-semibold text-fg-dark">{role.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-fg-dark-muted">{role.description}</p>
+                </GlassCard>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </div>
+      </section>
+
+      {/* Mission & Vision — white */}
+      <section data-section-theme="light" className="section-light section">
         <div className="container-pmrg grid grid-cols-1 gap-6 lg:grid-cols-2">
           <Reveal>
-            <GlassCard strong className="relative h-full overflow-hidden p-9">
-              <GradientOrb className="-right-16 -top-16" size={240} />
-              <span className="relative flex h-12 w-12 items-center justify-center rounded-xl border border-accent/30 bg-accent/soft text-accent">
-                <Target className="h-6 w-6" />
+            <GlassCard theme="light" strong className="relative h-full overflow-hidden p-9">
+              <span className="relative flex h-12 w-12 items-center justify-center rounded-xl border border-light-line bg-blue-50 text-brand">
+                <Eye className="h-6 w-6" />
               </span>
-              <h3 className="relative mt-6 font-mono text-xs uppercase tracking-[0.2em] text-accent">
-                Our Mission
+              <h3 className="relative mt-6 font-mono text-xs uppercase tracking-[0.2em] text-brand">
+                Our Vision
               </h3>
-              <p className="relative mt-3 text-2xl font-semibold leading-snug text-fg">
-                To empower enterprises with intelligent, scalable, and future-ready
-                technology solutions.
+              <p className="relative mt-3 text-xl font-semibold leading-snug text-fg-dark sm:text-2xl">
+                To build a trusted ecosystem where artificial intelligence, governance, technology, and human capability work together to make businesses and institutions more intelligent, accountable, inclusive, and future-ready.
               </p>
             </GlassCard>
           </Reveal>
           <Reveal delay={0.1}>
-            <GlassCard strong className="relative h-full overflow-hidden p-9">
-              <GradientOrb className="-right-16 -top-16" from="#7B2FFF" to="#00F5A0" size={240} />
-              <span className="relative flex h-12 w-12 items-center justify-center rounded-xl border border-accent/30 bg-accent/soft text-accent">
-                <Eye className="h-6 w-6" />
+            <GlassCard theme="light" strong className="relative h-full overflow-hidden p-9">
+              <span className="relative flex h-12 w-12 items-center justify-center rounded-xl border border-light-line bg-blue-50 text-brand">
+                <Target className="h-6 w-6" />
               </span>
-              <h3 className="relative mt-6 font-mono text-xs uppercase tracking-[0.2em] text-accent">
-                Our Vision
+              <h3 className="relative mt-6 font-mono text-xs uppercase tracking-[0.2em] text-brand">
+                Our Mission
               </h3>
-              <p className="relative mt-3 text-2xl font-semibold leading-snug text-fg">
-                To be the global leader in AI-driven telecom and enterprise digital
-                transformation.
+              <p className="relative mt-3 text-xl font-semibold leading-snug text-fg-dark sm:text-2xl">
+                To design, implement, and operationalize practical AI-led solutions that simplify complexity, improve decision-making, strengthen governance, enhance customer and stakeholder experience, and build sustainable capability within organizations and institutions.
               </p>
             </GlassCard>
           </Reveal>
         </div>
       </section>
 
-      {/* Core Values */}
-      <section className="section relative">
+      {/* What We Believe — light grey */}
+      <section data-section-theme="light" className="section-light-grey section">
+        <div className="container-pmrg grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
+          <Reveal>
+            <span className="eyebrow-light">What We Believe</span>
+            <h2 className="mt-4 text-3xl font-bold leading-tight text-fg-dark sm:text-4xl">
+              The principles behind our <span className="text-gradient">approach</span>
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-fg-dark-muted">
+              These beliefs shape how we design solutions, engage with clients, and measure success.
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="space-y-4">
+              {BELIEFS.map((belief, i) => (
+                <div key={i} className="flex gap-4 rounded-lg border border-light-line bg-white p-5">
+                  <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand">
+                    <Heart className="h-3.5 w-3.5" />
+                  </span>
+                  <p className="text-sm leading-relaxed text-fg-dark-muted">{belief}</p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Core Values — white */}
+      <section data-section-theme="light" className="section-light section relative">
         <div className="container-pmrg">
           <SectionHeading
+            theme="light"
             eyebrow="Core Values"
             title={
               <>
@@ -136,15 +195,15 @@ export default function AboutPage() {
             }
             description="These aren't posters on a wall — they're the operating system behind how we hire, build, and deliver."
           />
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4" stagger={0.08}>
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4" stagger={0.06}>
             {CORE_VALUES.map((value) => (
               <RevealItem key={value.title}>
-                <GlassCard className="h-full p-7">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-line-strong bg-white/[0.02] text-accent">
+                <GlassCard theme="light" className="h-full p-7">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-light-line bg-blue-50 text-brand">
                     <Icon name={value.icon} className="h-6 w-6" />
                   </span>
-                  <h3 className="mt-5 text-lg font-semibold text-fg">{value.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-fg-muted">
+                  <h3 className="mt-5 text-lg font-semibold text-fg-dark">{value.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-fg-dark-muted">
                     {value.description}
                   </p>
                 </GlassCard>
@@ -154,99 +213,24 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="section relative overflow-hidden">
-        <div className="pointer-events-none absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-white/10 to-transparent" />
-        <div className="container-pmrg">
-          <SectionHeading
-            eyebrow="Our Journey"
-            title={
-              <>
-                Milestones along the <span className="text-gradient">way</span>
-              </>
-            }
-          />
-          <div className="mx-auto mt-16 max-w-3xl">
-            {TIMELINE.map((item, i) => (
-              <Reveal key={item.year} delay={i * 0.05}>
-                <div className={`relative flex gap-8 pb-12 last:pb-0 ${i % 2 === 0 ? "flex-row" : "flex-row-reverse text-right"}`}>
-                  {/* node */}
-                  <div className="absolute left-1/2 top-1.5 z-10 h-4 w-4 -translate-x-1/2">
-                    <span className="absolute inset-0 rounded-full bg-gradient-to-r from-accent to-accent" />
-                    <span className="absolute inset-0 animate-ping rounded-full bg-accent/soft" />
-                  </div>
-                  {/* card */}
-                  <div className={`w-1/2 ${i % 2 === 0 ? "pr-12 text-right" : "pl-12 text-left"}`}>
-                    <GlassCard className="p-6">
-                      <span className="font-display text-2xl font-extrabold text-gradient">
-                        {item.year}
-                      </span>
-                      <h3 className="mt-2 text-base font-semibold text-fg">{item.title}</h3>
-                      <p className="mt-1.5 text-sm leading-relaxed text-fg-muted">
-                        {item.description}
-                      </p>
-                    </GlassCard>
-                  </div>
-                  <div className="w-1/2" />
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership */}
-      <section className="section">
-        <div className="container-pmrg">
-          <SectionHeading
-            eyebrow="Leadership"
-            title={
-              <>
-                The people <span className="text-gradient">steering the ship</span>
-              </>
-            }
-            description="A leadership team with decades of combined experience across telecom, cloud, and AI."
-          />
-          <RevealGroup className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4" stagger={0.06}>
-            {LEADERSHIP.map((person) => (
-              <RevealItem key={person.name}>
-                <GlassCard className="group h-full overflow-hidden p-6 text-center">
-                  <div className="relative mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-accent/20 to-accent/20 font-display text-2xl font-bold text-gradient">
-                    {person.initials}
-                    <span className="absolute inset-0 rounded-full ring-1 ring-line-strong transition-all group-hover:ring-accent/40" />
-                  </div>
-                  <h3 className="mt-4 text-base font-semibold text-fg">{person.name}</h3>
-                  <p className="mt-0.5 text-xs text-fg-muted">{person.role}</p>
-                  <div className="mt-3 flex justify-center">
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-line-strong px-2.5 py-1 text-[10px] text-fg-subtle transition-colors group-hover:border-accent/40 group-hover:text-accent">
-                      in / LinkedIn
-                    </span>
-                  </div>
-                </GlassCard>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="pb-28">
-        <div className="container-pmrg">
-          <Reveal>
-            <GlassCard strong className="relative overflow-hidden p-10 text-center sm:p-14">
-              <GradientOrb className="-left-20 -top-20" size={300} />
-              <GradientOrb className="-bottom-20 -right-20" from="#7B2FFF" to="#00F5A0" size={300} />
-              <h2 className="relative text-3xl font-bold sm:text-4xl">Want to build something that lasts?</h2>
-              <p className="relative mx-auto mt-3 max-w-xl text-fg-muted">
-                Let's talk about how PMRG can help you architect your next decade of growth.
-              </p>
-              <div className="relative mt-8 flex justify-center">
-                <Button href="/contact" size="lg">
-                  Get in Touch
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </div>
-            </GlassCard>
+      {/* CTA — blue gradient */}
+      <section data-section-theme="dark" className="section-gradient-cta relative overflow-hidden py-20 sm:py-24">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-grid opacity-20"
+        />
+        <div className="container-pmrg relative text-center">
+          <Reveal variant="slide-up">
+            <h2 className="mx-auto max-w-2xl text-3xl font-bold text-white sm:text-4xl">Ready to work with us?</h2>
+            <p className="mx-auto mt-3 max-w-xl text-white/80">
+              Let&apos;s discuss how PMRG Solution can help you build intelligent, governed, and scalable ecosystems.
+            </p>
+            <div className="mt-8 flex justify-center">
+              <Button href="/contact" size="lg" className="bg-white text-brand-deep hover:bg-white/90 hover:text-brand-deep">
+                Get in Touch
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </div>
           </Reveal>
         </div>
       </section>

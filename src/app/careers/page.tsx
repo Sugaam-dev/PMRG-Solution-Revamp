@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MapPin, Briefcase, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 export default function CareersPage() {
   return (
     <>
+      {/* Hero — light theme */}
       <PageHero
         eyebrow="Careers"
         title={
@@ -36,15 +37,15 @@ export default function CareersPage() {
         </Button>
       </PageHero>
 
-      {/* Culture */}
-      <section className="section">
+      {/* Culture — white */}
+      <section data-section-theme="light" className="section-light section">
         <div className="container-pmrg grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <Reveal>
-            <span className="eyebrow">Our Culture</span>
-            <h2 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl">
+            <span className="eyebrow-light">Our Culture</span>
+            <h2 className="mt-4 text-3xl font-bold leading-tight text-fg-dark sm:text-4xl">
               High talent density, <span className="text-gradient">low ego</span>, real ownership
             </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-fg-muted">
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-fg-dark-muted">
               <p>
                 We hire senior, curious people and trust them to do their best work. No
                 micromanagement, no politics — just clear ownership, great teammates, and
@@ -65,11 +66,11 @@ export default function CareersPage() {
                 { k: "4", v: "Delivery centers" },
                 { k: "94%", v: "Would refer a friend" },
               ].map((stat, i) => (
-                <GlassCard key={stat.k} className={i % 2 === 1 ? "mt-6 p-6" : "p-6"}>
+                <GlassCard theme="light" key={stat.k} className={i % 2 === 1 ? "mt-6 p-6" : "p-6"}>
                   <div className="font-display text-3xl font-extrabold text-gradient">
                     {stat.k}
                   </div>
-                  <div className="mt-1 text-sm text-fg-muted">{stat.v}</div>
+                  <div className="mt-1 text-sm text-fg-dark-muted">{stat.v}</div>
                 </GlassCard>
               ))}
             </div>
@@ -77,11 +78,12 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Openings */}
-      <section id="openings" className="section scroll-mt-28">
+      {/* Openings — light grey */}
+      <section id="openings" data-section-theme="light" className="section-light-grey section scroll-mt-28">
         <div className="container-pmrg">
           <SectionHeading
             align="left"
+            theme="light"
             eyebrow="Open Positions"
             title={
               <>
@@ -96,10 +98,13 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="section relative">
-        <div className="container-pmrg">
+      {/* Benefits — dark navy */}
+      <section data-section-theme="dark" className="section-navy section relative overflow-hidden">
+        <GradientOrb color="blue" size={500} animate className="-right-20 top-20" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 bg-grid opacity-50 mask-fade-y" />
+        <div className="container-pmrg relative">
           <SectionHeading
+            theme="dark"
             eyebrow="Benefits & Perks"
             title={
               <>
@@ -126,25 +131,26 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="pb-28">
-        <div className="container-pmrg">
-          <Reveal>
-            <GlassCard strong className="relative overflow-hidden p-10 text-center sm:p-14">
-              <GradientOrb className="-left-20 -top-20" size={300} />
-              <h2 className="relative text-3xl font-bold sm:text-4xl">
-                Don't see the right role?
-              </h2>
-              <p className="relative mx-auto mt-3 max-w-xl text-fg-muted">
-                Send us your story. We hire for trajectory, not just job descriptions.
-              </p>
-              <div className="relative mt-8 flex justify-center">
-                <Button href="/contact" size="lg">
-                  Introduce Yourself
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </div>
-            </GlassCard>
+      {/* CTA — blue gradient */}
+      <section data-section-theme="dark" className="section-gradient-cta relative overflow-hidden py-20 sm:py-24">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-grid opacity-20"
+        />
+        <div className="container-pmrg relative text-center">
+          <Reveal variant="slide-up">
+            <h2 className="mx-auto max-w-2xl text-3xl font-bold text-white sm:text-4xl">
+              Don't see the right role?
+            </h2>
+            <p className="mx-auto mt-3 max-w-xl text-white/80">
+              Send us your story. We hire for trajectory, not just job descriptions.
+            </p>
+            <div className="mt-8 flex justify-center">
+              <Button href="/contact" size="lg" className="bg-white text-brand-deep hover:bg-white/90 hover:text-brand-deep">
+                Introduce Yourself
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </div>
           </Reveal>
         </div>
       </section>

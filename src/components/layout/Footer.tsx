@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { Linkedin, Facebook, ArrowRight } from "lucide-react";
-import { COMPANY, NAV_ITEMS, SERVICES } from "@/lib/constants";
+import { COMPANY, NAV_ITEMS, SERVICE_PILLARS } from "@/lib/constants";
 import { Logo } from "./Logo";
 
 const quickLinks = NAV_ITEMS.filter((n) => !n.children).slice(0, 7);
-const serviceLinks = SERVICES.slice(0, 6);
+const serviceLinks = SERVICE_PILLARS;
 
 const socials = [
   { icon: Linkedin, href: COMPANY.social.linkedin, label: "LinkedIn" },
@@ -15,8 +15,14 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] bg-onyx">
-      <div className="container-pmrg py-16">
+    <footer className="section-footer relative overflow-hidden">
+      {/* Subtle grid overlay */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-grid opacity-30"
+      />
+
+      <div className="container-pmrg relative py-16">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-12">
           <div className="col-span-2 lg:col-span-4">
             <Logo />
@@ -29,7 +35,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-line text-fg-subtle transition-colors hover:border-accent/40 hover:text-accent"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-line text-fg-subtle transition-colors hover:border-brand/40 hover:text-brand"
                 >
                   <s.icon className="h-4 w-4" />
                 </a>
@@ -56,7 +62,7 @@ export default function Footer() {
               {serviceLinks.map((s) => (
                 <li key={s.id}>
                   <Link
-                    href={`/services#${s.id}`}
+                    href={`/services/${s.id}`}
                     className="text-sm text-fg-muted transition-colors hover:text-fg"
                   >
                     {s.title}
@@ -86,7 +92,7 @@ export default function Footer() {
               <label htmlFor="newsletter" className="sr-only">
                 Email for newsletter
               </label>
-              <div className="flex items-center gap-2 rounded-lg border border-line bg-surface p-1 pl-4 focus-within:border-accent/40">
+              <div className="flex items-center gap-2 rounded-lg border border-line bg-surface p-1 pl-4 focus-within:border-brand/40">
                 <input
                   id="newsletter"
                   type="email"
@@ -97,7 +103,7 @@ export default function Footer() {
                 <button
                   type="submit"
                   aria-label="Subscribe"
-                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-accent text-ink transition-transform hover:scale-105"
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand text-white transition-transform hover:scale-105"
                 >
                   <ArrowRight className="h-4 w-4" />
                 </button>

@@ -9,10 +9,18 @@ import {
 } from "react";
 
 /**
- * Lightweight scroll-triggered fade-up using IntersectionObserver + CSS.
+ * Lightweight scroll-triggered reveal using IntersectionObserver + CSS.
  * No framer-motion dependency — keeps the site calm and fast.
  * Respects prefers-reduced-motion (jumps straight to visible).
+ *
+ * Variants:
+ * - "fade-up" (default): opacity 0→1 + translateY(14px→0)
+ * - "slide-up": opacity 0→1 + translateY(30px→0) — more dramatic
+ * - "scale": opacity 0→1 + scale(0.95→1)
+ * - "fade-in": opacity only, no transform
  */
+type RevealVariant = "fade-up" | "slide-up" | "scale" | "fade-in";
+
 type RevealProps = {
   children: ReactNode;
   delay?: number;
@@ -21,6 +29,21 @@ type RevealProps = {
   once?: boolean;
   amount?: number;
   as?: ElementType;
+  variant?: RevealVariant;
+};
+
+const INITIAL_STYLES: Record<RevealVariant, { opacity: number; transform: string }> = {
+  "fade-up": { opacity: 0, transform: "translateY(14px)" },
+  "slide-up": { opacity: 0, transform: "translateY(30px)" },
+  "scale": { opacity: 0, transform: "scale(0.95)" },
+  "fade-in": { opacity: 0, transform: "none" },
+};
+
+const VISIBLE_STYLES: Record<RevealVariant, { opacity: number; transform: string }> = {
+  "fade-up": { opacity: 1, transform: "translateY(0)" },
+  "slide-up": { opacity: 1, transform: "translateY(0)" },
+  "scale": { opacity: 1, transform: "scale(1)" },
+  "fade-in": { opacity: 1, transform: "none" },
 };
 
 export function Reveal({
@@ -31,6 +54,7 @@ export function Reveal({
   once = true,
   amount = 0.15,
   as,
+  variant = "fade-up",
 }: RevealProps) {
   const ref = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
@@ -59,13 +83,16 @@ export function Reveal({
   }, [once, amount]);
 
   const Tag: ElementType = as ?? "div";
+  const initial = INITIAL_STYLES[variant];
+  const final = VISIBLE_STYLES[variant];
+
   return (
     <Tag
       ref={ref}
       className={className}
       style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(14px)",
+        opacity: visible ? final.opacity : initial.opacity,
+        transform: visible ? final.transform : initial.transform,
         transition: `opacity ${duration}s cubic-bezier(0.22,1,0.36,1) ${delay}s, transform ${duration}s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
         willChange: "opacity, transform",
       }}
@@ -97,14 +124,16 @@ export function RevealItem({
   className,
   delay = 0,
   as = "div",
+  variant = "fade-up",
 }: {
   children: ReactNode;
   className?: string;
   delay?: number;
   as?: ElementType;
+  variant?: RevealVariant;
 }) {
   return (
-    <Reveal as={as} delay={delay} className={className}>
+    <Reveal as={as} delay={delay} className={className} variant={variant}>
       {children}
     </Reveal>
   );

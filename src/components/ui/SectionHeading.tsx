@@ -6,6 +6,8 @@ type SectionHeadingProps = {
   title: React.ReactNode;
   description?: React.ReactNode;
   align?: "left" | "center";
+  /** "dark" for dark backgrounds, "light" for light backgrounds */
+  theme?: "dark" | "light";
   className?: string;
 };
 
@@ -14,8 +16,11 @@ export function SectionHeading({
   title,
   description,
   align = "center",
+  theme = "dark",
   className,
 }: SectionHeadingProps) {
+  const isLight = theme === "light";
+
   return (
     <div
       className={cn(
@@ -26,11 +31,16 @@ export function SectionHeading({
     >
       {eyebrow && (
         <Reveal>
-          <span className="eyebrow">{eyebrow}</span>
+          <span className={isLight ? "eyebrow-light" : "eyebrow"}>{eyebrow}</span>
         </Reveal>
       )}
       <Reveal delay={0.05}>
-        <h2 className="max-w-3xl text-3xl font-bold leading-tight sm:text-4xl lg:text-[2.75rem]">
+        <h2
+          className={cn(
+            "max-w-3xl text-3xl font-bold leading-tight sm:text-4xl lg:text-[2.75rem]",
+            isLight ? "text-fg-dark" : "text-fg"
+          )}
+        >
           {title}
         </h2>
       </Reveal>
@@ -38,7 +48,8 @@ export function SectionHeading({
         <Reveal delay={0.1}>
           <p
             className={cn(
-              "max-w-2xl text-base leading-relaxed text-fg-muted sm:text-lg",
+              "max-w-2xl text-base leading-relaxed sm:text-lg",
+              isLight ? "text-fg-dark-muted" : "text-fg-muted",
               align === "center" ? "mx-auto" : ""
             )}
           >

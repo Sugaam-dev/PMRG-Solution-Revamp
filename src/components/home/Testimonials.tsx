@@ -29,9 +29,13 @@ export default function Testimonials() {
   const active = TESTIMONIALS[index];
 
   return (
-    <section className="section">
+    <section
+      data-section-theme="light"
+      className="section-light-grey section"
+    >
       <div className="container-pmrg">
         <SectionHeading
+          theme="light"
           eyebrow="Client Voices"
           title={
             <>
@@ -56,19 +60,21 @@ export default function Testimonials() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: direction * -24 }}
                 transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                className="rounded-xl border border-line bg-surface p-8 sm:p-10"
+                className="overflow-hidden rounded-xl border border-light-line bg-white p-8 shadow-card-light sm:p-10"
               >
-                <p className="text-lg leading-relaxed text-fg sm:text-xl">“{active.quote}”</p>
+                {/* Blue accent bar */}
+                <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand to-brand-cyan" />
+                <p className="text-lg leading-relaxed text-fg-dark sm:text-xl">"{active.quote}"</p>
                 <footer className="mt-7 flex items-center gap-4">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-surface-2 font-mono text-sm font-semibold text-accent">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-50 font-mono text-sm font-semibold text-brand">
                     {active.name
                       .split(" ")
                       .map((n) => n[0])
                       .join("")}
                   </span>
                   <div>
-                    <div className="font-semibold text-fg">{active.name}</div>
-                    <div className="text-sm text-fg-subtle">
+                    <div className="font-semibold text-fg-dark">{active.name}</div>
+                    <div className="text-sm text-fg-dark-subtle">
                       {active.title}, {active.company}
                     </div>
                   </div>
@@ -81,7 +87,7 @@ export default function Testimonials() {
             <button
               onClick={() => go(-1)}
               aria-label="Previous testimonial"
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-line text-fg-muted transition-colors hover:border-line-strong hover:text-fg"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-light-line text-fg-dark-muted transition-colors hover:border-light-line-strong hover:text-fg-dark"
             >
               <ArrowLeft className="h-4 w-4" />
             </button>
@@ -95,7 +101,7 @@ export default function Testimonials() {
                   }}
                   aria-label={`Go to testimonial ${i + 1}`}
                   className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i === index ? "w-7 bg-accent" : "w-1.5 bg-line-strong hover:bg-fg-subtle"
+                    i === index ? "w-7 bg-brand" : "w-1.5 bg-light-line-strong hover:bg-fg-dark-subtle"
                   }`}
                 />
               ))}
@@ -103,7 +109,7 @@ export default function Testimonials() {
             <button
               onClick={() => go(1)}
               aria-label="Next testimonial"
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-line text-fg-muted transition-colors hover:border-line-strong hover:text-fg"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-light-line text-fg-dark-muted transition-colors hover:border-light-line-strong hover:text-fg-dark"
             >
               <ArrowRight className="h-4 w-4" />
             </button>

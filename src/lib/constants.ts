@@ -7,9 +7,9 @@ export const COMPANY = {
   name: "PMRG Solution",
   shortName: "PMRG",
   legalName: "PMRG Solution LLP",
-  tagline: "AI-Powered Telecom & Enterprise Solutions",
+  tagline: "Innovate to Elevate",
   description:
-    "PMRG Solution is an AI-driven business and software services company specializing in Telecom BSS/OSS, CRM platforms, and enterprise digital transformation.",
+    "PMRG Solution is an AI-led technology, consulting, and transformation company focused on helping businesses and institutions become more intelligent, connected, accountable, and future-ready.",
   foundedYear: 2014,
   email: "admin@pmrgsolution.com",
   salesEmail: "admin@pmrgsolution.com",
@@ -20,7 +20,7 @@ export const COMPANY = {
     { city: "Pune", country: "India", tz: "GMT+5:30" },
   ],
   social: {
-    linkedin: "https://www.linkedin.com/in/pmrg-solution-llp-24532537a/",
+    linkedin: "https://www.linkedin.com/company/pmrg-solution/",
     facebook: "https://www.facebook.com/people/Sugaam-In/pfbid02MDjVo1ZDWVKJBJSR4cvnb5FYV94bXowvYji8nQeKkgez8DnuTQ9w7RE4QoSCjKNcl/",
   },
   url: "https://www.pmrgsolution.com",
@@ -50,22 +50,24 @@ export const NAV_ITEMS: NavItem[] = [
     label: "Services",
     href: "/services",
     children: [
-      { label: "BSS/OSS Solutions", href: "/services/bss-oss", description: "Billing, rating, charging & mediation.", icon: "Network" },
-      { label: "CRM Platforms", href: "/services/crm", description: "AI-enhanced customer management.", icon: "Users" },
-      { label: "Digital Transformation", href: "/services/digital", description: "Modernize legacy systems.", icon: "RefreshCw" },
-      { label: "AI & Machine Learning", href: "/services/ai-ml", description: "Predictive analytics & automation.", icon: "BrainCircuit" },
-      { label: "Cloud & DevOps", href: "/services/cloud", description: "Scalable infra & CI/CD.", icon: "Cloud" },
-      { label: "Custom Software", href: "/services/custom", description: "Bespoke enterprise apps.", icon: "Code2" },
+      { label: "AI, Governance & Delivery Intelligence", href: "/services/ai-governance", description: "AI strategy, governance frameworks, and delivery intelligence.", icon: "BrainCircuit" },
+      { label: "Enterprise, Telecom & Customer Platforms", href: "/services/enterprise-telecom", description: "Customer lifecycle, BSS/OSS, ERP, and CRM solutions.", icon: "RadioTower" },
+      { label: "Infrastructure & Managed Operations", href: "/services/infrastructure-ops", description: "Data center management, cloud, DevOps, and managed ops.", icon: "Server" },
+      { label: "Education, Innovation & Talent Readiness", href: "/services/education-innovation", description: "AI for schools, smart campuses, incubation, and internships.", icon: "GraduationCap" },
     ],
   },
   {
     label: "Solutions",
     href: "/solutions",
     children: [
-      { label: "PMRG BSS Suite", href: "/solutions/bss-suite", description: "Unified billing & revenue management.", icon: "Receipt" },
-      { label: "PMRG CRM360", href: "/solutions/crm360", description: "AI-powered customer engagement.", icon: "Contact" },
-      { label: "PMRG CloudOps", href: "/solutions/cloudops", description: "Infrastructure automation & monitoring.", icon: "Server" },
-      { label: "PMRG DataIntel", href: "/solutions/dataintel", description: "Business intelligence & analytics.", icon: "BarChart3" },
+      { label: "AI-Assisted Governance Layer", href: "/solutions/governance-layer", description: "Decision support, risk visibility & outcome tracking.", icon: "ShieldCheck" },
+      { label: "Intelligent Sprint Planning", href: "/solutions/sprint-planning", description: "Capacity-aware planning & commitment control.", icon: "CalendarCheck" },
+      { label: "Data Center Management", href: "/solutions/data-center", description: "Unified infrastructure visibility & control.", icon: "Server" },
+      { label: "Customer Lifecycle Management", href: "/solutions/customer-lifecycle", description: "End-to-end customer journey orchestration.", icon: "Users" },
+      { label: "AI for Schools", href: "/solutions/ai-for-schools", description: "Responsible AI for K-12 education.", icon: "GraduationCap" },
+      { label: "Smart Campus for Universities", href: "/solutions/smart-campus", description: "Connected campus operations & academic intelligence.", icon: "Building2" },
+      { label: "Incubation Center Enablement", href: "/solutions/incubation-center", description: "Structured innovation pipelines.", icon: "Lightbulb" },
+      { label: "Structured Industry Internship", href: "/solutions/industry-internship", description: "Role-based learning & workplace readiness.", icon: "Briefcase" },
     ],
   },
   { label: "Case Studies", href: "/case-studies" },
@@ -210,96 +212,415 @@ export const SERVICES = [
   },
 ] as const;
 
-
-export const PRODUCTS = [
+/** Service pillars — the 4 connected practice areas from the content strategy. */
+export const SERVICE_PILLARS = [
   {
-    id: "bss-suite",
-    slug: "bss-suite", 
-    name: "PMRG BSS Suite",
-    tagline: "Unified billing & revenue management",
-    icon: "Receipt",
-    description:
-      "A convergent BSS platform unifying product catalog, charging, billing, and partner settlement into a single cloud-native fabric — built for 5G monetization.",
-    features: [
-      "Catalog-driven product & offer management",
-      "Real-time online & offline charging",
-      "Invoice generation & dunning",
-      "Interconnect & wholesale settlement",
-      "Open APIs (TMF Open) for partner integration",
-    ],
-    metrics: [
-      { label: "Throughput", value: "50K TPS" },
-      { label: "Avallability", value: "99.99%" },
-      { label: "Latency", value: "<8ms" },
+    id: "ai-governance",
+    title: "AI, Governance and Delivery Intelligence",
+    tag: "Pillar 1",
+    icon: "BrainCircuit",
+    description: "AI strategy, governance frameworks, and delivery intelligence that turn decisions into measurable outcomes.",
+    items: [
+      "AI strategy, use-case prioritization, readiness assessment, and adoption roadmap",
+      "AI-assisted enterprise, portfolio, program, project, and technical governance",
+      "Intelligent sprint planning, capacity management, dependency control, and delivery forecasting",
+      "Executive dashboards, risk intelligence, decision logs, escalation workflows, and outcome tracking",
+      "Responsible AI controls, human approvals, auditability, and governance operating models",
     ],
   },
   {
-    id: "crm360",
-    slug: "crm360",
-    name: "PMRG CRM360",
-    tagline: "AI-powered customer engagement platform",
-    icon: "Contact",
-    description:
-      "A telecom-native CRM that fuses a 360° customer view with AI-driven next-best-action, omnichannel care, and marketing automation.",
-    features: [
-      "Unified customer profile & golden record",
-      "AI next-best-action & sentiment analysis",
-      "Omnichannel service desk (voice, chat, email, social)",
-      "Journey orchestration & campaigns",
-      "Self-care portal & mobile app",
-    ],
-    metrics: [
-      { label: "CSAT lift", value: "+27%" },
-      { label: "First-contact", value: "+34%" },
-      { label: "Churn ↓", value: "−18%" },
+    id: "enterprise-telecom",
+    title: "Enterprise, Telecom and Customer Platforms",
+    tag: "Pillar 2",
+    icon: "RadioTower",
+    description: "End-to-end platform engineering for customer lifecycle, telecom BSS/OSS, ERP, and CRM solutions.",
+    items: [
+      "Customer Lifecycle Management and Customer 360 solutions",
+      "Telecom BSS/OSS consulting, solution architecture, CRM, catalog, order, inventory, billing, and digital journeys",
+      "ERPNext implementation, finance, sales, inventory, HR, project, and workflow transformation",
+      "CRM, customer service, sales automation, and business process digitization",
+      "API integration, cloud-native architecture, data migration, workflow orchestration, and platform modernization",
     ],
   },
   {
-    id: "cloudops",
-    slug: "cloudops",
-    name: "PMRG CloudOps",
-    tagline: "Infrastructure automation & monitoring",
+    id: "infrastructure-ops",
+    title: "Infrastructure and Managed Operations",
+    tag: "Pillar 3",
     icon: "Server",
-    description:
-      "A unified platform for provisioning, deploying, and observing your entire cloud estate — GitOps delivery, SLO management, and FinOps in one pane of glass.",
-    features: [
-      "Self-service provisioning & guardrails",
-      "GitOps continuous delivery",
-      "Full-stack observability & SLOs",
-      "Auto-remediation & runbook automation",
-      "Cost visibility & optimization",
-    ],
-    metrics: [
-      { label: "Deploy freq", value: "12×/day" },
-      { label: "MTTR", value: "−61%" },
-      { label: "Cloud cost", value: "−23%" },
+    description: "Data center management, cloud enablement, DevOps, and SLA-based managed operations.",
+    items: [
+      "Data center management, asset visibility, capacity, incident, change, and service-level management",
+      "Infrastructure monitoring, observability, predictive alerting, and operational dashboards",
+      "Cloud and DevOps enablement, deployment automation, reliability, and security controls",
+      "Application support, managed services, continuous improvement, and SLA-based operations",
+      "Operational governance, documentation, knowledge transfer, and support transition",
     ],
   },
   {
-    id: "dataintel",
-    slug: "dataintel",
-    name: "PMRG DataIntel",
-    tagline: "Business intelligence & analytics platform",
-    icon: "BarChart3",
-    description:
-      "An end-to-end analytics platform — ingestion, modeling, BI, and augmented analytics — that turns raw data into trusted, governed insight across the enterprise.",
-    features: [
-      "Governed semantic layer & metrics store",
-      "Self-serve BI & dashboard studio",
-      "Real-time streaming analytics",
-      "Augmented analytics with natural language",
-      "Embedded analytics & data APIs",
-    ],
-    metrics: [
-      { label: "Query speed", value: "10× faster" },
-      { label: "Adoption", value: "4.2× users" },
-      { label: "Trust score", value: "99.2%" },
+    id: "education-innovation",
+    title: "Education, Innovation and Talent Readiness",
+    tag: "Pillar 4",
+    icon: "GraduationCap",
+    description: "AI for schools, smart campuses, incubation ecosystems, and structured industry-readiness programs.",
+    items: [
+      "AI literacy and responsible AI programs for schools",
+      "AI-enabled university transformation and smart campus solutions",
+      "Incubation center design, startup pipelines, innovation challenges, mentorship, and market readiness",
+      "Structured internships with real project exposure, learning paths, mentoring, and milestone-based assessment",
+      "Faculty development, guest sessions, industry-academia collaboration, placement readiness, and innovation programs",
     ],
   },
 ] as const;
 
+/** Who We Are — operating identity roles from the content strategy. */
+export const WHO_WE_ARE_ROLES = [
+  { title: "Transformation Partner", icon: "ArrowRightLeft", description: "We help clients translate business challenges into structured roadmaps, operating models, and measurable digital initiatives." },
+  { title: "Product Innovator", icon: "Lightbulb", description: "We build reusable platforms and solution accelerators for governance, planning, customer lifecycle, operations, and education." },
+  { title: "Implementation Team", icon: "Wrench", description: "We configure, integrate, deploy, and support technology in real business and institutional environments." },
+  { title: "Capability Builder", icon: "GraduationCap", description: "We help client teams, students, faculty, founders, and professionals adopt new tools and develop future-ready capabilities." },
+  { title: "Domain Specialist", icon: "Award", description: "We bring practical experience in telecom, enterprise platforms, customer operations, delivery governance, and digital transformation." },
+  { title: "Ecosystem Enabler", icon: "Network", description: "We work with clients, institutions, mentors, partners, and specialists to build solutions that can scale beyond a single engagement." },
+] as const;
 
 
+export const PRODUCTS = [
+  {
+    id: "governance-layer",
+    slug: "governance-layer",
+    name: "AI-Assisted Governance Layer",
+    tag: "GOVERN",
+    tagline: "Decision support, risk visibility & outcome tracking",
+    detailedTagline: "From status reporting to decision intelligence.",
+    icon: "ShieldCheck",
+    description:
+      "Decision support, risk visibility, compliance, escalation, and outcome tracking across portfolios and projects.",
+    detailedDescription:
+      "A configurable governance layer that connects strategy, portfolios, programs, projects, risks, dependencies, approvals, financials, milestones, and technical delivery into a single decision-support environment. It helps leadership understand what requires attention, why it matters, who owns the action, and what outcome is at risk.",
+    features: [
+      "AI-assisted decision support & risk scoring",
+      "Real-time compliance monitoring",
+      "Escalation workflows & audit trails",
+      "Portfolio-level outcome tracking",
+      "Governance dashboards & reporting",
+    ],
+    coreCapabilities: [
+      "Executive, portfolio, program, project, and technical governance",
+      "Risk, issue, dependency, action, and decision management",
+      "AI-assisted summaries, anomaly detection, and escalation recommendations",
+      "KPI, milestone, budget, quality, compliance, and benefit tracking",
+      "Approval workflows, audit trails, evidence, and role-based dashboards",
+      "Integration with delivery, ticketing, finance, and collaboration tools",
+    ],
+    businessOutcomes: [
+      "Earlier identification of delivery and operational risk",
+      "Faster, evidence-based management decisions",
+      "Improved accountability and traceability",
+      "Reduced manual reporting and governance effort",
+      "Greater confidence in commitments and forecasts",
+      "A repeatable governance operating model across teams",
+    ],
+    bestSuitedFor: "Enterprises, telecom operators, multi-project organizations, transformation offices, PMOs, delivery leaders, and regulated environments.",
+    metrics: [
+      { label: "Risk visibility", value: "360°" },
+      { label: "Compliance", value: "99.5%" },
+      { label: "Decision speed", value: "3× faster" },
+    ],
+  },
+  {
+    id: "sprint-planning",
+    slug: "sprint-planning",
+    name: "Intelligent Sprint Planning",
+    tag: "PLAN",
+    tagline: "Capacity-aware planning & commitment control",
+    detailedTagline: "A system that thinks before teams commit.",
+    icon: "CalendarCheck",
+    description:
+      "Capacity-aware planning, dependency validation, risk prediction, and commitment control for delivery teams.",
+    detailedDescription:
+      "An AI-assisted planning solution that evaluates capacity, skills, priorities, dependencies, historical velocity, release constraints, risk signals, and delivery readiness before sprint commitments are finalized. It supports more realistic planning and continuously revalidates commitments as conditions change.",
+    features: [
+      "AI-driven capacity planning & forecasting",
+      "Dependency validation & conflict detection",
+      "Risk prediction & mitigation suggestions",
+      "Commitment tracking & velocity analytics",
+      "Cross-team coordination & resource balancing",
+    ],
+    coreCapabilities: [
+      "Backlog prioritization and readiness checks",
+      "Capacity and skill-based allocation",
+      "Dependency and constraint mapping",
+      "AI-assisted estimation and historical pattern analysis",
+      "Commitment validation and scenario planning",
+      "Sprint health, scope change, risk, and delivery forecast dashboards",
+    ],
+    businessOutcomes: [
+      "More realistic sprint commitments",
+      "Fewer rollovers, blocked stories, and late surprises",
+      "Better utilization without overloading teams",
+      "Improved release predictability and stakeholder confidence",
+      "Faster planning cycles with stronger evidence",
+      "Clear linkage between delivery capacity and business priority",
+    ],
+    bestSuitedFor: "Product teams, software delivery organizations, engineering leaders, agile PMOs, managed service teams, and transformation programs.",
+    metrics: [
+      { label: "Plan accuracy", value: "+40%" },
+      { label: "On-time delivery", value: "94%" },
+      { label: "Velocity", value: "+25%" },
+    ],
+  },
+  {
+    id: "data-center",
+    slug: "data-center",
+    name: "Data Center Management",
+    tag: "OPERATE",
+    tagline: "Unified infrastructure visibility & control",
+    detailedTagline: "Unified control for infrastructure visibility, reliability, capacity, and service assurance.",
+    icon: "Server",
+    description:
+      "Unified visibility of assets, incidents, capacity, service levels, energy, security, and infrastructure risk.",
+    detailedDescription:
+      "A modular data center and infrastructure operations solution that provides a connected view of physical and virtual assets, environment, power, capacity, incidents, changes, service levels, security events, and operational risk. The solution can be integrated with existing monitoring, ITSM, CMDB, facilities, and cloud platforms.",
+    features: [
+      "Asset lifecycle & inventory management",
+      "Incident management & auto-remediation",
+      "Capacity planning & utilization tracking",
+      "Energy monitoring & optimization",
+      "Security posture & infrastructure risk",
+    ],
+    coreCapabilities: [
+      "Asset inventory, rack, location, ownership, lifecycle, and CMDB synchronization",
+      "Infrastructure health, availability, performance, and environmental monitoring",
+      "Incident, problem, change, maintenance, and escalation workflows",
+      "Capacity, power, cooling, space, and utilization dashboards",
+      "SLA, availability, MTTR, recurring fault, and operational risk analytics",
+      "Predictive alerts, anomaly detection, knowledge support, and audit evidence",
+    ],
+    businessOutcomes: [
+      "Higher infrastructure availability and service reliability",
+      "Reduced mean time to detect and repair",
+      "Better capacity planning and investment decisions",
+      "Improved asset utilization and lifecycle control",
+      "Stronger compliance, security, and audit readiness",
+      "Lower operational risk through proactive visibility",
+    ],
+    bestSuitedFor: "Data centers, enterprise IT teams, managed service providers, telecom operators, campuses, and organizations with distributed infrastructure.",
+    metrics: [
+      { label: "Uptime", value: "99.99%" },
+      { label: "Energy cost", value: "−18%" },
+      { label: "MTTR", value: "−55%" },
+    ],
+  },
+  {
+    id: "customer-lifecycle",
+    slug: "customer-lifecycle",
+    name: "Customer Lifecycle Management",
+    tag: "GROW",
+    tagline: "End-to-end customer journey orchestration",
+    detailedTagline: "Manage every customer moment — from interest to loyalty.",
+    icon: "Users",
+    description:
+      "End-to-end customer acquisition, onboarding, fulfilment, care, retention, and insight across digital and telecom journeys.",
+    detailedDescription:
+      "An end-to-end customer lifecycle platform covering acquisition, onboarding, identity and KYC, product selection, ordering, fulfilment, activation, billing and payment, service, issue resolution, retention, cross-sell, and customer insight. The solution can serve telecom, subscription, service, and digital-first business models.",
+    features: [
+      "Customer acquisition & onboarding automation",
+      "Order fulfilment & provisioning",
+      "Omnichannel care & self-service portals",
+      "Retention analytics & churn prediction",
+      "360° customer insight & reporting",
+    ],
+    coreCapabilities: [
+      "Lead, prospect, customer, account, and subscription management",
+      "Omnichannel onboarding, KYC, document, consent, and payment journeys",
+      "Product catalog, eligibility, pricing, offers, discounts, and order orchestration",
+      "Service activation, inventory integration, billing, collection, and notifications",
+      "Customer 360, service requests, trouble tickets, care, and self-service",
+      "Churn prediction, next-best-action, retention, loyalty, and revenue insight",
+    ],
+    businessOutcomes: [
+      "Faster onboarding and order-to-activation",
+      "Consistent customer experience across assisted and digital channels",
+      "Higher conversion, retention, and customer lifetime value",
+      "Lower cost-to-serve through automation and self-service",
+      "Better visibility across customer, product, service, payment, and interaction data",
+      "A scalable platform for new products, channels, and business models",
+    ],
+    bestSuitedFor: "Telecom operators, MSOs, ISPs, subscription businesses, service enterprises, digital brands, and organizations seeking a unified customer operating model.",
+    metrics: [
+      { label: "CSAT lift", value: "+27%" },
+      { label: "Churn ↓", value: "−18%" },
+      { label: "Onboarding", value: "3× faster" },
+    ],
+  },
+  {
+    id: "ai-for-schools",
+    slug: "ai-for-schools",
+    name: "AI for Schools",
+    tag: "EDUCATE",
+    tagline: "Responsible AI for K-12 education",
+    detailedTagline: "Responsible, age-appropriate AI that supports students, teachers, and school operations.",
+    icon: "GraduationCap",
+    description:
+      "Responsible AI literacy, teacher enablement, student support, assessment assistance, and administrative intelligence.",
+    detailedDescription:
+      "A structured school transformation offering that introduces AI literacy while helping teachers and administrators use AI safely and productively. The program can be customized by grade, curriculum, institutional maturity, and policy requirements.",
+    features: [
+      "AI-powered adaptive learning paths",
+      "Automated assessment & grading",
+      "Teacher enablement & analytics",
+      "Student support & early intervention",
+      "Administrative intelligence & reporting",
+    ],
+    coreCapabilities: [
+      "AI awareness, computational thinking, prompt basics, digital safety, and responsible use",
+      "Project-based learning, storytelling, research support, and creative problem solving",
+      "Teacher copilots for lesson planning, worksheets, assessments, feedback, and differentiated learning",
+      "Student support, knowledge assistants, learning analytics, and intervention signals",
+      "School operations dashboards, communication assistance, and workflow automation",
+      "AI policy, usage guidelines, safeguarding, teacher review, and governance",
+    ],
+    businessOutcomes: [
+      "Future-ready students with practical and responsible AI exposure",
+      "Improved teacher productivity and classroom innovation",
+      "More personalized support and earlier intervention",
+      "Stronger digital safety and governance awareness",
+      "Better parent, teacher, and administration visibility",
+      "A phased, sustainable AI adoption roadmap for the school",
+    ],
+    bestSuitedFor: "Schools, school groups, educators, trustees, academic leaders, and institutions introducing AI across Classes 6-12.",
+    metrics: [
+      { label: "Students", value: "10K+" },
+      { label: "Teacher time", value: "+8h/week" },
+      { label: "Assessment", value: "−60%" },
+    ],
+  },
+  {
+    id: "smart-campus",
+    slug: "smart-campus",
+    name: "Smart Campus for Universities",
+    tag: "TRANSFORM",
+    tagline: "Connected campus operations & academic intelligence",
+    detailedTagline: "Connect academics, administration, innovation, employability, and campus operations.",
+    icon: "Building2",
+    description:
+      "Connected student lifecycle, academic intelligence, research, innovation, placement, and campus operations.",
+    detailedDescription:
+      "A modular university transformation framework that creates an intelligent campus experience across the student lifecycle, academic delivery, research, placements, incubation, facilities, stakeholder engagement, and institutional decision-making.",
+    features: [
+      "Student lifecycle management",
+      "Academic intelligence & analytics",
+      "Research & innovation tracking",
+      "Placement management & industry connect",
+      "Campus operations & facility management",
+    ],
+    coreCapabilities: [
+      "Digital student lifecycle from enquiry and admission to alumni engagement",
+      "AI-assisted student support, academic advising, faculty enablement, and knowledge access",
+      "Smart dashboards for attendance, performance, engagement, retention, placement, and accreditation",
+      "Internship, placement, industry projects, mentor, and employer engagement platforms",
+      "Research, innovation, ideathon, incubation, startup, and intellectual property workflows",
+      "Campus command center for service requests, assets, facilities, events, and institutional KPIs",
+    ],
+    businessOutcomes: [
+      "Improved student experience and institutional responsiveness",
+      "Greater employability and industry alignment",
+      "Stronger research, innovation, and startup outcomes",
+      "More efficient academic and administrative operations",
+      "Data-driven leadership and accreditation readiness",
+      "A connected digital identity and operating model across the campus",
+    ],
+    bestSuitedFor: "Universities, colleges, education groups, autonomous institutions, incubation cells, placement teams, and academic leadership.",
+    metrics: [
+      { label: "Placement", value: "+35%" },
+      { label: "Operations", value: "−40% cost" },
+      { label: "Engagement", value: "2× higher" },
+    ],
+  },
+  {
+    id: "incubation-center",
+    slug: "incubation-center",
+    name: "Incubation Center Enablement",
+    tag: "INNOVATE",
+    tagline: "Structured innovation pipelines",
+    detailedTagline: "Build a repeatable journey from idea to market impact.",
+    icon: "Lightbulb",
+    description:
+      "Structured innovation pipelines from idea discovery to validation, mentoring, market readiness, and investor preparation.",
+    detailedDescription:
+      "A structured incubation offering covering center strategy, governance, operating processes, idea pipelines, innovation challenges, founder support, mentor networks, validation, prototyping, market access, investor readiness, and performance reporting.",
+    features: [
+      "Idea discovery & evaluation framework",
+      "Validation & prototyping support",
+      "Mentorship matching & tracking",
+      "Market readiness assessment",
+      "Investor preparation & pitch support",
+    ],
+    coreCapabilities: [
+      "Incubation vision, focus areas, governance, roles, policies, and operating model",
+      "Idea intake, evaluation, selection, cohort, and milestone workflows",
+      "Ideathons, hackathons, innovation challenges, and problem-statement programs",
+      "Mentor, domain expert, corporate, alumni, and investor engagement",
+      "Business model, prototype, market validation, go-to-market, finance, and pitch support",
+      "Startup portfolio dashboards, impact metrics, documentation, and review governance",
+    ],
+    businessOutcomes: [
+      "More credible and structured startup pipelines",
+      "Greater conversion from ideas to validated solutions",
+      "Improved mentor, industry, and investor participation",
+      "Clear visibility of startup progress and incubation impact",
+      "Stronger institutional innovation branding",
+      "A scalable model that can run multiple cohorts and programs",
+    ],
+    bestSuitedFor: "Universities, colleges, incubation centers, innovation cells, government institutions, corporate academies, and entrepreneurship programs.",
+    metrics: [
+      { label: "Startups", value: "50+ launched" },
+      { label: "Funding", value: "₹10Cr+" },
+      { label: "Success rate", value: "72%" },
+    ],
+  },
+  {
+    id: "industry-internship",
+    slug: "industry-internship",
+    name: "Structured Industry Internship",
+    tag: "ENABLE",
+    tagline: "Role-based learning & workplace readiness",
+    detailedTagline: "Move students from course completion to workplace contribution.",
+    icon: "Briefcase",
+    description:
+      "Role-based learning paths, real project exposure, mentorship, milestone evaluation, and workplace readiness.",
+    detailedDescription:
+      "A structured internship model that combines role-based learning, mentor guidance, real project exposure, industry practices, documentation, reviews, and milestone-based assessment. The focus is not only technical knowledge, but also ownership, communication, delivery discipline, and professional readiness.",
+    features: [
+      "Role-based learning path design",
+      "Real project exposure & assignments",
+      "Mentorship & progress tracking",
+      "Milestone evaluation & certification",
+      "Workplace readiness & placement support",
+    ],
+    coreCapabilities: [
+      "Role-based learning paths for AI, software, data, cloud, testing, design, ERP, telecom, and project roles",
+      "Foundation learning, practical assignments, live or simulated projects, and portfolio creation",
+      "Mentor sessions, industry talks, code and design reviews, and delivery checkpoints",
+      "Agile working, requirement analysis, documentation, testing, deployment, and presentation practice",
+      "Milestone assessments covering skills, quality, communication, ownership, and teamwork",
+      "Completion reports, project evidence, performance feedback, and employability guidance",
+    ],
+    businessOutcomes: [
+      "Practical exposure beyond classroom learning",
+      "Stronger portfolios, confidence, and interview readiness",
+      "Better understanding of real project delivery and client expectations",
+      "Improved communication, ownership, teamwork, and professional behaviour",
+      "A transparent assessment model for institutions and employers",
+      "Stronger industry-academia collaboration and placement outcomes",
+    ],
+    bestSuitedFor: "Students, interns, universities, colleges, training partners, placement cells, and organizations seeking project-ready entry-level talent.",
+    metrics: [
+      { label: "Interns", value: "200+/year" },
+      { label: "Placement", value: "89%" },
+      { label: "Satisfaction", value: "4.7/5" },
+    ],
+  },
+] as const;
 export const STATS: { value: number; suffix: string; label: string; decimals?: number }[] = [
   { value: 150, suffix: "+", label: "Projects Delivered" },
   { value: 50, suffix: "+", label: "Enterprise Clients" },
@@ -309,38 +630,50 @@ export const STATS: { value: number; suffix: string; label: string; decimals?: n
 
 export const WHY_PMRG = [
   {
+    icon: "TrendingUp",
+    title: "Business-First Technology",
+    description:
+      "We begin with the outcome, operating challenge, and stakeholder need before defining the technology.",
+  },
+  {
     icon: "BrainCircuit",
-    title: "AI-First Approach",
+    title: "AI with Accountability",
     description:
-      "AI is woven into every layer — from predictive models in BSS to copilots in CRM — not bolted on as an afterthought.",
+      "Our solutions combine intelligent assistance with clear governance, controls, human judgement, and auditability.",
   },
   {
-    icon: "RadioTower",
-    title: "Telecom Domain Expertise",
+    icon: "Award",
+    title: "Domain-Led Architecture",
     description:
-      "A decade of deep BSS/OSS experience means we speak rating, mediation, and 5G policy fluently.",
+      "We bring practical expertise in telecom, customer operations, delivery governance, enterprise platforms, education, and infrastructure.",
   },
   {
-    icon: "ShieldCheck",
-    title: "Enterprise-Grade Security",
+    icon: "Wrench",
+    title: "Execution, Not Presentations Alone",
     description:
-      "SOC 2, ISO 27001, and zero-trust by design. Security is engineered in, never audited in.",
+      "We translate strategy into architecture, prototypes, products, integrations, deployments, and operating routines.",
   },
   {
-    icon: "Headset",
-    title: "24/7 Global Support",
+    icon: "Puzzle",
+    title: "Flexible Paths to Value",
     description:
-      "Follow-the-sun operations across four delivery centers keep your platforms running around the clock.",
+      "Clients can start small, prove value, and scale through modular solutions and phased implementation.",
+  },
+  {
+    icon: "GraduationCap",
+    title: "Capability That Remains with the Client",
+    description:
+      "Training, documentation, governance, and knowledge transfer are built into our approach.",
   },
 ] as const;
 
 export const INDUSTRIES = [
-  { icon: "RadioTower", name: "Telecommunications", description: "Operators, MVNOs & digital telcos" },
-  { icon: "Landmark", name: "Banking & Finance", description: "Banks, fintech & insurance" },
-  { icon: "HeartPulse", name: "Healthcare", description: "Providers, payers & healthtech" },
-  { icon: "ShoppingCart", name: "E-Commerce", description: "Marketplaces & D2C brands" },
-  { icon: "Building2", name: "Government", description: "Public sector & smart cities" },
-  { icon: "Zap", name: "Energy & Utilities", description: "Grid, oil & gas, water" },
+  { icon: "RadioTower", name: "Telecom", fullName: "Telecom, Broadband and Digital Service Providers", description: "Customer lifecycle, BSS/OSS, AI care, order and service operations, governance, field operations, and revenue insight." },
+  { icon: "GraduationCap", name: "Education", fullName: "Schools, Universities and Education Groups", description: "Responsible AI, smart campus, student lifecycle, faculty enablement, placements, incubation, and institutional dashboards." },
+  { icon: "Building2", name: "Enterprises", fullName: "Enterprises and Growing Businesses", description: "ERP, CRM, workflow digitization, AI automation, governance, data center management, and custom platforms." },
+  { icon: "Rocket", name: "Startups", fullName: "Startups and Innovation Ecosystems", description: "Product discovery, architecture, MVP development, incubation programs, market validation, and scalable technology foundations." },
+  { icon: "UtensilsCrossed", name: "Food & Wellness", fullName: "Food, Wellness and Service Organizations", description: "Digital presence, customer engagement, operations automation, ERP/CRM, booking, communication, and analytics." },
+  { icon: "Landmark", name: "Public Institutions", fullName: "Public and Institutional Programs", description: "Program governance, dashboards, innovation challenges, capacity building, digital platforms, and stakeholder engagement." },
 ] as const;
 
 export const TESTIMONIALS = [
@@ -368,21 +701,50 @@ export const TESTIMONIALS = [
 ] as const;
 
 export const CLIENTS = [
-  "NORTHWIND TELECOM",
-  "ATLAS DIGITAL",
-  "VERTEX FINANCE",
-  "HELIX HEALTH",
-  "ORBIS COMMERCE",
-  "QUANTUM GRID",
-  "MERIDIAN MOBILE",
-  "NEXUS PAYMENTS",
+  { name: "Hathway", descriptor: "Telecom and digital services engagement" },
+  { name: "MTC", descriptor: "Technology and transformation engagement" },
+  { name: "Ocean Impact", descriptor: "Digital and solution collaboration" },
+  { name: "Acharya Institutes", descriptor: "Education, innovation, and industry-readiness initiatives" },
+  { name: "BPUT", descriptor: "University transformation and innovation collaboration" },
+  { name: "Amddas Food", descriptor: "Enterprise and digital enablement" },
+  { name: "Bali Yoga Kendra", descriptor: "Digital and customer engagement support" },
+] as const;
+
+export const PARTNERS = [
+  { name: "USU Telecom", description: "Strategic collaboration for telecom opportunities, solution delivery, and account-specific market engagement." },
+  { name: "Global Tech", description: "Technology and delivery partnership supporting solution implementation and scale." },
+] as const;
+
+export const ENGAGEMENT_STEPS = [
+  { step: 1, stage: "Discover", description: "Understand goals, stakeholders, current processes, systems, data, pain points, and value opportunities." },
+  { step: 2, stage: "Design", description: "Define target operating model, solution architecture, roadmap, governance, KPIs, and implementation plan." },
+  { step: 3, stage: "Pilot", description: "Deliver a focused proof of value with measurable scope, adoption, feedback, and decision criteria." },
+  { step: 4, stage: "Scale", description: "Integrate, configure, migrate, train, deploy, govern, and expand across users, modules, or institutions." },
+  { step: 5, stage: "Operate", description: "Support, monitor, optimize, measure outcomes, manage releases, and continuously improve." },
+] as const;
+
+export const VALUE_ADDITIONS = [
+  { title: "One Partner from Strategy to Operations", description: "Discovery, solution design, build, integration, governance, adoption, support, and continuous improvement through one accountable engagement model." },
+  { title: "AI with Governance and Human Accountability", description: "AI assists with analysis, recommendations, forecasting, and productivity while roles, approvals, policies, and auditability remain explicit." },
+  { title: "Strong Domain and Solution Architecture", description: "Practical understanding of telecom, customer platforms, enterprise systems, delivery governance, institutional transformation, and infrastructure operations." },
+  { title: "Modular and Scalable Adoption", description: "Clients can begin with an assessment, pilot, module, department, campus, or use case and expand as value is demonstrated." },
+  { title: "Integration with the Existing Ecosystem", description: "Our solutions are designed to connect with current systems, data, workflows, users, and operating processes rather than creating isolated technology." },
+  { title: "Outcome and KPI Orientation", description: "Every engagement defines success measures such as adoption, predictability, cycle time, cost, quality, availability, conversion, retention, or employability." },
+  { title: "Capability Transfer", description: "Documentation, training, operating procedures, governance routines, and handover help client teams sustain and improve the solution." },
+  { title: "Partnership-Led Delivery", description: "We collaborate with technology partners, domain specialists, educational leaders, mentors, and client stakeholders to strengthen delivery capacity." },
+  { title: "Flexible Engagement Models", description: "Consulting, implementation, pilot, managed service, support retainer, product subscription, and outcome-linked models can be structured to the context." },
+  { title: "Continuous Improvement", description: "Post-go-live reviews, enhancement roadmaps, data-driven insights, and governance cadences help the solution evolve with changing priorities." },
 ] as const;
 
 export const CORE_VALUES = [
-  { icon: "Lightbulb", title: "Innovation", description: "We chase the frontier — relentlessly turning emerging tech into durable business value." },
-  { icon: "ShieldCheck", title: "Integrity", description: "We say what we'll do and do what we say. Transparency is non-negotiable." },
-  { icon: "Gem", title: "Excellence", description: "Craft at every layer. We sweat the details others skip, because quality compounds." },
-  { icon: "Handshake", title: "Partnership", description: "We win when you win. Long-term trust over short-term transactions, always." },
+  { icon: "Lightbulb", title: "Purposeful Innovation", description: "We innovate to solve real problems, not to follow trends." },
+  { icon: "ShieldCheck", title: "Governance by Design", description: "Controls, accountability, risk visibility, and traceability are built into the solution." },
+  { icon: "Handshake", title: "Client Ownership", description: "We treat client outcomes, timelines, quality, and trust as our own responsibility." },
+  { icon: "Users", title: "Co-Creation", description: "The strongest solutions are built with stakeholders, not imposed on them." },
+  { icon: "Eye", title: "Transparency", description: "We communicate clearly about scope, progress, risk, assumptions, and decisions." },
+  { icon: "GraduationCap", title: "Continuous Learning", description: "We build a culture where teams, students, professionals, and institutions keep evolving." },
+  { icon: "BarChart3", title: "Measurable Impact", description: "Every solution should have visible KPIs and a clear value realization path." },
+  { icon: "BrainCircuit", title: "Human-First AI", description: "We design technology that supports people, protects trust, and respects accountability." },
 ] as const;
 
 export const TIMELINE = [

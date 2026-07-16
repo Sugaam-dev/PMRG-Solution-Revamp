@@ -29,7 +29,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#0B1020",
+  themeColor: "#050508",
   width: "device-width",
   initialScale: 1,
 };
@@ -42,12 +42,16 @@ export const metadata: Metadata = {
   },
   description: COMPANY.description,
   keywords: [
+    "AI governance",
+    "Sprint planning",
+    "Data center management",
+    "Customer lifecycle management",
     "Telecom BSS/OSS",
-    "CRM platforms",
+    "Smart campus",
+    "AI for schools",
+    "Incubation center",
+    "ERPNext",
     "Digital transformation",
-    "AI & Machine Learning",
-    "Cloud & DevOps",
-    "Custom software development",
     "PMRG Solution",
   ],
   authors: [{ name: COMPANY.name }],
@@ -101,7 +105,7 @@ const organizationJsonLd = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${jakarta.variable} ${jetbrains.variable}`}>
-      <body className="min-h-screen bg-ink text-fg antialiased">
+      <body className="min-h-screen bg-[#050508] text-fg antialiased">
 
         <script
           type="application/ld+json"

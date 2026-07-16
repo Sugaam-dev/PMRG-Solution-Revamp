@@ -37,7 +37,7 @@ export function Logo({
           width={152}
           height={64}
           className={cn(
-            "w-auto transition-all duration-300",
+            "w-auto transition-all duration-500",
             scrolled ? "h-9" : "h-14",
             textClassName
           )}

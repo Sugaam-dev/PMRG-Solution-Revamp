@@ -21,11 +21,11 @@ export default function CaseStudiesPage() {
         }
         description="A selection of engagements where we turned complex problems into production systems with quantifiable results."
       />
-      <div className="pb-28">
+      <section data-section-theme="light" className="section-light pb-28">
         <div className="container-pmrg">
           <CaseStudiesGrid />
         </div>
-      </div>
+      </section>
     </>
   );
 }

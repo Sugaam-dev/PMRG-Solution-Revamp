@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, X, TrendingUp } from "lucide-react";
 import { CASE_STUDIES, CASE_STUDY_FILTERS } from "@/lib/constants";
 import { GlassCard } from "@/components/ui/GlassCard";
-import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
@@ -34,8 +33,8 @@ export default function CaseStudiesGrid() {
             className={cn(
               "rounded-full border px-4 py-2 text-xs font-medium transition-all",
               filter === f
-                ? "border-accent/50 bg-accent/soft text-accent"
-                : "border-line-strong bg-white/[0.02] text-fg-muted hover:border-white/20 hover:text-fg"
+                ? "border-brand/50 bg-blue-50 text-brand"
+                : "border-light-line bg-white text-fg-dark-muted hover:border-light-line-strong hover:text-fg-dark"
             )}
           >
             {f}
@@ -57,34 +56,33 @@ export default function CaseStudiesGrid() {
               onClick={() => setActive(study)}
               className="group text-left"
             >
-              <GlassCard className="flex h-full flex-col overflow-hidden p-0">
+              <GlassCard theme="light" className="flex h-full flex-col overflow-hidden p-0">
                 {/* thumbnail */}
-                <div className="relative h-40 overflow-hidden border-b border-line bg-gradient-to-br from-surface/40 to-ink">
-                  <div className="absolute inset-0 bg-grid opacity-40" />
+                <div className="relative h-40 overflow-hidden border-b border-light-line bg-gradient-to-br from-blue-50 to-light-bg-grey">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="font-display text-5xl font-extrabold text-white/5">
+                    <span className="font-display text-5xl font-extrabold text-brand/10">
                       {study.industry[0]}
                     </span>
                   </div>
                   <div className="absolute left-4 top-4 flex gap-2">
-                    <Badge>{study.tag}</Badge>
+                    <span className="inline-flex items-center gap-1.5 rounded-md border border-brand/30 bg-blue-50 px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-brand">{study.tag}</span>
                   </div>
-                  <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full glass text-fg transition-all group-hover:bg-accent group-hover:text-ink">
+                  <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-light-line bg-white text-fg-dark-muted transition-all group-hover:bg-brand group-hover:text-white group-hover:border-brand">
                     <ArrowUpRight className="h-4 w-4" />
                   </span>
                 </div>
                 {/* body */}
                 <div className="flex flex-1 flex-col p-6">
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-accent">
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-brand">
                     {study.industry}
                   </span>
-                  <h3 className="mt-2 text-lg font-semibold leading-snug text-fg">
+                  <h3 className="mt-2 text-lg font-semibold leading-snug text-fg-dark">
                     {study.title}
                   </h3>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-fg-muted">
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-fg-dark-muted">
                     {study.excerpt}
                   </p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-fg-subtle transition-colors group-hover:text-accent">
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-fg-dark-subtle transition-colors group-hover:text-brand">
                     Read case study <span aria-hidden>→</span>
                   </span>
                 </div>
@@ -110,26 +108,26 @@ function CaseStudyModal({ study, onClose }: { study: CaseStudy; onClose: () => v
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="absolute inset-0 bg-ink/80 backdrop-blur-md" onClick={onClose} />
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-md" onClick={onClose} />
       <motion.div
-        className="relative max-h-[92vh] w-full max-w-2xl overflow-y-auto glass-strong rounded-t-3xl sm:rounded-3xl"
+        className="relative max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-3xl border border-light-line bg-white shadow-2xl sm:rounded-3xl"
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 40, opacity: 0 }}
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
       >
-        <div className="sticky top-0 z-10 flex items-start justify-between gap-4 border-b border-line bg-ink/60 p-6 backdrop-blur-xl">
+        <div className="sticky top-0 z-10 flex items-start justify-between gap-4 border-b border-light-line bg-white/90 p-6 backdrop-blur-xl">
           <div>
             <div className="flex gap-2">
-              <Badge>{study.tag}</Badge>
-              <Badge variant="outline">{study.industry}</Badge>
+              <span className="inline-flex items-center gap-1.5 rounded-md border border-brand/30 bg-blue-50 px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-brand">{study.tag}</span>
+              <span className="inline-flex items-center gap-1.5 rounded-md border border-light-line px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-fg-dark-muted">{study.industry}</span>
             </div>
-            <h2 className="mt-3 text-2xl font-bold leading-tight">{study.title}</h2>
+            <h2 className="mt-3 text-2xl font-bold leading-tight text-fg-dark">{study.title}</h2>
           </div>
           <button
             onClick={onClose}
             aria-label="Close"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line-strong text-fg-muted transition-colors hover:bg-white/5 hover:text-fg"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-light-line text-fg-dark-muted transition-colors hover:bg-light-bg-grey hover:text-fg-dark"
           >
             <X className="h-5 w-5" />
           </button>
@@ -137,17 +135,17 @@ function CaseStudyModal({ study, onClose }: { study: CaseStudy; onClose: () => v
 
         <div className="space-y-7 p-6 sm:p-8">
           <Section title="The Challenge">
-            <p className="text-sm leading-relaxed text-fg-muted">{study.challenge}</p>
+            <p className="text-sm leading-relaxed text-fg-dark-muted">{study.challenge}</p>
           </Section>
           <Section title="Our Solution">
-            <p className="text-sm leading-relaxed text-fg-muted">{study.solution}</p>
+            <p className="text-sm leading-relaxed text-fg-dark-muted">{study.solution}</p>
           </Section>
 
           <Section title="Results">
             <ul className="space-y-2.5">
               {study.results.map((r) => (
-                <li key={r} className="flex items-start gap-2.5 text-sm text-fg">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/soft text-accent">
+                <li key={r} className="flex items-start gap-2.5 text-sm text-fg-dark">
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-50 text-brand">
                     <TrendingUp className="h-3 w-3" />
                   </span>
                   {r}
@@ -159,22 +157,22 @@ function CaseStudyModal({ study, onClose }: { study: CaseStudy; onClose: () => v
           <Section title="Technology">
             <div className="flex flex-wrap gap-2">
               {study.tech.map((t) => (
-                <Badge key={t} variant="outline">
+                <span key={t} className="inline-flex items-center gap-1.5 rounded-md border border-light-line px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-fg-dark-muted">
                   {t}
-                </Badge>
+                </span>
               ))}
             </div>
           </Section>
 
-          <div className="rounded-xl border border-line bg-surface p-5">
-            <p className="text-sm italic leading-relaxed text-fg">“{study.testimonial}”</p>
+          <div className="rounded-xl border border-light-line bg-light-bg-grey p-5">
+            <p className="text-sm italic leading-relaxed text-fg-dark">"{study.testimonial}"</p>
           </div>
 
           <div className="flex flex-wrap gap-3 pt-2">
             <Button href="/contact" className="flex-1">
               Start a similar project
             </Button>
-            <Button variant="secondary" onClick={onClose}>
+            <Button variant="outline" onClick={onClose}>
               Close
             </Button>
           </div>
@@ -187,7 +185,7 @@ function CaseStudyModal({ study, onClose }: { study: CaseStudy; onClose: () => v
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-accent">{title}</h3>
+      <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-brand">{title}</h3>
       <div className="mt-3">{children}</div>
     </div>
   );

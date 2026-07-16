@@ -6,6 +6,7 @@ import type { NavChild } from "@/lib/constants";
 import { Icon } from "@/components/ui/Icon";
 
 export function MegaMenu({ items, open }: { items: NavChild[]; open: boolean }) {
+  const isWide = items.length > 4;
   return (
     <AnimatePresence>
       {open && (
@@ -14,10 +15,10 @@ export function MegaMenu({ items, open }: { items: NavChild[]; open: boolean }) 
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 8 }}
           transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute left-1/2 top-full z-50 mt-2 w-[560px] -translate-x-1/2"
+          className={`absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 ${isWide ? "w-[720px]" : "w-[560px]"}`}
         >
           <div className="overflow-hidden rounded-xl border border-line-strong bg-surface-2 shadow-card-hover">
-            <div className="grid grid-cols-2 gap-1 p-2">
+            <div className={`grid gap-1 p-2 ${isWide ? "grid-cols-2" : "grid-cols-2"}`}>
               {items.map((item) => (
                 <Link
                   key={item.href}

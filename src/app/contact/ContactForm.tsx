@@ -109,15 +109,15 @@ export default function ContactForm() {
 
       {/* service interest */}
       <div className="sm:col-span-2">
-        <label className="mb-2 block text-sm font-medium text-fg">Service Interest</label>
+        <label className="mb-2 block text-sm font-medium text-fg-dark">Service Interest</label>
         <select
           value={values.service}
           onChange={(e) => update("service", e.target.value)}
-          className="w-full rounded-xl border border-line-strong bg-white/[0.02] px-4 py-3 text-sm text-fg transition-colors focus:border-accent/50 focus:outline-none focus:ring-2 focus:ring-accent/20"
+          className="w-full rounded-xl border border-light-line bg-white px-4 py-3 text-sm text-fg-dark transition-colors focus:border-brand/50 focus:outline-none focus:ring-2 focus:ring-brand/20"
         >
-          <option value="" className="bg-ink">Select a service…</option>
+          <option value="">Select a service…</option>
           {SERVICE_INTERESTS.map((s) => (
-            <option key={s} value={s} className="bg-ink">
+            <option key={s} value={s}>
               {s}
             </option>
           ))}
@@ -141,7 +141,7 @@ export default function ContactForm() {
         <Button type="submit" size="lg" className="w-full sm:w-auto" disabled={submitting}>
           {submitting ? (
             <>
-              <span className="h-4 w-4 animate-spin rounded-full border-2 border-navy/30 border-t-navy" />
+              <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" />
               Sending…
             </>
           ) : (
@@ -178,16 +178,16 @@ function Field({
   required?: boolean;
 }) {
   const base = cn(
-    "w-full rounded-xl border bg-white/[0.02] px-4 py-3 text-sm text-fg placeholder:text-fg-subtle transition-all focus:outline-none focus:ring-2",
+    "w-full rounded-xl border bg-white px-4 py-3 text-sm text-fg-dark placeholder:text-fg-dark-subtle transition-all focus:outline-none focus:ring-2",
     error
-      ? "border-red-400/50 focus:border-red-400 focus:ring-red-400/20"
-      : "border-line-strong focus:border-accent/50 focus:ring-accent/20"
+      ? "border-red-300 focus:border-red-400 focus:ring-red-200/50"
+      : "border-light-line focus:border-brand/50 focus:ring-brand/20"
   );
 
   return (
     <div>
-      <label htmlFor={name} className="mb-2 block text-sm font-medium text-fg">
-        {label} {required && <span className="text-accent">*</span>}
+      <label htmlFor={name} className="mb-2 block text-sm font-medium text-fg-dark">
+        {label} {required && <span className="text-brand">*</span>}
       </label>
       {as === "textarea" ? (
         <textarea
@@ -216,7 +216,7 @@ function Field({
             initial={{ opacity: 0, height: 0, y: -4 }}
             animate={{ opacity: 1, height: "auto", y: 0 }}
             exit={{ opacity: 0, height: 0, y: -4 }}
-            className="mt-1.5 flex items-center gap-1.5 text-xs text-red-400"
+            className="mt-1.5 flex items-center gap-1.5 text-xs text-red-500"
           >
             <AlertCircle className="h-3 w-3" />
             {error}
@@ -238,18 +238,18 @@ function SuccessState({ onReset }: { onReset: () => void }) {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 200, damping: 14, delay: 0.1 }}
-        className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-accent to-accent-light text-ink shadow-glow"
+        className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-brand to-brand-cyan text-white shadow-lg"
       >
         <Check className="h-8 w-8" strokeWidth={3} />
       </motion.span>
-      <h3 className="mt-6 text-2xl font-bold text-fg">Message sent!</h3>
-      <p className="mt-2 max-w-sm text-sm text-fg-muted">
+      <h3 className="mt-6 text-2xl font-bold text-fg-dark">Message sent!</h3>
+      <p className="mt-2 max-w-sm text-sm text-fg-dark-muted">
         Thanks for reaching out. A member of our team will get back to you within one
         business day.
       </p>
       <button
         onClick={onReset}
-        className="mt-6 text-sm font-medium text-accent hover:underline"
+        className="mt-6 text-sm font-medium text-brand hover:underline"
       >
         Send another message
       </button>

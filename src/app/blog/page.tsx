@@ -21,11 +21,11 @@ export default function BlogPage() {
         }
         description="Deep dives, playbooks, and field notes on AI, telecom, cloud, and digital transformation — written by the engineers doing the work."
       />
-      <div className="pb-28">
+      <section data-section-theme="light" className="section-light pb-28">
         <div className="container-pmrg">
           <BlogGrid />
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
+import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
-import { Badge } from "@/components/ui/Badge";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/animations/Reveal";
-import { SERVICES } from "@/lib/constants";
+import { SERVICE_PILLARS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "All Services",
-  description: "Explore our full range of services.",
+  title: "AI, Enterprise Platforms, Cloud and Digital Transformation",
+  description: "Consulting, architecture, implementation, integration, managed support, ERPNext, CRM, telecom, AI automation, and cloud-native delivery services.",
   alternates: { canonical: "/services" },
 };
 
@@ -21,54 +20,84 @@ export default function ServicesListingPage() {
         eyebrow="Our Services"
         title={
           <>
-            End-to-end capability for{" "}
-            <span className="text-gradient">every layer</span> of your stack
+            Four connected pillars for{" "}
+            <span className="text-gradient">end-to-end delivery</span>
           </>
         }
-        description="Six practice areas, one accountable partner. From the charging core of a telecom to the ML layer of a marketplace — we build it, run it, and improve it."
+        description="From strategy to implementation, PMRG Solution provides one accountable team for discovery, design, build, integration, governance, adoption, and support."
       />
 
-      <div className="section">
-        <div className="container-pmrg">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map((service) => {
-             
-              const { slug, title, description, icon, stack } = service;
-              return (
-                <Reveal key={service.id}>
-                  <Link href={`/services/${slug}`} className="block h-full">
-                    <GlassCard strong className="h-full transition-all hover:scale-[1.02] hover:border-accent/40">
-                      <div className="flex items-center gap-3">
-                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-accent/30 bg-accent/soft text-accent">
-                          <Icon name={icon} className="h-5 w-5" />
-                        </span>
-                        <h3 className="text-lg font-semibold">{title}</h3>
-                      </div>
-                      <p className="mt-3 text-sm text-fg-muted line-clamp-2">
-                        {description}
-                      </p>
-                      <div className="mt-4 flex flex-wrap gap-1">
-                        {stack.slice(0, 3).map((tech) => (
-                          <Badge key={tech} variant="outline">
-                            {tech}
-                          </Badge>
-                        ))}
-                        {stack.length > 3 && (
-                          <Badge variant="outline">+{stack.length - 3}</Badge>
-                        )}
-                      </div>
-                      <div className="mt-5 flex items-center text-sm font-medium text-accent">
-                        Learn more
-                        <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </div>
-                    </GlassCard>
-                  </Link>
-                </Reveal>
-              );
-            })}
-          </div>
+      {/* Service Pillars */}
+      <section data-section-theme="light" className="section-light section">
+        <div className="container-pmrg space-y-12">
+          {SERVICE_PILLARS.map((pillar, i) => (
+            <Reveal key={pillar.id} delay={i * 0.05}>
+              <GlassCard theme="light" strong className="overflow-hidden">
+                <div className="grid grid-cols-1 lg:grid-cols-5">
+                  {/* Left — pillar info */}
+                  <div className="border-b border-light-line p-8 lg:col-span-2 lg:border-b-0 lg:border-r">
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-light-line bg-blue-50 text-brand">
+                        <Icon name={pillar.icon} className="h-6 w-6" />
+                      </span>
+                      <span className="rounded-full border border-brand/20 bg-brand-soft px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-brand">
+                        {pillar.tag}
+                      </span>
+                    </div>
+                    <h3 className="mt-5 text-xl font-bold text-fg-dark sm:text-2xl">{pillar.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-fg-dark-muted">{pillar.description}</p>
+                  </div>
+
+                  {/* Right — items list */}
+                  <div className="p-8 lg:col-span-3">
+                    <ul className="space-y-3.5">
+                      {pillar.items.map((item, j) => (
+                        <li key={j} className="flex gap-3">
+                          <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-brand" />
+                          <span className="text-sm leading-relaxed text-fg-dark-muted">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </GlassCard>
+            </Reveal>
+          ))}
         </div>
-      </div>
+      </section>
+
+      {/* Service Promise CTA */}
+      <section data-section-theme="dark" className="section-gradient-cta relative overflow-hidden py-20 sm:py-24">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-grid opacity-20"
+        />
+        <div className="container-pmrg relative text-center">
+          <Reveal variant="slide-up">
+            <span className="mb-4 inline-block font-mono text-xs uppercase tracking-[0.2em] text-white/60">Our Service Promise</span>
+            <h2 className="mx-auto max-w-3xl text-3xl font-bold text-white sm:text-4xl">
+              One accountable team from strategy to production
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-base text-white/80 sm:text-lg">
+              From strategy to implementation, PMRG Solution provides one accountable team for discovery, design, build, integration, governance, adoption, and support.
+            </p>
+            <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
+              <Button href="/contact" size="lg" className="bg-white text-brand-deep hover:bg-white/90 hover:text-brand-deep">
+                Schedule a Consultation
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              </Button>
+              <Button
+                href="/solutions"
+                variant="outline"
+                size="lg"
+                className="border-white/40 text-white hover:border-white/70 hover:bg-white/10"
+              >
+                Explore Our Solutions
+              </Button>
+            </div>
+          </Reveal>
+        </div>
+      </section>
     </>
   );
 }
