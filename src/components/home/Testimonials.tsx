@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { TESTIMONIALS } from "@/lib/constants";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -36,7 +37,7 @@ export default function Testimonials() {
       <div className="container-pmrg">
         <SectionHeading
           theme="light"
-          eyebrow="Client Voices"
+          eyebrow="Testimonials"
           title={
             <>
               Outcomes our clients{" "}
@@ -64,14 +65,26 @@ export default function Testimonials() {
               >
                 {/* Blue accent bar */}
                 <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand to-brand-cyan" />
-                <p className="text-lg leading-relaxed text-fg-dark sm:text-xl">"{active.quote}"</p>
+                <p className="text-lg leading-relaxed text-fg-dark sm:text-xl">&quot;{active.quote}&quot;</p>
                 <footer className="mt-7 flex items-center gap-4">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-50 font-mono text-sm font-semibold text-brand">
-                    {active.name
-                      .split(" ")
-                      .map((n) => n[0])
-                      .join("")}
-                  </span>
+                  {active.logo ? (
+                    <span className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white border border-light-line">
+                      <Image
+                        src={active.logo}
+                        alt={`${active.company} logo`}
+                        fill
+                        className="object-contain p-1"
+                        sizes="44px"
+                      />
+                    </span>
+                  ) : (
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-50 font-mono text-sm font-semibold text-brand">
+                      {active.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
+                    </span>
+                  )}
                   <div>
                     <div className="font-semibold text-fg-dark">{active.name}</div>
                     <div className="text-sm text-fg-dark-subtle">

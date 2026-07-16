@@ -3,7 +3,6 @@ import ClientsStrip from "@/components/home/ClientsStrip";
 import ServicesGrid from "@/components/home/ServicesGrid";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import IndustriesSection from "@/components/home/IndustriesSection";
-import Testimonials from "@/components/home/Testimonials";
 import CTABanner from "@/components/home/CTABanner";
 
 export default function HomePage() {
@@ -14,7 +13,7 @@ export default function HomePage() {
       <ServicesGrid />
       <WhyChooseUs />
       <IndustriesSection />
-      <Testimonials />
+
       <CTABanner />
     </>
   );
