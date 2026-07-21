@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { COMPANY, NAV_ITEMS, SERVICE_PILLARS } from "@/lib/constants";
+import { COMPANY, NAV_ITEMS } from "@/lib/constants";
 import { Logo } from "./Logo";
 
 const quickLinks = NAV_ITEMS.filter((n) => !n.children).slice(0, 7);
-const serviceLinks = SERVICE_PILLARS;
+const solutionNav = NAV_ITEMS.find((n) => n.label === "Solutions");
+const solutionLinks = solutionNav?.children ?? [];
 
 export default function Footer() {
   return (
@@ -38,15 +39,15 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-3">
-            <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Services</h3>
+            <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Solutions</h3>
             <ul className="mt-4 space-y-3">
-              {serviceLinks.map((s) => (
-                <li key={s.id}>
+              {solutionLinks.map((s) => (
+                <li key={s.href}>
                   <Link
-                    href={`/services/${s.id}`}
+                    href={s.href}
                     className="text-sm text-fg-muted transition-colors hover:text-fg"
                   >
-                    {s.title}
+                    {s.label}
                   </Link>
                 </li>
               ))}

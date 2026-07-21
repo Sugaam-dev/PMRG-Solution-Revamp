@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { Search, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import { NAV_ITEMS, SERVICE_PILLARS, PRODUCTS } from "@/lib/constants";
+import { NAV_ITEMS, PRODUCTS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 type SearchItem = { label: string; href: string; category: string };
@@ -23,12 +23,7 @@ function buildSearchIndex(): SearchItem[] {
     }
   }
 
-  // Services (pillars)
-  for (const s of SERVICE_PILLARS) {
-    items.push({ label: s.title, href: `/services/${s.id}`, category: "Service" });
-  }
-
-  // Products / Solutions
+  // Products / Solutions (legacy constants, kept for search)
   for (const p of PRODUCTS) {
     items.push({ label: p.name, href: `/solutions/${p.slug}`, category: "Solution" });
   }

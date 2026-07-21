@@ -35,7 +35,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
     if (searchOpen && searchQuery.trim()) {
       // Navigate to blog page as a simple search destination
       onClose();
-      router.push("/blog");
+      router.push("/insights");
     } else {
       setSearchOpen(true);
       setTimeout(() => inputRef.current?.focus(), 100);
@@ -97,7 +97,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
                       onKeyDown={(e) => {
                         if (e.key === "Enter" && searchQuery.trim()) {
                           onClose();
-                          router.push("/blog");
+                          router.push("/insights");
                         }
                         if (e.key === "Escape") {
                           setSearchOpen(false);

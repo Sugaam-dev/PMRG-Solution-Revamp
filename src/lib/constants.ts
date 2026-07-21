@@ -47,34 +47,48 @@ export type NavItem = {
 
 export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Mission Vision", href: "/about" },
-  {
-    label: "Services",
-    href: "/services",
-    children: [
-      { label: "AI, Governance & Delivery Intelligence", href: "/services/ai-governance", description: "AI strategy, governance frameworks, and delivery intelligence.", icon: "BrainCircuit" },
-      { label: "Enterprise, Telecom & Customer Platforms", href: "/services/enterprise-telecom", description: "Customer lifecycle, BSS/OSS, ERP, and CRM solutions.", icon: "RadioTower" },
-      { label: "Infrastructure & Managed Operations", href: "/services/infrastructure-ops", description: "Data center management, cloud, DevOps, and managed ops.", icon: "Server" },
-      { label: "Education, Innovation & Talent Readiness", href: "/services/education-innovation", description: "AI for schools, smart campuses, incubation, and internships.", icon: "GraduationCap" },
-    ],
-  },
   {
     label: "Solutions",
     href: "/solutions",
     children: [
-      { label: "AI-Intelligence Layer", href: "/solutions/governance-layer", description: "Decision support, risk visibility & outcome tracking.", icon: "ShieldCheck" },
-      { label: "Intelligent Sprint Planning", href: "/solutions/sprint-planning", description: "Capacity-aware planning & commitment control.", icon: "CalendarCheck" },
-      { label: "Data Center Management", href: "/solutions/data-center", description: "Unified infrastructure visibility & control.", icon: "Server" },
-      { label: "Customer Lifecycle Management", href: "/solutions/customer-lifecycle", description: "End-to-end customer journey orchestration.", icon: "Users" },
-      { label: "AI for Schools", href: "/solutions/ai-for-schools", description: "Responsible AI for K-12 education.", icon: "GraduationCap" },
-      { label: "Smart Campus for Universities", href: "/solutions/smart-campus", description: "Connected campus operations & academic intelligence.", icon: "Building2" },
-      { label: "Incubation Center Enablement", href: "/solutions/incubation-center", description: "Structured innovation pipelines.", icon: "Lightbulb" },
-      { label: "Structured Industry Internship", href: "/solutions/industry-internship", description: "Role-based learning & workplace readiness.", icon: "Briefcase" },
+      { label: "AI-Assisted Governance", href: "/solutions/ai-assisted-governance", description: "Govern strategy, delivery, risks, vendors and decisions with AI-supported oversight.", icon: "ShieldCheck" },
+      { label: "Smart Campus & Education", href: "/solutions/smart-campus-education", description: "Build AI-ready schools and universities across learning, operations, innovation and careers.", icon: "GraduationCap" },
+      { label: "Enterprise Solutions", href: "/solutions/enterprise-solutions", description: "Modernize ERP, CRM, workflows, data and operational visibility.", icon: "Building2" },
+      { label: "AI Agents & Automation", href: "/solutions/ai-agents-automation", description: "Deploy role-based copilots and workflow agents with human oversight.", icon: "BrainCircuit" },
+      { label: "Telecom BSS/OSS", href: "/solutions/telecom-bss-oss", description: "Transform customer lifecycle, orders, inventory, billing, orchestration and delivery governance.", icon: "RadioTower" },
     ],
   },
-  { label: "Blogs/Testimonials", href: "/blog" },
-  { label: "Our Team", href: "/team" },
-  { label: "Jobs/Internship", href: "/careers" },
+  {
+    label: "Platforms",
+    href: "/platforms",
+    children: [
+      { label: "AI Governance Layer", href: "/platforms/ai-governance-layer", description: "A unified decision and accountability layer for enterprise transformation.", icon: "ShieldCheck" },
+      { label: "Sprint & Delivery Intelligence", href: "/platforms/sprint-delivery-intelligence", description: "Plan, track and govern execution across teams, vendors, risks and milestones.", icon: "CalendarCheck" },
+      { label: "AI Sales Tracker & CLM", href: "/platforms/ai-sales-tracker-clm", description: "Connect leads, opportunities, follow-ups and lifecycle intelligence.", icon: "Users" },
+      { label: "Data Center Management", href: "/platforms/data-center-management", description: "Improve infrastructure visibility, capacity, incidents, assets and operational control.", icon: "Server" },
+    ],
+  },
+  {
+    label: "Industries",
+    href: "/industries",
+    children: [
+      { label: "Telecom & MSO", href: "/industries/telecom-mso", description: "Domain-led modernization for operators, MSOs and telecom technology teams.", icon: "RadioTower" },
+      { label: "Education", href: "/industries/education", description: "AI-ready learning, institutional operations, employability and innovation.", icon: "GraduationCap" },
+      { label: "Enterprise & SME", href: "/industries/enterprise-sme", description: "Practical enterprise systems and AI automation aligned to growth.", icon: "Building2" },
+    ],
+  },
+  {
+    label: "Company",
+    href: "/company/about",
+    children: [
+      { label: "About PMRG", href: "/company/about", description: "Learn about PMRG's mission, values, domain depth and delivery approach.", icon: "Building2" },
+      { label: "Careers", href: "/company/careers", description: "Join PMRG across technology, consulting, delivery, growth and internships.", icon: "Briefcase" },
+      { label: "Insights", href: "/insights", description: "Read practical perspectives on AI governance, telecom, enterprise and education.", icon: "Lightbulb" },
+      { label: "Contact", href: "/contact", description: "Start a solution, platform, institutional or partnership conversation.", icon: "Mail" },
+    ],
+  },
+  { label: "Success Stories", href: "/success-stories" },
+  { label: "Partnerships", href: "/partnerships" },
   { label: "Contact", href: "/contact" },
 ];
 
