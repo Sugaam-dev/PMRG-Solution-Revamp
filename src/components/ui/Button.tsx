@@ -15,10 +15,10 @@ const variants: Record<Variant, string> = {
   // Secondary: light fill for high-contrast actions
   secondary:
     "bg-fg text-ink hover:bg-white hover:-translate-y-0.5",
-  // Outline: subtle border
+  // Outline: subtle border — light-background default
   outline:
-    "border border-line-strong text-fg hover:border-fg-muted hover:bg-white/[0.02] hover:-translate-y-0.5",
-  ghost: "text-fg-muted hover:text-fg hover:bg-white/[0.04]",
+    "border border-light-line-strong text-fg-dark hover:border-brand/30 hover:text-brand hover:bg-brand-soft hover:-translate-y-0.5",
+  ghost: "text-fg-dark-muted hover:text-fg-dark hover:bg-black/[0.04]",
 };
 
 const sizes: Record<Size, string> = {

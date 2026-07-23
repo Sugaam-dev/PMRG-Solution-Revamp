@@ -9,11 +9,11 @@ export const COMPANY = {
   legalName: "PMRG Solution LLP",
   tagline: "Innovate to Elevate",
   description:
-    "PMRG Solution is an AI-led technology, consulting, and transformation company focused on helping businesses and institutions become more intelligent, connected, accountable, and future-ready.",
+    "PMRG Solution LLP helps enterprises, telecom organizations and educational institutions turn AI capability into governed, practical and measurable transformation.",
   foundedYear: 2014,
-  email: "admin@pmrgsolution.com",
-  salesEmail: "admin@pmrgsolution.com",
-  phone: "+91 7722017100",
+  email: "support@pmrgsolution.com",
+  salesEmail: "support@pmrgsolution.com",
+  phone: "+91 9766540198",
   address: "E2-103, Sr No-296, Revell Orchid, Porwal Pune City, Pune-411047",
   hq: "Pune, India",
   offices: [
@@ -1040,11 +1040,13 @@ export const BENEFITS = [
 export const BLOG_CATEGORIES = ["All", "AI & Governance", "Telecom", "Cloud & Infrastructure", "Education"] as const;
 export const CASE_STUDY_FILTERS = ["All", "Telecommunications", "Education & AI", "Maritime & Logistics", "Manufacturing"] as const;
 export const SERVICE_INTERESTS = [
-  "BSS/OSS Solutions",
-  "CRM Platforms",
-  "Digital Transformation",
-  "AI & Machine Learning",
-  "Cloud & DevOps",
-  "Custom Software Development",
-  "Not sure yet — help me decide",
+  "AI-Assisted Governance",
+  "Smart Campus / AI for Education",
+  "Enterprise Solutions / ERP / CRM",
+  "AI Agents & Automation",
+  "Telecom BSS/OSS",
+  "Platforms / Product Demo",
+  "Partnership",
+  "Careers / Internship",
+  "Other",
 ] as const;

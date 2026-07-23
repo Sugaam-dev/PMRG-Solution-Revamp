@@ -1,155 +1,142 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Check, ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ShieldCheck, GraduationCap, Building2, BrainCircuit, RadioTower } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/animations/Reveal";
-import { PRODUCTS } from "@/lib/constants";
+import { RevealGroup, RevealItem } from "@/components/animations/Reveal";
 
 export const metadata: Metadata = {
-  title: "AI Governance, Sprint Planning, Data Center & CLM Products",
+  title: "AI Governance, Smart Campus, Enterprise & Telecom Solutions | PMRG",
   description:
-    "Explore PMRG Solution products for governance intelligence, agile planning, infrastructure operations, and end-to-end customer lifecycle management.",
+    "Explore PMRG solutions for AI-assisted governance, smart campus and education, enterprise ERP/CRM, AI agents, and telecom BSS/OSS transformation.",
   alternates: { canonical: "/solutions" },
 };
+
+const SOLUTION_CARDS = [
+  {
+    icon: "ShieldCheck",
+    title: "AI-Assisted Governance",
+    description: "Govern strategy, delivery, risks, vendors and decisions with AI-supported oversight.",
+    href: "/solutions/ai-assisted-governance",
+  },
+  {
+    icon: "GraduationCap",
+    title: "Smart Campus & Education",
+    description: "Build AI-ready schools and universities across learning, operations, innovation and careers.",
+    href: "/solutions/smart-campus-education",
+  },
+  {
+    icon: "Building2",
+    title: "Enterprise Solutions",
+    description: "Modernize ERP, CRM, workflows, data and operational visibility.",
+    href: "/solutions/enterprise-solutions",
+  },
+  {
+    icon: "BrainCircuit",
+    title: "AI Agents & Automation",
+    description: "Deploy role-based copilots and workflow agents with human oversight.",
+    href: "/solutions/ai-agents-automation",
+  },
+  {
+    icon: "RadioTower",
+    title: "Telecom BSS/OSS",
+    description: "Transform customer lifecycle, orders, inventory, billing, orchestration and delivery governance.",
+    href: "/solutions/telecom-bss-oss",
+  },
+];
+
+const ENGAGEMENT_STEPS = [
+  { step: "01", title: "Discover", description: "Understand business context, stakeholders, constraints and opportunities." },
+  { step: "02", title: "Design", description: "Define target architecture, roadmap, governance and measurable scope." },
+  { step: "03", title: "Pilot", description: "Deliver a focused proof of value with clear acceptance criteria." },
+  { step: "04", title: "Scale", description: "Implement, integrate, adopt and expand across the organization." },
+  { step: "05", title: "Operate", description: "Support, measure, optimize and continuously improve." },
+];
 
 export default function SolutionsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Solutions & Products"
+        eyebrow="Solutions"
         title={
           <>
-            Flagship platforms, <span className="text-gradient">battle-tested at scale</span>
+            Choose the <span className="text-gradient">outcome you need.</span> We bring the architecture, AI and delivery.
           </>
         }
-        description="Four production platforms that unify billing, engagement, infrastructure, and analytics — deployable independently or as an integrated suite."
-      />
+        description="PMRG connects AI-assisted governance, enterprise platforms, education transformation and telecom expertise to help organizations move from fragmented initiatives to governed, measurable progress."
+      >
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+          <Button href="/contact" size="lg">
+            Book a Strategy Session
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </Button>
+          <Button href="#solutions" variant="outline" size="lg">
+            Browse Solutions
+          </Button>
+        </div>
+      </PageHero>
 
-      <section data-section-theme="light" className="section-light section">
-        <div className="container-pmrg flex flex-col gap-8">
-          {PRODUCTS.map((product, idx) => (
-            <Reveal key={product.id}>
-              <section id={product.id} className="scroll-mt-28">
-                <GlassCard theme="light" strong className="relative overflow-hidden transition-all hover:scale-[1.01] hover:border-brand/30">
-                  <div className="relative grid grid-cols-1 gap-8 p-8 sm:p-10 lg:grid-cols-12 lg:gap-12">
-                    {/* left: identity */}
-                    <div className="lg:col-span-5">
-                      <div className="flex items-center gap-3">
-                        <span className="flex h-14 w-14 items-center justify-center rounded-2xl border border-light-line bg-blue-50 text-brand">
-                          <Icon name={product.icon} className="h-7 w-7" />
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-md border border-light-line bg-light-bg-slate px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-fg-dark-muted">Product 0{idx + 1}</span>
-                      </div>
-                      <h2 className="mt-5 text-2xl font-bold text-fg-dark sm:text-3xl">{product.name}</h2>
-                      <p className="mt-1 text-sm font-medium text-brand">{product.tagline}</p>
-                      <p className="mt-4 text-sm leading-relaxed text-fg-dark-muted">
-                        {product.description}
-                      </p>
+      {/* Solutions Grid */}
+      <section id="solutions" data-section-theme="light" className="section-light section">
+        <div className="container-pmrg">
+          <SectionHeading
+            theme="light"
+            eyebrow="What We Do"
+            title="Five connected solution areas"
+            description="Each solution area is supported by reusable platforms, domain expertise and a structured delivery approach."
+          />
 
-                      {/* metrics */}
-                      <div className="mt-6 grid grid-cols-3 gap-3">
-                        {product.metrics.map((m) => (
-                          <div
-                            key={m.label}
-                            className="rounded-xl border border-light-line bg-light-bg-grey p-3 text-center"
-                          >
-                            <div className="font-display text-lg font-extrabold text-gradient">
-                              {m.value}
-                            </div>
-                            <div className="mt-0.5 text-[10px] uppercase tracking-wider text-fg-dark-subtle">
-                              {m.label}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {SOLUTION_CARDS.map((card) => (
+              <RevealItem key={card.title} as="div" variant="slide-up">
+                <Link href={card.href} className="group block h-full">
+                  <GlassCard theme="light" className="flex h-full flex-col p-8">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-light-line bg-blue-50 text-brand transition-colors duration-200 group-hover:border-brand/40 group-hover:bg-blue-100">
+                      <Icon name={card.icon} className="h-6 w-6" />
+                    </span>
+                    <h3 className="mt-5 text-lg font-semibold text-fg-dark">{card.title}</h3>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-fg-dark-muted">{card.description}</p>
+                    <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-fg-dark-subtle transition-colors group-hover:text-brand">
+                      Explore
+                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                    </span>
+                  </GlassCard>
+                </Link>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </div>
+      </section>
 
-                      <div className="mt-7 flex flex-wrap items-center gap-4">
-                        
-                        <Button href="/contact">
-                          Request a Demo
-                          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                        </Button>
+      {/* How PMRG engages */}
+      <section data-section-theme="light" className="section-light section border-t border-light-line">
+        <div className="container-pmrg">
+          <SectionHeading
+            theme="light"
+            eyebrow="Engagement Approach"
+            title="How PMRG engages"
+            description="PMRG follows a phased approach to ensure discovery, evidence, adoption and measurable value at each stage."
+          />
 
-                       
-                        <Link
-                          href={`/solutions/${product.slug}`}
-                          className="inline-flex items-center gap-1 text-sm font-medium text-brand transition-colors hover:text-brand-deep"
-                        >
-                          View Details
-                          <ExternalLink className="h-3.5 w-3.5" />
-                        </Link>
-                      </div>
-                    </div>
-
-                    {/* right: features + architecture */}
-                    <div className="lg:col-span-7">
-                      <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-fg-dark-subtle">
-                        Key Capabilities
-                      </h3>
-                      <ul className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-                        {product.features.map((f) => (
-                          <li key={f} className="flex items-start gap-2.5 text-sm text-fg-dark">
-                            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-50 text-brand">
-                              <Check className="h-3 w-3" />
-                            </span>
-                            {f}
-                          </li>
-                        ))}
-                      </ul>
-
-                      <div className="mt-7 rounded-xl border border-light-line bg-light-bg-grey p-5">
-                        <div className="font-mono text-[10px] uppercase tracking-wider text-fg-dark-subtle">
-                          Reference Architecture
-                        </div>
-                        <ArchitectureDiagram />
-                      </div>
-                    </div>
-                  </div>
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            {ENGAGEMENT_STEPS.map((s) => (
+              <RevealItem key={s.step} as="div" variant="slide-up">
+                <GlassCard theme="light" className="flex h-full flex-col p-6 text-center">
+                  <span className="mx-auto flex h-10 w-10 items-center justify-center rounded-full border border-brand/20 bg-brand-soft font-mono text-sm font-bold text-brand">
+                    {s.step}
+                  </span>
+                  <h3 className="mt-4 text-base font-semibold text-fg-dark">{s.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-fg-dark-muted">{s.description}</p>
                 </GlassCard>
-              </section>
-            </Reveal>
-          ))}
+              </RevealItem>
+            ))}
+          </RevealGroup>
         </div>
       </section>
     </>
-  );
-}
-
-/** Lightweight SVG architecture diagram */
-function ArchitectureDiagram() {
-  const layers = [
-    { label: "Data Sources", nodes: ["APIs", "Events", "Batch"] },
-    { label: "Ingestion", nodes: ["Kafka", "Stream"] },
-    { label: "Core Engine", nodes: ["Process", "AI / Rules"] },
-    { label: "Delivery", nodes: ["APIs", "UI", "Insights"] },
-  ];
-  return (
-    <div className="mt-4 flex items-stretch gap-2 overflow-x-auto pb-1">
-      {layers.map((layer, i) => (
-        <div key={layer.label} className="flex min-w-[110px] flex-1 items-center">
-          <div className="w-full rounded-lg border border-light-line bg-white p-3">
-            <div className="font-mono text-[9px] uppercase tracking-wider text-brand">
-              {layer.label}
-            </div>
-            <div className="mt-2 flex flex-col gap-1.5">
-              {layer.nodes.map((n) => (
-                <div
-                  key={n}
-                  className="rounded-md bg-light-bg-grey px-2 py-1.5 text-center text-[10px] text-fg-dark-muted"
-                >
-                  {n}
-                </div>
-              ))}
-            </div>
-          </div>
-          {i < layers.length - 1 && (
-            <span className="mx-1 shrink-0 text-brand/50">→</span>
-          )}
-        </div>
-      ))}
-    </div>
   );
 }
