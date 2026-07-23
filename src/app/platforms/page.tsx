@@ -213,8 +213,10 @@ export default function PlatformsPage() {
             eyebrow="Engagement model"
             title="Platform engagement"
             description="Platforms can be assessed, demonstrated, piloted and configured around your operating model and integrations."
-          />
+          />   
+ 
 
+ 
           <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {engagementSteps.map((e, i) => (
               <RevealItem key={e.step} as="div" variant="slide-up">
