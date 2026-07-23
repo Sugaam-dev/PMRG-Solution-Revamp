@@ -46,7 +46,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="container-pmrg relative flex min-h-[88vh] flex-col items-center justify-center py-28 text-center">
+      <div className="container-pmrg relative flex min-h-[80vh] flex-col items-center justify-center py-16 text-center">
         <Reveal variant="fade-in">
           <span className="eyebrow">AI-led · Outcome-driven · Human-accountable</span>
         </Reveal>

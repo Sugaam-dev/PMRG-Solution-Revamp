@@ -10,11 +10,11 @@ import { Logo } from "./Logo";
 
 const container = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.04, delayChildren: 0.08 } },
+  show: { transition: { staggerChildren: 0.06, delayChildren: 0.15 } },
 };
 const item = {
   hidden: { opacity: 0, y: 14 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] as const } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -53,7 +53,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.3 }}
         >
           <div className="absolute inset-0 bg-ink/80 backdrop-blur-xl" onClick={onClose} />
 
@@ -62,7 +62,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="flex items-center justify-between">
               <Logo />
@@ -185,7 +185,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
                   aria-label="WhatsApp"
                   className={iconClass}
                 >
-                  <WhatsAppIcon className="h-4.5 w-4.5" />
+                  <WhatsAppIcon className="h-4 w-4" />
                 </a>
               </div>
             </motion.div>
