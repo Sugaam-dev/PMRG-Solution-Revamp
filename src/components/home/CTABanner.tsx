@@ -45,12 +45,11 @@ export default function CTABanner() {
             />
 
             <h2 className="relative mx-auto max-w-3xl text-balance text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Let&apos;s turn your next challenge into a governed, scalable, and measurable solution.
+              Have a transformation goal but need a clearer path?
             </h2>
             <p className="relative mx-auto mt-4 max-w-xl text-base text-white/80 sm:text-lg">
-              Whether you are modernizing customer operations, improving project predictability,
-              governing AI adoption, transforming a campus, or preparing students for industry,
-              PMRG Solution can help you define the right starting point and a practical path to scale.
+              Bring PMRG the business problem. We will help define the operating model,
+              solution architecture and execution roadmap.
             </p>
             <div className="relative mt-9 flex flex-wrap items-center justify-center gap-3">
               <Button
@@ -58,7 +57,7 @@ export default function CTABanner() {
                 size="lg"
                 className="bg-white text-brand-deep hover:bg-white/90 hover:text-brand-deep"
               >
-                Schedule a Discovery Workshop
+                Book a Strategy Session
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Button>
               <Button
@@ -67,7 +66,7 @@ export default function CTABanner() {
                 size="lg"
                 className="border-white/40 text-white hover:border-white/70 hover:bg-white/10"
               >
-                Explore Our Solutions
+                Share Your Requirement
               </Button>
             </div>
           </div>

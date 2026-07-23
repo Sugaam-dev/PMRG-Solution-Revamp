@@ -53,29 +53,28 @@ export default function Hero() {
 
         <Reveal delay={0.08} variant="slide-up">
           <h1 className="mt-7 max-w-4xl text-balance text-4xl font-bold leading-[1.08] tracking-tight text-fg sm:text-5xl lg:text-6xl">
-            Transforming Businesses.{" "}
-            <span className="text-gradient">Empowering Institutions.</span>{" "}
-            Governing Innovation.
+            Govern complex transformation.{" "}
+            <span className="text-gradient">Build AI-ready institutions.</span>{" "}
+            Modernize enterprise operations.
           </h1>
         </Reveal>
 
         <Reveal delay={0.16}>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-fg-muted">
-            PMRG Solution combines artificial intelligence, enterprise platforms,
-            telecom expertise, infrastructure operations, and education innovation
-            to help organizations move from fragmented processes to intelligent,
-            governed, and scalable ecosystems.
+            From strategy to governed execution, PMRG combines AI
+            platforms, enterprise systems and domain-led delivery to turn ambitious
+            transformation into measurable progress.
           </p>
         </Reveal>
 
         <Reveal delay={0.24}>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-            <Button href="/solutions" size="lg">
-              Explore Our Solutions
+            <Button href="/contact" size="lg">
+              Book a 30-Minute Strategy Session
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Button>
-            <Button href="/contact" variant="outline" size="lg">
-              Talk to Our Experts
+            <Button href="/solutions" variant="outline" size="lg" className="border-line-strong text-fg hover:border-fg-muted hover:bg-white/[0.02] hover:text-fg">
+              Explore Solutions
             </Button>
           </div>
         </Reveal>
@@ -86,8 +85,8 @@ export default function Hero() {
             <div className="h-px w-10 bg-line" />
             <span>
               Trusted across{" "}
-              <span className="font-semibold text-fg">telecom, education, enterprise transformation</span>,{" "}
-              innovation, and digital operations
+              <span className="font-semibold text-fg">enterprise, telecom, education</span>{" "}
+              and emerging businesses
             </span>
           </div>
         </Reveal>

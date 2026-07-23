@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
+import PageHero from "@/components/shared/PageHero";
 import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Icon } from "@/components/ui/Icon";
+import { Reveal } from "@/components/animations/Reveal";
+import { RevealGroup, RevealItem } from "@/components/animations/Reveal";
 
 export const metadata: Metadata = {
   title: "Smart Campus & AI for Education Solutions | PMRG",
@@ -11,207 +16,194 @@ export const metadata: Metadata = {
   alternates: { canonical: "/solutions/smart-campus-education" },
 };
 
-// Document: "Choose your path"
-const PATHS = [
+const PATH_CARDS = [
   {
-    title: "AI for Schools",
+    icon: "GraduationCap",
+    title: "For Schools",
+    description: "Age-appropriate AI learning, teacher enablement, innovation labs, responsible-use policies and operational support.",
     href: "/solutions/ai-for-schools",
-    description:
-      "AI literacy, safety, teacher enablement, innovation clubs and school operations.",
   },
   {
-    title: "AI for Universities",
+    icon: "Building2",
+    title: "For Universities",
+    description: "Smart campus, admissions, student support, internships, placements, incubation, faculty enablement and dashboards.",
     href: "/solutions/ai-for-universities",
-    description:
-      "Smart campus, student support, internships, placements, incubation and institutional dashboards.",
   },
 ];
 
-// Document: "Five transformation pillars"
 const PILLARS = [
-  "AI learning and responsible use",
-  "Faculty and staff enablement",
-  "Digital and operational intelligence",
-  "Employability and industry readiness",
-  "Innovation, incubation and ecosystem engagement",
+  {
+    title: "AI learning and readiness",
+    items: ["Age-appropriate curricula", "Faculty and teacher enablement", "Responsible-AI policy"],
+  },
+  {
+    title: "Student and campus experience",
+    items: ["Admissions and lifecycle", "Student support and engagement", "Campus operations"],
+  },
+  {
+    title: "Employability and industry connect",
+    items: ["Internships and placements", "Industry projects and mentoring", "Career readiness programs"],
+  },
+  {
+    title: "Innovation and incubation",
+    items: ["Ideathons and hackathons", "Startup pipelines", "Mentor and investor engagement"],
+  },
+  {
+    title: "Institutional intelligence",
+    items: ["KPI dashboards", "Accreditation readiness", "Data-driven decision support"],
+  },
 ];
 
-// Document: "What institutional leaders gain"
-const LEADER_GAINS = [
-  "Clear AI readiness baseline",
-  "Role-based program design",
-  "Defined pilots and success measures",
-  "Student, faculty and management journeys",
-  "Governance and responsible-AI controls",
+const OUTCOMES = [
+  "Structured AI adoption without institutional risk",
+  "Improved student experience and institutional responsiveness",
+  "Greater employability, placement and industry alignment",
+  "Stronger innovation and research outcomes",
+  "Efficient, governed and connected operations",
+  "A phased, measurable transformation roadmap",
 ];
 
-// Document: "How PMRG works"
-const ENGAGEMENT_STEPS = ["Discover", "Blueprint", "Pilot", "Measure", "Scale"];
-
-export default function Page() {
+export default function SmartCampusEducationPage() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* HERO – exact document copy */}
-      <section className="bg-white">
-        <div className="container-pmrg py-16 sm:py-20">
-          <div className="max-w-4xl">
-            <p className="eyebrow-light">Solutions</p>
-            <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
-              Build an AI-ready institution---without losing the human purpose of
-              education.
-            </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
-              PMRG connects responsible AI learning, faculty enablement,
-              institutional operations, employability and innovation into a
-              practical transformation model.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/solutions/ai-for-schools">
-                Explore Your Institution Path
-              </Button>
-              <Link
-                href="/contact?type=education"
-                className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
-              >
+    <>
+      <PageHero
+        eyebrow="Smart Campus & AI for Education"
+        title={
+          <>
+            Build an <span className="text-gradient">AI-ready institution</span> — without losing the human purpose of education.
+          </>
+        }
+        description="PMRG connects responsible AI learning, faculty enablement, institutional operations, employability and innovation into a practical transformation model."
+      >
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+          <Button href="/contact" size="lg">
+            Request an Institutional Workshop
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </Button>
+          <Button href="#paths" variant="outline" size="lg">
+            Choose Your Path
+          </Button>
+        </div>
+      </PageHero>
+
+      {/* Choose your path */}
+      <section id="paths" data-section-theme="light" className="section-light section">
+        <div className="container-pmrg">
+          <SectionHeading
+            theme="light"
+            title="Choose your path"
+            description="PMRG tailors programs for schools and universities with different maturity, stakeholder and regulatory contexts."
+          />
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 max-w-3xl mx-auto">
+            {PATH_CARDS.map((card) => (
+              <RevealItem key={card.title} as="div" variant="slide-up">
+                <Link href={card.href} className="group block h-full">
+                  <GlassCard theme="light" className="flex h-full flex-col p-8 text-center">
+                    <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-light-line bg-blue-50 text-brand transition-colors group-hover:bg-blue-100">
+                      <Icon name={card.icon} className="h-7 w-7" />
+                    </span>
+                    <h3 className="mt-5 text-xl font-semibold text-fg-dark">{card.title}</h3>
+                    <p className="mt-3 flex-1 text-sm leading-relaxed text-fg-dark-muted">{card.description}</p>
+                    <span className="mt-5 inline-flex items-center justify-center gap-1.5 text-sm font-medium text-brand transition-colors group-hover:text-brand-deep">
+                      Explore
+                      <ArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                    </span>
+                  </GlassCard>
+                </Link>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </div>
+      </section>
+
+      {/* Five transformation pillars */}
+      <section data-section-theme="light" className="section-light section border-t border-light-line">
+        <div className="container-pmrg">
+          <SectionHeading
+            theme="light"
+            title="Five transformation pillars"
+            description="A connected approach across learning, experience, employability, innovation and intelligence."
+          />
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {PILLARS.map((pillar) => (
+              <RevealItem key={pillar.title} as="div" variant="slide-up">
+                <GlassCard theme="light" className="flex h-full flex-col p-7">
+                  <h3 className="text-base font-semibold text-fg-dark">{pillar.title}</h3>
+                  <ul className="mt-4 flex flex-col gap-2">
+                    {pillar.items.map((item) => (
+                      <li key={item} className="flex items-start gap-2.5 text-sm text-fg-dark-muted">
+                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-50 text-brand">
+                          <Check className="h-3 w-3" />
+                        </span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </GlassCard>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </div>
+      </section>
+
+      {/* What institutional leaders gain */}
+      <section data-section-theme="light" className="section-light section border-t border-light-line">
+        <div className="container-pmrg">
+          <SectionHeading
+            theme="light"
+            title="What institutional leaders gain"
+            description="Define measures appropriate to the institution instead of applying generic technology metrics."
+          />
+          <Reveal>
+            <div className="mx-auto mt-10 max-w-3xl">
+              <GlassCard theme="light" className="p-8">
+                <ul className="grid gap-3 sm:grid-cols-2">
+                  {OUTCOMES.map((item) => (
+                    <li key={item} className="flex items-start gap-2.5 text-sm text-fg-dark">
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-50 text-brand">
+                        <Check className="h-3 w-3" />
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </GlassCard>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* How PMRG works with institutions */}
+      <section data-section-theme="light" className="section-light section border-t border-light-line">
+        <div className="container-pmrg">
+          <SectionHeading
+            theme="light"
+            title="How PMRG works with institutions"
+            description="PMRG can work with institutional leadership, academic departments, placement cells, incubation centers and industry partners through one coordinated roadmap."
+          />
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            {["Discovery", "Blueprint", "Pilot programs", "Operational enablement", "Evidence and scale"].map((step, i) => (
+              <RevealItem key={step} as="div" variant="slide-up">
+                <GlassCard theme="light" className="flex h-full flex-col p-6 text-center">
+                  <span className="mx-auto flex h-10 w-10 items-center justify-center rounded-full border border-brand/20 bg-brand-soft font-mono text-sm font-bold text-brand">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="mt-4 text-sm font-semibold text-fg-dark">{step}</h3>
+                </GlassCard>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+
+          <Reveal>
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
+              <Button href="/contact" size="lg">
                 Request an Institutional Workshop
-              </Link>
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              </Button>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
-
-      {/* MAIN CONTENT */}
-      <section className="bg-[#f8fafc]">
-        <div className="container-pmrg py-16 sm:py-20">
-          {/* 1. CHOOSE YOUR PATH */}
-          <div>
-            <h2 className="text-2xl font-semibold text-fg-dark">
-              Choose your path
-            </h2>
-            <p className="mt-1 text-sm text-fg-dark-muted">
-              Institutional needs differ. Select the path designed for your
-              learners, faculty and operating context.
-            </p>
-            <div className="mt-5 grid gap-6 md:grid-cols-2">
-              {PATHS.map((path) => (
-                <Link
-                  key={path.href}
-                  href={path.href}
-                  className="group rounded-2xl border border-light-line bg-white p-8 transition-all hover:border-brand/30 hover:shadow-sm"
-                >
-                  <h3 className="text-xl font-semibold text-fg-dark group-hover:text-brand">
-                    {path.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-fg-dark-muted">
-                    {path.description}
-                  </p>
-                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand">
-                    Explore {path.title}
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* 2. FIVE TRANSFORMATION PILLARS */}
-          <GlassCard theme="light" className="mt-6 p-8 sm:p-10">
-            <h2 className="text-2xl font-semibold text-fg-dark">
-              Five transformation pillars
-            </h2>
-            <p className="mt-2 text-sm text-fg-dark-muted">
-              PMRG links learning and operations rather than treating AI as an
-              isolated laboratory activity.
-            </p>
-            <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-              {PILLARS.map((pillar) => (
-                <li
-                  key={pillar}
-                  className="flex items-start gap-3 rounded-xl border border-light-line bg-white px-4 py-3 text-sm text-fg-dark"
-                >
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
-                  <span>{pillar}</span>
-                </li>
-              ))}
-            </ul>
-          </GlassCard>
-
-          {/* 3. WHAT INSTITUTIONAL LEADERS GAIN */}
-          <GlassCard theme="light" className="mt-6 p-8 sm:p-10">
-            <h2 className="text-2xl font-semibold text-fg-dark">
-              What institutional leaders gain
-            </h2>
-            <p className="mt-2 text-sm text-fg-dark-muted">
-              A phased roadmap aligned to current maturity, priorities and
-              capacity.
-            </p>
-            <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-              {LEADER_GAINS.map((gain) => (
-                <li
-                  key={gain}
-                  className="flex items-start gap-3 rounded-xl border border-light-line bg-white px-4 py-3 text-sm text-fg-dark"
-                >
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
-                  <span>{gain}</span>
-                </li>
-              ))}
-            </ul>
-          </GlassCard>
-
-          {/* 4. HOW PMRG WORKS */}
-          <GlassCard theme="light" className="mt-6 p-8 sm:p-10">
-            <h2 className="text-2xl font-semibold text-fg-dark">
-              How PMRG works
-            </h2>
-            <p className="mt-2 text-sm text-fg-dark-muted">
-              Start with discovery, create the institutional blueprint, launch
-              selected high-value pilots and expand only after evidence and
-              adoption are established.
-            </p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-5">
-              {ENGAGEMENT_STEPS.map((step, index) => (
-                <div
-                  key={step}
-                  className="flex items-center gap-3 rounded-xl border border-light-line bg-white px-4 py-3 text-sm text-fg-dark"
-                >
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">
-                    {index + 1}
-                  </span>
-                  <span>{step}</span>
-                </div>
-              ))}
-            </div>
-          </GlassCard>
-
-          {/* 5. FINAL CTA – exact document copy */}
-          <GlassCard theme="light" className="mt-6 p-8 sm:p-10">
-            <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
-              <div>
-                <h2 className="text-2xl font-semibold text-fg-dark">
-                  Request an Institutional Workshop
-                </h2>
-                <p className="mt-2 text-sm text-fg-dark-muted">
-                  Ready to define your institution's AI readiness and
-                  transformation roadmap? Start with a focused discovery session.
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-3">
-                <Button href="/contact?type=education">
-                  Request an Institutional Workshop
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-                <Link
-                  href="/solutions/ai-for-schools"
-                  className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
-                >
-                  Explore Your Institution Path
-                </Link>
-              </div>
-            </div>
-          </GlassCard>
-        </div>
-      </section>
-    </main>
+    </>
   );
 }

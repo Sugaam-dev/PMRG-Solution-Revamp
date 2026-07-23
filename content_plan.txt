@@ -1,0 +1,4270 @@
+﻿# PMRG Solution Website - IA & Content Plan
+
+**PMRG Solution Website**
+
+Information architecture & conversion content
+plan
+
+**Strategic recommendation.** Position PMRG as an
+AI-powered transformation and governance partner—not a catalogue of
+disconnected services. Organize the site around business outcomes, route
+each priority audience to a tailored landing page within two clicks, and
+use architecture, use cases and approved relationships as proof.
+
+1 Positioning and
+audience priorities
+
+**Master proposition:** PMRG helps enterprises and
+institutions turn AI capability into governed, measurable
+transformation—combining domain consulting, implementation platforms and
+execution accountability.
+
+CXO, CIO, COO and PMO leaders: governance visibility, risk
+control and delivery accountability.
+
+Universities and schools: AI readiness, connected operations,
+innovation and career outcomes.
+
+Telecom, MSO and enterprise teams: BSS/OSS, CLM, ERP/CRM,
+automation and operational intelligence.
+
+Technology, sales and academic partners: joint market access,
+implementation capacity and innovation programs.
+
+2 Recommended
+navigation
+
+**Solutions**
+**Platforms**
+**Industries**
+**Success Stories**
+**Partnerships**
+**Company**
+
+Governance
+
+Smart Campus
+
+Enterprise
+
+Telecom
+Governance Layer
+
+Sprint Intelligence
+
+AI Sales / CLM
+
+Data Center
+Telecom & MSO
+
+Education
+
+Enterprise / SME
+Case studies
+
+Use cases
+
+Client outcomes
+Technology & delivery
+
+Academic & innovation
+About
+
+Leadership
+
+Careers
+
+Contact
+
+**Persistent primary CTA: Book a Strategy Session** |
+Secondary navigation: Insights, Careers, Contact, Privacy and Terms.
+
+3 Homepage content
+sequence
+
+**Stage**
+**Purpose**
+
+**01 Hero**
+Outcome-led promise + two CTAs
+
+**02 Trust strip**
+Approved client, institutional and partner logos
+
+**03 Choose your outcome**
+Govern delivery / Build smart campus / Modernize operations /
+Partner with PMRG
+
+**04 Flagship proof**
+AI Governance layers, agents, dashboards and security
+
+**05 Portfolio**
+Smart Campus, enterprise platforms and telecom capabilities
+
+**06 Evidence**
+Short case stories, architectures and engagement models
+
+**07 Conversion**
+Contextual CTA + short qualification form
+
+**CORE LANDING-PAGE ARCHITECTURE**
+
+**Four pages that carry the commercial story**
+
+Use one repeatable conversion pattern: pain → outcome → how it works
+→ proof → architecture → engagement model → next action.
+
+**AI-Assisted Governance**
+
+**Audience:** CIOs, transformation heads, PMO leaders,
+delivery executives and regulated operations.
+
+**Promise:** Turn fragmented delivery data into
+accountable decisions, earlier risk visibility and governed
+execution.
+
+**Show:** Executive / organizational / project /
+technical layers; Requirement, PMO, Vendor, UAT and Executive agents;
+sprint planning and testing intelligence; security and integration
+view.
+
+**Proof:** One annotated dashboard, one reference
+architecture, two use cases and an explainable 12-month adoption path.
+Avoid unverified ROI claims.
+
+**Primary CTA:** Request a Governance Assessment |
+Schedule a Platform Demo
+
+**Smart Campus & AI for Education**
+
+**Audience:** Vice-chancellors, registrars, principals,
+trustees, placement and innovation leaders.
+
+**Promise:** Create an AI-ready institution that
+connects learning, operations, innovation, employability and industry
+engagement.
+
+**Show:** AI literacy for schools; smart-campus command
+center; student and faculty enablement; admissions/placement CRM;
+internships and live projects; incubation, ideathons and innovation
+portals.
+
+**Proof:** Program model, role-based journey, sample
+100-day roadmap and approved institutional collaborations. Separate
+school and university pathways.
+
+**Primary CTA:** Design My 100-Day Campus Roadmap |
+Request an Institutional Workshop
+
+**Enterprise Platforms & Automation**
+
+**Audience:** Founders, CIOs, COOs and functional
+leaders modernizing core operations.
+
+**Promise:** Modernize processes, automate decisions and
+improve operational visibility without losing control.
+
+**Show:** ERPNext and CRM; AI Sales Tracker and CLM;
+Data Center Management; AI agents and workflow automation; analytics,
+integration and managed support.
+
+**Proof:** Capability map by business problem,
+integration patterns, phased implementation approach and
+outcome-oriented use cases by function.
+
+**Primary CTA:** Map a Transformation Sprint | Discuss
+an ERP / AI Automation Need
+
+**Telecom BSS/OSS & Industry Partnerships**
+
+**Audience:** MSOs, communication service providers,
+telecom product teams, solution partners and account-led sales
+partners.
+
+**Promise:** Combine telecom domain depth with
+AI-assisted governance, customer lifecycle modernization and
+delivery-ready collaboration.
+
+**Show:** BSS/OSS consulting; customer lifecycle,
+catalog, order, inventory and billing; orchestration/activation;
+co-sell, delivery and account-specific partnership models.
+
+**Proof:** Reference architecture, capability taxonomy,
+named relationships only with approval, clear responsibilities and a
+visible path from discovery to delivery.
+
+**Primary CTA:** Discuss a Telecom Use Case | Explore
+Partnership Fit
+
+**Partnership page rule:** separate Clients,
+Technology/Delivery Partners and Academic Collaborations; add logos only
+after written approval and link each relationship to a specific value
+story.
+
+**MESSAGING AND CONVERSION SYSTEM**
+
+Make every page answer: Why PMRG, why now, and what
+next?
+
+Recommended homepage
+hero
+
+Govern complex transformation. Build AI-ready institutions.
+Modernize enterprise operations.
+
+From strategy to governed execution—PMRG combines AI platforms,
+enterprise systems and domain-led delivery to turn ambitious
+transformation into measurable progress.
+
+**CTA:** Book a 30-Minute Strategy Session | Explore
+Solutions
+
+## **Message pillars**
+
+**Pillar**
+**Message**
+
+**AI GOVERNANCE**
+Intelligence with control. Decisions with
+accountability.
+
+**SMART CAMPUS**
+From classrooms to careers—one connected, AI-ready
+institution.
+
+**ENTERPRISE**
+Modernize processes. Automate decisions. Improve
+visibility.
+
+**PARTNERSHIPS**
+Bring market reach. PMRG brings architecture and delivery
+depth.
+
+## **Conversion design**
+
+**Intent**
+**Offer**
+**CTA language**
+
+**High**
+Demo, assessment or discovery session
+Schedule demo • Request assessment • Start discovery
+
+**Mid**
+Architecture, capability brief or 100-day roadmap
+View architecture • Download brief • Explore roadmap
+
+**Early**
+Insight, use case or checklist
+Read insight • See use case • Review checklist
+
+Replace vague ‘Learn More’ buttons with action-specific CTAs and
+keep one sticky primary CTA on desktop and mobile.
+
+Keep forms to 4–5 fields: name, work email, organization,
+interest area and brief need; route submissions by solution.
+
+Use proof cards with challenge, intervention and outcome; publish
+metrics only when documented and approved.
+
+SEO and editorial
+plan
+
+**Priority clusters:** AI governance platform;
+AI-assisted delivery governance; smart campus solutions; AI for schools
+and universities; telecom BSS/OSS consulting; ERPNext implementation; AI
+sales tracker and customer lifecycle management.
+
+**First content set:** Governance maturity checklist;
+smart-campus 100-day roadmap; telecom CLM architecture; ERP/AI
+modernization guide; one case story per priority audience.
+
+Three-week
+execution and publishing plan
+
+**Window**
+**Build and publish**
+**Exit criteria**
+
+**Week 1**
+Confirm sitemap and proof assets; approve homepage, four core
+landing pages and reusable page templates
+Content and wireframes signed off
+
+**Week 2**
+Design and develop responsive pages; configure forms, CTA routing,
+analytics, technical SEO and case-story structure
+Staging site complete and testable
+
+**Week 3**
+Load approved proof; complete UAT, accessibility, performance,
+mobile and form testing; launch and monitor
+Production launch with tracking verified
+
+**Content governance:** appoint one content owner;
+review offers and proof monthly; obtain client/partner approval before
+naming or logo use; meet WCAG 2.2 AA; track CTA and form events by
+landing page.
+
+**DEVELOPER HANDOFF — SINGLE SOURCE OF CONTENT**
+
+**PMRG Website: Complete Page Content Pack**
+
+This section converts the strategy into ready-to-paste website
+content. It includes every proposed URL, page purpose, audience, SEO
+metadata, hero copy, section copy, CTAs, component notes, forms,
+analytics events and launch requirements. Developers should use this
+document as the working content source and raise only factual, approval
+or technical blockers.
+
+**Publication control.** Client names, partner names,
+logos, screenshots, testimonials, metrics and confidential architecture
+must be published only after PMRG records approval. Where evidence is
+not approved, remove the claim instead of inserting invented proof.
+
+# **Page inventory**
+
+**#**
+**Page**
+**URL**
+**Primary conversion**
+
+**1**
+**Homepage**
+/
+Book a Strategy Session
+
+**2**
+**Solutions Overview**
+/solutions
+Find the right solution or request discovery.
+
+**3**
+**AI-Assisted Governance**
+/solutions/ai-assisted-governance
+Request a Governance Assessment
+
+**4**
+**Smart Campus & Education Overview**
+/solutions/smart-campus-education
+Choose institution type or request a workshop.
+
+**5**
+**AI for Schools**
+/solutions/ai-for-schools
+Request a School AI Readiness Workshop
+
+**6**
+**AI for Universities & Smart Campus**
+/solutions/ai-for-universities
+Design a 100-Day Campus Roadmap
+
+**7**
+**Enterprise Solutions**
+/solutions/enterprise-solutions
+Map a Transformation Sprint
+
+**8**
+**AI Agents & Automation**
+/solutions/ai-agents-automation
+Identify an Agentic AI Use Case
+
+**9**
+**Telecom BSS/OSS**
+/solutions/telecom-bss-oss
+Discuss a Telecom Use Case
+
+**10**
+**Platforms Overview**
+/platforms
+Select a platform or request a demonstration.
+
+**11**
+**AI Governance Layer Platform**
+/platforms/ai-governance-layer
+Schedule a Platform Demo
+
+**12**
+**Sprint & Delivery Intelligence Platform**
+/platforms/sprint-delivery-intelligence
+Request a Sprint Intelligence Demo
+
+**13**
+AI Sales Tracker & Customer Lifecycle
+Platform
+/platforms/ai-sales-tracker-clm
+Request a Sales Tracker Demo
+
+**14**
+**Data Center Management Platform**
+/platforms/data-center-management
+Request a Data Center Assessment
+
+**15**
+**Industries Overview**
+/industries
+Select an industry path.
+
+**16**
+**Telecom & MSO Industry**
+/industries/telecom-mso
+Book a Telecom Architecture Session
+
+**17**
+**Education Industry**
+/industries/education
+Request an Institutional Workshop
+
+**18**
+**Enterprise & SME Industry**
+/industries/enterprise-sme
+Request an Enterprise Discovery Session
+
+**19**
+**Success Stories**
+/success-stories
+Open a case story or discuss a similar need.
+
+**20**
+**Partnerships**
+/partnerships
+Explore Partnership Fit
+
+**21**
+**About PMRG**
+/company/about
+Start a conversation or explore solutions.
+
+**22**
+**Careers**
+/company/careers
+Apply or express interest.
+
+**23**
+**Insights**
+/insights
+Read, download or move to a related solution.
+
+**24**
+**Contact**
+/contact
+Submit requirement or use direct contact details.
+
+**25**
+**Thank-You Page**
+/thank-you
+Continue to a related solution or insight.
+
+**26**
+**404 Page**
+/404
+Return to a useful destination.
+
+**GLOBAL WEBSITE COMPONENTS**
+
+Header, navigation, footer, forms and
+measurement
+
+These components apply across the entire website. Reuse the same
+labels, descriptions, CTA hierarchy and tracking conventions on every
+page.
+
+Header and mega-menu
+copy
+
+## **Solutions**
+
+**Menu item**
+**Dropdown description**
+
+**AI-Assisted Governance**
+Govern strategy, delivery, risks, vendors and decisions with
+AI-supported oversight.
+
+**Smart Campus & Education**
+Build AI-ready schools and universities across learning, operations,
+innovation and careers.
+
+**Enterprise Solutions**
+Modernize ERP, CRM, workflows, data and operational visibility.
+
+**AI Agents & Automation**
+Deploy role-based copilots and workflow agents with human
+oversight.
+
+**Telecom BSS/OSS**
+Transform customer lifecycle, orders, inventory, billing,
+orchestration and delivery governance.
+
+## **Platforms**
+
+**Menu item**
+**Dropdown description**
+
+**AI Governance Layer**
+A unified decision and accountability layer for enterprise
+transformation.
+
+**Sprint & Delivery Intelligence**
+Plan, track and govern execution across teams, vendors, risks and
+milestones.
+
+**AI Sales Tracker & CLM**
+Connect leads, opportunities, follow-ups and lifecycle
+intelligence.
+
+**Data Center Management**
+Improve infrastructure visibility, capacity, incidents, assets and
+operational control.
+
+## **Industries**
+
+**Menu item**
+**Dropdown description**
+
+**Telecom & MSO**
+Domain-led modernization for operators, MSOs and telecom technology
+teams.
+
+**Education**
+AI-ready learning, institutional operations, employability and
+innovation.
+
+**Enterprise & SME**
+Practical enterprise systems and AI automation aligned to
+growth.
+
+## **Company**
+
+**Menu item**
+**Dropdown description**
+
+**Success Stories**
+See how PMRG approaches business, technology and institutional
+challenges.
+
+**Partnerships**
+Explore technology, delivery, sales and academic collaboration
+models.
+
+**About PMRG**
+Learn about PMRG's mission, values, domain depth and delivery
+approach.
+
+**Careers**
+Join PMRG across technology, consulting, delivery, growth and
+internships.
+
+**Insights**
+Read practical perspectives on AI governance, telecom, enterprise
+and education.
+
+**Contact**
+Start a solution, platform, institutional or partnership
+conversation.
+
+**Persistent header CTA:** Book a Strategy Session
+
+# **Footer copy**
+
+**Company statement:** PMRG Solution LLP helps
+enterprises, telecom organizations and educational institutions turn AI
+capability into governed, practical and measurable transformation.
+
+**Contact line:** support@pmrgsolution.com | +91
+9766540198 | Pune, India | www.pmrgsolution.com
+
+**Navigation links:** Solutions | Platforms | Industries
+| Success Stories | Partnerships | About | Careers | Insights |
+Contact
+
+**Legal links:** Privacy Policy | Terms of Use | Cookie
+Notice
+
+**Legal review note:** Privacy, terms and cookie pages
+require legal review before publication.
+
+# **Global enquiry form**
+
+- 
+Full name — required
+
+- 
+Work email — required
+
+- 
+Phone number — optional
+
+- 
+Organization — required
+
+- 
+Role / designation — optional
+
+- 
+Area of interest — required dropdown
+
+- 
+Brief requirement — required
+
+- 
+Consent checkbox — required
+
+**Interest-area options:** AI-Assisted Governance; Smart
+Campus / AI for Education; Enterprise Solutions / ERP / CRM; AI Agents
+& Automation; Telecom BSS/OSS; Platforms / Product Demo;
+Partnership; Careers / Internship; Other
+
+**Submit button:** Submit My Requirement
+
+**Privacy microcopy:** By submitting this form, you
+agree that PMRG Solution may contact you about this enquiry. Your
+information will be handled according to our Privacy Policy.
+
+Analytics event
+names
+
+**Event**
+**Trigger**
+
+**nav_cta_click**
+Persistent strategy-session CTA
+
+**solution_card_click**
+Any solution card
+
+**platform_card_click**
+Any platform card
+
+**case_story_click**
+Success-story card or detail link
+
+**download_click**
+Guide, checklist, brief or architecture download
+
+**form_start**
+First interaction with a form field
+
+**form_submit**
+Successful validated submission
+
+**meeting_request_click**
+Demo, workshop, assessment or strategy-session request
+
+**email_click**
+Clickable email address
+
+**phone_click**
+Clickable phone number
+
+**WEBSITE PAGE 01**
+
+# **Homepage**
+
+**/**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Position PMRG clearly, route priority audiences and create qualified
+strategy conversations.
+Enterprise, telecom, education and partnership decision-makers.
+Book a Strategy Session
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** PMRG Solution | AI Governance, Enterprise
+& Smart Campus
+
+**Meta description:** PMRG delivers AI-assisted
+governance, smart campus programs, enterprise solutions, telecom
+consulting and implementation platforms.
+
+Hero headline
+
+Govern complex transformation. Build AI-ready institutions. Modernize
+enterprise operations.
+
+From strategy to governed execution, PMRG combines AI
+platforms, enterprise systems and domain-led delivery to turn ambitious
+transformation into measurable progress.
+
+Primary CTA: Book a 30-Minute Strategy Session | Secondary CTA:
+Explore Solutions
+
+Ready-to-paste page
+sections
+
+### **Trust and ecosystem**
+
+Trusted across enterprise, telecom, education and emerging
+businesses.
+
+Client logo candidates, subject to written approval: Hathway,
+MTC, Ocean Impact, Acharya Institute, BPUT, Amddas Food and Bali Yoga
+Kendra.
+
+Partner logo candidates, displayed separately and subject to
+approval: USU Telecom and Global Tech.
+
+Choose the outcome you
+need
+
+Start with the business outcome, then connect the visitor to the most
+relevant PMRG capability.
+
+Govern delivery and decisions — Create accountability across
+requirements, vendors, risks, approvals, UAT and executive
+reporting.
+
+Build an AI-ready campus — Connect learning, operations,
+employability, innovation and institutional intelligence.
+
+Modernize enterprise operations — Improve processes through ERP,
+CRM, automation, data and AI-led visibility.
+
+Transform telecom operations — Modernize customer lifecycle,
+ordering, inventory, billing and service orchestration.
+
+Partner with PMRG — Combine market access with PMRG architecture,
+technology and delivery capability.
+
+Flagship: AI-assisted
+governance
+
+Capability without governance is just an expensive liability. PMRG's
+governance approach combines intelligence with accountability across
+executive, organizational, project and technical layers.
+
+- 
+Requirement, PMO, Vendor, UAT and Executive agents.
+
+Sprint, milestone, SLA, dependency, approval and testing
+intelligence.
+
+Role-based dashboards with human review and explainable
+recommendations.
+
+Smart Campus and AI
+for Education
+
+Help schools and universities become AI-ready while protecting human
+judgment, responsible use and institutional priorities.
+
+- 
+AI literacy, faculty enablement and innovation labs.
+
+Smart-campus dashboards, student support and operational
+automation.
+
+Internships, live projects, placement readiness, incubation and
+ideathons.
+
+Enterprise and
+telecom capability
+
+Modernize core operations through ERPNext, CRM, CLM, AI agents, sales
+intelligence, data center management and telecom BSS/OSS expertise.
+
+- 
+Outcome-led consulting and solution architecture.
+
+- 
+Phased implementation, integration and adoption support.
+
+Domain depth across telecom, education and emerging
+enterprises.
+
+### **Why PMRG**
+
+PMRG works as a transformation partner, product innovator,
+implementation team, capability builder, domain specialist and ecosystem
+enabler.
+
+- 
+Business-first discovery before technology selection.
+
+Governed execution with visible ownership and measurable
+checkpoints.
+
+Flexible engagement from assessment and PoC to implementation and
+managed support.
+
+Final conversion
+block
+
+Have a transformation goal but need a clearer path? Bring PMRG the
+business problem. We will help define the operating model, solution
+architecture and execution roadmap.
+
+- 
+Primary CTA: Book a Strategy Session
+
+- 
+Secondary CTA: Share Your Requirement
+
+Developer and design
+notes
+
+Hero: full-width technical AI/governance visual with restrained
+animation and readable contrast.
+
+Trust strip: show separate labels for Clients, Institutional
+Relationships and Partners.
+
+Outcome cards must link to the correct solution landing
+page.
+
+Use one sticky Book a Strategy Session CTA on desktop and
+mobile.
+
+**WEBSITE PAGE 02**
+
+# **Solutions Overview**
+
+**/solutions**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Explain PMRG's solution portfolio through business outcomes rather
+than a service catalogue.
+Business and technology leaders evaluating PMRG at portfolio
+level.
+Find the right solution or request discovery.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** AI, Enterprise, Education & Telecom
+Solutions | PMRG
+
+**Meta description:** Explore PMRG solutions for AI
+governance, smart campus transformation, enterprise systems, AI
+automation and telecom BSS/OSS.
+
+Hero headline
+
+Transformation solutions designed around outcomes, accountability and
+adoption.
+
+PMRG brings business consulting, domain architecture,
+implementation platforms and governed delivery together so organizations
+can move from ambition to execution.
+
+Primary CTA: Find the Right Solution | Secondary CTA: Book
+Discovery
+
+Ready-to-paste page
+sections
+AI-Assisted
+Governance
+
+Create an intelligence and accountability layer across strategy,
+delivery, vendors, approvals, risks, testing and executive
+decisions.
+
+Best for complex programs, multi-vendor delivery and leadership
+visibility.
+
+- 
+Links to: /solutions/ai-assisted-governance
+
+Smart Campus &
+Education
+
+Build AI-ready schools and universities across learning, operations,
+employability, research, innovation and institutional governance.
+
+- 
+Separate pathways for schools and higher education.
+
+- 
+Links to: /solutions/smart-campus-education
+
+### **Enterprise Solutions**
+
+Modernize operations with ERPNext, CRM, workflow automation,
+analytics, CLM and data center visibility.
+
+Designed for phased adoption and integration with current
+systems.
+
+- 
+Links to: /solutions/enterprise-solutions
+
+AI Agents &
+Automation
+
+Deploy role-based copilots and workflow agents for knowledge,
+decisions, service, sales and operations with human oversight.
+
+Governance, security and auditability remain built into the
+approach.
+
+- 
+Links to: /solutions/ai-agents-automation
+
+### **Telecom BSS/OSS**
+
+Apply deep domain expertise across customer lifecycle, catalog,
+order, inventory, billing, orchestration and delivery
+transformation.
+
+Suitable for operators, MSOs, product companies and
+implementation partners.
+
+- 
+Links to: /solutions/telecom-bss-oss
+
+### **How PMRG engages**
+
+Start with an assessment or solution workshop, validate the
+architecture and value case, run a focused PoC when appropriate, then
+implement through measurable phases.
+
+- 
+Assessment
+
+- 
+Architecture and roadmap
+
+- 
+PoC or pilot
+
+- 
+Implementation
+
+- 
+Adoption and managed support
+
+Developer and design
+notes
+
+Use five outcome cards and a simple engagement-flow
+component.
+
+Each card needs audience, business outcome and CTA; avoid
+technology-only descriptions.
+
+**WEBSITE PAGE 03**
+
+AI-Assisted
+Governance
+
+**/solutions/ai-assisted-governance**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Establish PMRG's flagship governance proposition and generate
+assessments and demos.
+CIOs, COOs, PMO heads, transformation leaders and delivery
+executives.
+Request a Governance Assessment
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** AI-Assisted Enterprise Governance
+Platform | PMRG
+
+**Meta description:** Improve delivery accountability,
+risk visibility and executive decisions through PMRG's AI-assisted
+governance platform and agent ecosystem.
+
+Hero headline
+
+Turn delivery data into accountable decisions.
+
+PMRG's AI-assisted governance approach connects requirements,
+delivery, vendors, testing, risks, approvals and executive reporting
+into one governed decision layer.
+
+Primary CTA: Request a Governance Assessment | Secondary CTA:
+Schedule a Platform Demo
+
+Ready-to-paste page
+sections
+Why
+transformation programs lose control
+
+Critical information sits across tools, documents, meetings and
+vendors. Leadership receives delayed summaries while dependencies,
+approval gaps and delivery risks grow underneath.
+
+- 
+Fragmented requirement ownership
+
+- 
+Late risk and dependency visibility
+
+- 
+Manual status consolidation
+
+- 
+Weak vendor and SLA accountability
+
+- 
+Disconnected UAT and release readiness
+
+- 
+Decisions without traceable evidence
+
+Four connected
+governance layers
+
+The platform turns operational activity into progressively richer
+management and decision intelligence.
+
+Executive governance — priorities, investment, exposure and
+decision support.
+
+Organizational governance — portfolios, capacity, dependencies
+and policy alignment.
+
+Project governance — scope, milestones, RAID, vendors, approvals
+and UAT.
+
+Technical governance — architecture, integration, quality,
+releases, security and technical debt.
+
+### **Agent ecosystem**
+
+Role-aligned AI agents organize evidence, surface exceptions and
+recommend action while accountable users retain decision authority.
+
+Requirement Agent — completeness, ambiguity, traceability and
+change impact.
+
+PMO Agent — milestones, dependencies, risk trends and status
+quality.
+
+Vendor Agent — commitments, SLA exposure, deliverables and
+escalations.
+
+UAT Agent — coverage, defects, readiness and acceptance
+evidence.
+
+Executive Agent — cross-program summaries, decisions and
+forward-looking exposure.
+
+### **Core capabilities**
+
+A governed workspace for delivery intelligence, not another
+disconnected task tracker.
+
+- 
+Requirement and change governance
+
+- 
+Sprint and milestone intelligence
+
+- 
+RAID and dependency management
+
+- 
+Vendor, SLA and escalation governance
+
+- 
+Approval and decision register
+
+- 
+Testing, UAT and release readiness
+
+- 
+Document and evidence repository
+
+- 
+Role-based dashboards and alerts
+
+Architecture,
+security and integration
+
+Integrate with existing project, service, source-control, testing,
+document and communication tools through APIs and controlled data
+pipelines.
+
+- 
+Role-based access and least privilege
+
+- 
+Encryption in transit and at rest
+
+- 
+Audit logs and traceable recommendations
+
+- 
+Human approval for material actions
+
+- 
+Configurable data retention and deployment patterns
+
+- 
+Integration with enterprise identity and reporting
+
+### **Engagement model**
+
+Begin with a maturity assessment, select priority use cases, validate
+through a focused pilot and scale through measurable governance
+waves.
+
+- 
+Assessment
+
+- 
+Governance blueprint
+
+- 
+PoC or pilot
+
+- 
+Phased implementation
+
+- 
+Adoption and continuous improvement
+
+### **Final CTA**
+
+See where delivery decisions are delayed, evidence is fragmented and
+accountability can be strengthened.
+
+- 
+Primary: Request a Governance Assessment
+
+- 
+Secondary: Schedule a Platform Demo
+
+Developer and design
+notes
+
+Use one four-layer governance diagram and one agent ecosystem
+visual.
+
+Provide dashboard screenshot placeholders labelled as conceptual
+until product images are approved.
+
+Add an FAQ accordion covering integration, AI oversight,
+deployment and security.
+
+**WEBSITE PAGE 04**
+
+Smart Campus &
+Education Overview
+
+**/solutions/smart-campus-education**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Present one education transformation narrative and route visitors to
+school or university offerings.
+School and university leadership, trustees and institutional
+decision-makers.
+Choose institution type or request a workshop.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Smart Campus & AI for Education
+Solutions | PMRG
+
+**Meta description:** Build AI-ready schools and
+universities through responsible AI learning, smart operations,
+employability, incubation and institutional intelligence.
+
+Hero headline
+
+Build an AI-ready institution—without losing the human purpose of
+education.
+
+PMRG connects responsible AI learning, faculty enablement,
+institutional operations, employability and innovation into a practical
+transformation model.
+
+Primary CTA: Explore Your Institution Path | Secondary CTA:
+Request an Institutional Workshop
+
+Ready-to-paste page
+sections
+
+### **Choose your path**
+
+Institutional needs differ. Select the path designed for your
+learners, faculty and operating context.
+
+AI for Schools — literacy, safety, teacher enablement, innovation
+clubs and school operations.
+
+AI for Universities — smart campus, student support, internships,
+placements, incubation and institutional dashboards.
+
+Five transformation
+pillars
+
+PMRG links learning and operations rather than treating AI as an
+isolated laboratory activity.
+
+- 
+AI learning and responsible use
+
+- 
+Faculty and staff enablement
+
+- 
+Digital and operational intelligence
+
+- 
+Employability and industry readiness
+
+- 
+Innovation, incubation and ecosystem engagement
+
+What institutional
+leaders gain
+
+A phased roadmap aligned to current maturity, priorities and
+capacity.
+
+- 
+Clear AI readiness baseline
+
+- 
+Role-based program design
+
+- 
+Defined pilots and success measures
+
+- 
+Student, faculty and management journeys
+
+- 
+Governance and responsible-AI controls
+
+### **How PMRG works**
+
+Start with discovery, create the institutional blueprint, launch
+selected high-value pilots and expand only after evidence and adoption
+are established.
+
+- 
+Discover
+
+- 
+Blueprint
+
+- 
+Pilot
+
+- 
+Measure
+
+- 
+Scale
+
+Developer and design
+notes
+
+Use a prominent School / University path selector above the
+fold.
+
+Use real institutional photography plus subtle AI overlays; avoid
+generic robot imagery.
+
+**WEBSITE PAGE 05**
+
+# **AI for Schools**
+
+**/solutions/ai-for-schools**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Explain the human-first school offering and generate leadership
+workshops.
+Principals, school management, trustees, academic heads and
+technology coordinators.
+Request a School AI Readiness Workshop
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** AI for Schools: Literacy, Teachers &
+Innovation | PMRG
+
+**Meta description:** A human-first AI program for
+students, teachers, school operations, digital safety and innovation
+across Classes 6–12.
+
+Hero headline
+
+Human-first AI for students, teachers and future-ready schools.
+
+PMRG helps schools introduce AI with age-appropriate learning,
+responsible use, teacher confidence, practical projects and
+institutional governance.
+
+Primary CTA: Request a School AI Readiness Workshop | Secondary
+CTA: View the Program Structure
+
+Ready-to-paste page
+sections
+AI literacy for Classes
+6–8
+
+Build curiosity, logic and digital responsibility before
+complexity.
+
+- 
+AI awareness and everyday examples
+
+- 
+Computational thinking and logic
+
+- 
+Digital safety and responsible use
+
+- 
+Prompt basics and fact checking
+
+- 
+Storytelling and simple project-based learning
+
+Applied AI for Classes
+9–10
+
+Move from awareness to structured problem solving and responsible
+project work.
+
+- 
+AI project cycle
+
+- 
+Data awareness and interpretation
+
+- 
+Prompt design and evaluation
+
+- 
+Bias, privacy and responsible AI
+
+- 
+Team projects connected to school or community problems
+
+Career
+and innovation exposure for Classes 11–12
+
+Help senior students understand AI pathways, real-world use cases and
+portfolio creation.
+
+- 
+AI and emerging-technology careers
+
+- 
+Applied projects and presentations
+
+- 
+Research, entrepreneurship and innovation exposure
+
+- 
+Portfolio and industry-readiness guidance
+
+- 
+Responsible use in higher education
+
+### **Teacher enablement**
+
+Teachers remain the decision-makers. AI supports lesson preparation,
+differentiated material, feedback, administration and professional
+development.
+
+- 
+Prompting for educators
+
+- 
+Verification and academic integrity
+
+- 
+AI-assisted content preparation
+
+- 
+Student-use policies
+
+- 
+Classroom adoption playbook
+
+AI Innovation Lab and
+Club
+
+Create a structured environment for projects, demonstrations,
+competitions and interdisciplinary problem solving.
+
+- 
+Annual activity calendar
+
+- 
+Mentor-supported project cycles
+
+- 
+Showcase and demo day
+
+- 
+Responsible-AI charter
+
+- 
+Student leadership roles
+
+School operations and
+governance
+
+Identify safe uses of AI across communication, knowledge management,
+reporting and student support without exposing sensitive data.
+
+- 
+Use-case prioritization
+
+- 
+Data and privacy controls
+
+- 
+Role-based access
+
+- 
+Approval and review processes
+
+- 
+Impact and adoption measurement
+
+Developer and design
+notes
+
+- 
+Include class-band tabs for 6–8, 9–10 and 11–12.
+
+Add a downloadable one-page program outline only after its
+content is approved.
+
+**WEBSITE PAGE 06**
+
+AI for Universities
+& Smart Campus
+
+**/solutions/ai-for-universities**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Position PMRG as an institutional transformation partner across
+campus operations, employability and innovation.
+Vice-chancellors, registrars, deans, placement heads, incubation
+leaders and trustees.
+Design a 100-Day Campus Roadmap
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** AI for Universities & Smart Campus
+Solutions | PMRG
+
+**Meta description:** Connect student services, campus
+operations, placements, internships, incubation and AI governance
+through a practical smart-campus roadmap.
+
+Hero headline
+
+From campus operations to career outcomes—build one connected, AI-ready
+institution.
+
+PMRG brings institutional strategy, AI enablement, digital
+platforms, employability programs and innovation ecosystems into a
+phased smart-campus model.
+
+Primary CTA: Design My 100-Day Campus Roadmap | Secondary CTA:
+Request a Leadership Workshop
+
+Ready-to-paste page
+sections
+Student experience and
+support
+
+Create clearer access to academic, administrative, career and campus
+information through governed digital journeys.
+
+- 
+Student support assistant
+
+- 
+Service request tracking
+
+- 
+Knowledge and policy access
+
+- 
+Personalized alerts and guidance
+
+- 
+Feedback and issue intelligence
+
+Admissions and
+institutional growth
+
+Connect website journeys, inquiries, follow-ups and conversion
+visibility.
+
+- 
+Program landing pages
+
+- 
+Admissions CRM
+
+- 
+Lead source and stage tracking
+
+- 
+Communication workflows
+
+- 
+Management dashboards
+
+Industry readiness
+and placements
+
+Move beyond certificates to structured exposure, live projects,
+portfolios and employer engagement.
+
+- 
+Structured internships
+
+- 
+PMRG-supported live projects
+
+- 
+Placement-readiness programs
+
+- 
+Recruiter engagement
+
+- 
+Portfolio and outcome dashboards
+
+Incubation and
+innovation
+
+Create repeatable pathways from idea discovery to prototype,
+mentorship, validation and ecosystem visibility.
+
+- 
+Ideathons and hackathons
+
+- 
+Mentor and expert network
+
+- 
+Prototype support
+
+- 
+Startup readiness
+
+- 
+CSR and industry engagement
+
+Faculty and
+operational enablement
+
+Support teaching, research, reporting and administration through
+responsible AI practices and controlled automation.
+
+- 
+Faculty development
+
+- 
+Research support
+
+- 
+Administrative workflows
+
+- 
+Policy and responsible-AI framework
+
+- 
+Role-based dashboards
+
+Indicative 100-day
+roadmap
+
+The roadmap shown is a service offering, separate from the three-week
+PMRG website build plan.
+
+- 
+Days 1–20: institutional discovery and baseline
+
+- 
+Days 21–40: blueprint and pilot design
+
+- 
+Days 41–70: priority pilot implementation
+
+- 
+Days 71–100: evidence, adoption and scale plan
+
+Developer and design
+notes
+
+Use a campus journey visual linking Admissions, Learning,
+Operations, Careers and Innovation.
+
+Include Institutional Workshop and 100-Day Roadmap forms with the
+same backend form component.
+
+**WEBSITE PAGE 07**
+
+Enterprise
+Solutions
+
+**/solutions/enterprise-solutions**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Connect PMRG's ERP, CRM, automation, analytics and infrastructure
+offers to enterprise problems.
+Founders, CEOs, CIOs, COOs and functional leaders.
+Map a Transformation Sprint
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Enterprise ERP, CRM, Automation & AI
+Solutions | PMRG
+
+**Meta description:** Modernize operations with ERPNext,
+CRM, customer lifecycle, workflow automation, analytics and
+infrastructure visibility from PMRG.
+
+Hero headline
+
+Modernize processes. Automate decisions. Improve visibility.
+
+PMRG helps growing and established organizations simplify
+operations through enterprise platforms, AI automation, integration and
+governed delivery.
+
+Primary CTA: Map a Transformation Sprint | Secondary CTA:
+Discuss an ERP or Automation Need
+
+Ready-to-paste page
+sections
+
+### **Where PMRG helps**
+
+Prioritize the processes that create delays, duplicate effort,
+inconsistent data or management blind spots.
+
+- 
+Finance, procurement and inventory
+
+- 
+Sales, CRM and customer lifecycle
+
+- 
+HR and workforce operations
+
+- 
+Projects, service and support
+
+- 
+Data center and infrastructure operations
+
+- 
+Management analytics and reporting
+
+ERPNext and business
+systems
+
+Configure and implement integrated processes aligned to how the
+organization actually operates.
+
+- 
+Process discovery
+
+- 
+Core configuration
+
+- 
+Master-data preparation
+
+- 
+Role and workflow setup
+
+- 
+Reports and dashboards
+
+- 
+UAT, go-live and stabilization
+
+CRM and customer
+lifecycle
+
+Connect leads, opportunities, onboarding, service, retention and
+management visibility.
+
+- 
+Lead and opportunity management
+
+- 
+Sales activity and follow-up
+
+- 
+Customer 360
+
+- 
+Service and issue journeys
+
+- 
+Lifecycle reporting
+
+### **AI automation**
+
+Apply AI to repeatable knowledge and workflow tasks with clear
+ownership, approvals and auditability.
+
+- 
+Document intelligence
+
+- 
+Knowledge assistants
+
+- 
+Operational copilots
+
+- 
+Exception and risk detection
+
+- 
+Workflow recommendations
+
+### **Delivery approach**
+
+Start small enough to learn and structured enough to scale.
+
+- 
+Business-process assessment
+
+- 
+Target architecture
+
+- 
+Prioritized backlog
+
+- 
+Phased implementation
+
+- 
+Adoption and support
+
+Developer and design
+notes
+
+Show a business-function capability map, not a wall of product
+logos.
+
+Use sector-neutral imagery and architecture-inspired
+graphics.
+
+**WEBSITE PAGE 08**
+
+AI Agents &
+Automation
+
+**/solutions/ai-agents-automation**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Explain how PMRG deploys practical and governed AI agents across
+enterprise functions.
+Business leaders, CIOs, operations heads and product teams.
+Identify an Agentic AI Use Case
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Enterprise AI Agents & Workflow
+Automation | PMRG
+
+**Meta description:** Design and deploy governed AI
+agents and copilots for knowledge, operations, service, sales and
+decision support.
+
+Hero headline
+
+AI agents that work inside your operating model—not outside your
+control.
+
+PMRG identifies high-value agentic use cases, designs the
+architecture and embeds human oversight, security, evidence and
+measurable execution.
+
+Primary CTA: Identify an Agentic AI Use Case | Secondary CTA:
+Discuss the Architecture
+
+Ready-to-paste page
+sections
+Where agents create
+value
+
+Select tasks with repeatable inputs, clear decision boundaries and
+evidence that can be verified.
+
+- 
+Knowledge and policy assistants
+
+- 
+Sales and follow-up copilots
+
+- 
+Project and governance agents
+
+- 
+Customer service support
+
+- 
+Document and requirement analysis
+
+- 
+Operational monitoring and exception alerts
+
+Human-in-the-loop by
+design
+
+AI can organize evidence, draft responses and recommend actions.
+Accountable users approve material decisions and external
+communication.
+
+- 
+Defined decision rights
+
+- 
+Confidence and exception thresholds
+
+- 
+Approval workflows
+
+- 
+Audit history
+
+- 
+Feedback and correction loops
+
+Reference
+architecture
+
+A modular architecture separates channels, orchestration, models,
+enterprise tools, data and governance controls.
+
+- 
+User and system channels
+
+- 
+Agent orchestration
+
+- 
+Model and tool layer
+
+- 
+Enterprise integrations
+
+- 
+Knowledge and data layer
+
+- 
+Identity, security, monitoring and audit
+
+### **Engagement path**
+
+Begin with use-case assessment and feasibility, then move through
+prototype, controlled pilot and production hardening.
+
+- 
+Use-case prioritization
+
+- 
+Data and security assessment
+
+- 
+Prototype
+
+- 
+Pilot with acceptance criteria
+
+- 
+Production rollout and monitoring
+
+Developer and design
+notes
+
+- 
+Include one layered agent architecture diagram.
+
+Avoid claims of full autonomy; consistently show human review and
+governance.
+
+**WEBSITE PAGE 09**
+
+# **Telecom BSS/OSS**
+
+**/solutions/telecom-bss-oss**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Show PMRG's telecom domain depth and create architecture,
+modernization and delivery conversations.
+Operators, MSOs, telecom product companies, technology partners and
+transformation teams.
+Discuss a Telecom Use Case
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Telecom BSS/OSS, CLM & Transformation
+Consulting | PMRG
+
+**Meta description:** PMRG supports telecom customer
+lifecycle, catalog, order, inventory, billing, orchestration, activation
+and AI-led delivery governance.
+
+Hero headline
+
+Telecom transformation grounded in architecture, customer lifecycle and
+execution reality.
+
+PMRG combines BSS/OSS domain expertise with AI-assisted
+governance, enterprise architecture and implementation leadership.
+
+Primary CTA: Discuss a Telecom Use Case | Secondary CTA: Request
+a Reference Architecture Session
+
+Ready-to-paste page
+sections
+
+### **Customer and channel**
+
+Design consistent assisted and digital journeys across onboarding,
+self-care, service and retention.
+
+- 
+CRM and customer lifecycle
+
+- 
+Digital self-care
+
+- 
+Customer 360
+
+- 
+KYC and document journeys
+
+- 
+Notifications, service and support
+
+Product, order and
+orchestration
+
+Connect commercial intent to feasible, traceable and governed service
+fulfillment.
+
+- 
+Product catalog
+
+- 
+Order capture and decomposition
+
+- 
+Service order management
+
+- 
+Orchestration and activation
+
+- 
+Fallout and retry management
+
+Inventory, charging and
+billing
+
+Align resource availability, service state, commercial policy and
+financial events.
+
+- 
+Resource and service inventory
+
+- 
+Number and SIM lifecycle
+
+- 
+Charging and balance interactions
+
+- 
+Billing and invoice processes
+
+- 
+Payments, refunds and reconciliation
+
+Architecture and
+modernization
+
+Support target architecture, product selection, migration,
+integration and phased transformation.
+
+- 
+Capability and gap assessment
+
+- 
+ODA-aligned architecture
+
+- 
+API and event integration
+
+- 
+Migration and cutover planning
+
+- 
+Cloud, security and observability
+
+### **AI-led governance**
+
+Improve requirement quality, vendor accountability, delivery
+visibility, testing and executive decision support across telecom
+programs.
+
+- 
+Requirement traceability
+
+- 
+Multi-vendor governance
+
+- 
+UAT and release readiness
+
+- 
+SLA and dependency intelligence
+
+- 
+Executive program dashboards
+
+### **Why PMRG**
+
+Senior telecom architecture experience combined with practical
+delivery and AI transformation capability.
+
+- 
+Business-to-technology translation
+
+- 
+End-to-end BSS/OSS perspective
+
+- 
+Architecture and implementation alignment
+
+- 
+Governed delivery across stakeholders
+
+Developer and design
+notes
+
+Use an end-to-end telecom capability map from Channel to Billing
+and Assurance.
+
+Do not publish confidential customer program details or
+unapproved names.
+
+**WEBSITE PAGE 10**
+
+# **Platforms Overview**
+
+**/platforms**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Present PMRG's productized capabilities and route visitors to
+focused platform pages.
+Buyers seeking product-led or platform-enabled engagements.
+Select a platform or request a demonstration.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** AI Governance & Enterprise Platforms
+| PMRG
+
+**Meta description:** Explore PMRG platforms for
+governance, sprint intelligence, sales and customer lifecycle, and data
+center management.
+
+Hero headline
+
+Platforms that turn operational signals into accountable action.
+
+PMRG's platforms support governance, execution, sales
+intelligence and infrastructure visibility while integrating with the
+tools organizations already use.
+
+Primary CTA: Explore the Platforms | Secondary CTA: Request a
+Demo
+
+Ready-to-paste page
+sections
+
+### **AI Governance Layer**
+
+Connect delivery evidence, risks, decisions and accountability across
+management levels.
+
+- 
+Link: /platforms/ai-governance-layer
+
+Sprint & Delivery
+Intelligence
+
+Plan, track and govern delivery across sprints, milestones, teams and
+vendors.
+
+- 
+Link: /platforms/sprint-delivery-intelligence
+
+AI Sales Tracker &
+CLM
+
+Connect external leads, qualification, follow-up, opportunity
+progress and lifecycle insight.
+
+- 
+Link: /platforms/ai-sales-tracker-clm
+
+Data Center
+Management
+
+Improve visibility across assets, capacity, incidents, energy, risk
+and operational readiness.
+
+- 
+Link: /platforms/data-center-management
+
+### **Platform engagement**
+
+Platforms can be assessed, demonstrated, piloted and configured
+around the client's operating model and integrations.
+
+- 
+Discovery
+
+- 
+Demonstration
+
+- 
+Fit-gap
+
+- 
+Pilot
+
+- 
+Implementation and support
+
+Developer and design
+notes
+
+Use four equal platform cards with screenshot or diagram
+placeholders.
+
+- 
+Each card must show problem, capability and CTA.
+
+**WEBSITE PAGE 11**
+
+AI Governance Layer
+Platform
+
+**/platforms/ai-governance-layer**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Provide product-oriented detail for the AI governance platform.
+PMO, transformation, delivery, governance and technology
+leaders.
+Schedule a Platform Demo
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** AI Governance Layer for Delivery &
+Decisions | PMRG
+
+**Meta description:** A configurable governance layer
+for requirements, sprints, vendors, risks, approvals, UAT, releases and
+executive intelligence.
+
+Hero headline
+
+One governance layer across delivery, vendors, risk and decisions.
+
+Bring evidence from existing tools into a role-based governance
+workspace that highlights exceptions, traceability and decisions
+requiring attention.
+
+Primary CTA: Schedule a Platform Demo | Secondary CTA: Request a
+Fit Assessment
+
+Ready-to-paste page
+sections
+
+### **Platform modules**
+
+Configure the platform around the governance areas that matter
+most.
+
+- 
+Requirement governance
+
+- 
+Program and sprint oversight
+
+- 
+RAID and dependencies
+
+- 
+Vendor and SLA governance
+
+- 
+Approvals and decisions
+
+- 
+Testing, UAT and release
+
+- 
+Document evidence
+
+- 
+Executive dashboards
+
+AI-supported
+intelligence
+
+Use AI to summarize evidence, detect gaps and recommend actions while
+retaining human accountability.
+
+- 
+Completeness and consistency checks
+
+- 
+Trend and exception detection
+
+- 
+Impact and dependency analysis
+
+- 
+Status-quality checks
+
+- 
+Executive narrative generation
+
+- 
+Decision and escalation prompts
+
+### **Integration model**
+
+Connect through APIs, events or controlled batch ingestion according
+to enterprise constraints.
+
+- 
+Project and work management
+
+- 
+Source control and CI/CD
+
+- 
+Testing and defect tools
+
+- 
+Document repositories
+
+- 
+Communication platforms
+
+- 
+BI and reporting
+
+Deployment and
+controls
+
+Deployment architecture is selected with the client's security, data
+and operational requirements.
+
+- 
+Role-based access
+
+- 
+Identity integration
+
+- 
+Audit and observability
+
+- 
+Data retention
+
+- 
+Model and prompt controls
+
+- 
+Human approval
+
+Developer and design
+notes
+
+Use product screenshots only when current and approved; otherwise
+label visuals Conceptual View.
+
+- 
+Add Demo and Fit Assessment form variants.
+
+**WEBSITE PAGE 12**
+
+Sprint &
+Delivery Intelligence Platform
+
+**/platforms/sprint-delivery-intelligence**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Explain PMRG's sprint planning and delivery-governance
+capability.
+Delivery heads, PMOs, product leaders, scrum teams and vendor
+managers.
+Request a Sprint Intelligence Demo
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Sprint Planning & Delivery
+Intelligence Platform | PMRG
+
+**Meta description:** Plan sprints, track commitments,
+expose dependencies and improve delivery governance across teams,
+milestones and vendors.
+
+Hero headline
+
+Move from sprint activity to delivery intelligence.
+
+Connect plans, capacity, dependencies, risks, commitments and
+outcomes so delivery leaders can act before slippage becomes status
+history.
+
+Primary CTA: Request a Sprint Intelligence Demo | Secondary CTA:
+Review the Capability Map
+
+Ready-to-paste page
+sections
+
+### **Planning**
+
+Create a governed planning view across priorities, capacity and
+dependencies.
+
+- 
+Backlog and priority view
+
+- 
+Capacity and allocation
+
+- 
+Dependency mapping
+
+- 
+Milestone alignment
+
+- 
+Definition of ready
+
+Execution
+intelligence
+
+Surface progress, exceptions and evidence across teams and
+vendors.
+
+- 
+Commitment versus completion
+
+- 
+Blocked and aging work
+
+- 
+Dependency exposure
+
+- 
+Risk and issue trends
+
+- 
+Vendor commitments
+
+Quality and
+readiness
+
+Connect development activity to testing, acceptance and release
+readiness.
+
+- 
+Defect trends
+
+- 
+UAT status
+
+- 
+Acceptance evidence
+
+- 
+Release criteria
+
+- 
+Readiness scorecards
+
+Leadership
+dashboards
+
+Provide different views for teams, PMO, delivery leadership and
+executives.
+
+- 
+Sprint dashboard
+
+- 
+Program dashboard
+
+- 
+Vendor dashboard
+
+- 
+Risk and dependency dashboard
+
+- 
+Executive summary
+
+Developer and design
+notes
+
+Visualize one sprint dashboard and one cross-program dependency
+view.
+
+Do not position the platform as a Jira replacement; position it
+as an intelligence and governance layer.
+
+**WEBSITE PAGE 13**
+
+AI Sales
+Tracker & Customer Lifecycle Platform
+
+**/platforms/ai-sales-tracker-clm**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Explain lead-to-lifecycle intelligence and generate demos.
+Sales leaders, founders, revenue operations, account teams and
+customer lifecycle owners.
+Request a Sales Tracker Demo
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** AI Sales Tracker & Customer Lifecycle
+Platform | PMRG
+
+**Meta description:** Connect external lead sources,
+qualification, follow-ups, opportunity progress, customer lifecycle and
+revenue visibility.
+
+Hero headline
+
+Turn scattered leads and follow-ups into a visible, accountable sales
+journey.
+
+PMRG's AI-led sales tracker connects lead sources, activities,
+opportunities, next actions and customer lifecycle intelligence in one
+management view.
+
+Primary CTA: Request a Sales Tracker Demo | Secondary CTA:
+Discuss Your Lead Pipeline
+
+Ready-to-paste page
+sections
+Lead capture and
+integration
+
+Bring leads into one governed pipeline from approved internal and
+external sources.
+
+- 
+Website and campaign forms
+
+- 
+Partner and referral leads
+
+- 
+Imported lists
+
+- 
+External lead-generation integrations
+
+- 
+Deduplication and source tracking
+
+Qualification and
+prioritization
+
+Apply defined business rules and AI-assisted signals without hiding
+the basis of prioritization.
+
+- 
+Fit and intent fields
+
+- 
+Lead scoring
+
+- 
+Priority and aging
+
+- 
+Duplicate and incomplete lead detection
+
+- 
+Human review and reassignment
+
+Activity and
+opportunity management
+
+Make ownership, follow-up and next action visible.
+
+- 
+Calls, meetings and notes
+
+- 
+Tasks and reminders
+
+- 
+Opportunity stages
+
+- 
+Proposal and commercial milestones
+
+- 
+Dormancy and escalation alerts
+
+Customer lifecycle
+intelligence
+
+Extend visibility beyond initial conversion into onboarding, service,
+growth and retention.
+
+- 
+Customer 360
+
+- 
+Onboarding milestones
+
+- 
+Service and issue history
+
+- 
+Renewal and growth signals
+
+- 
+Account health and risks
+
+Management
+dashboards
+
+Provide evidence for action, not vanity metrics.
+
+- 
+Source and stage funnel
+
+- 
+Owner and team performance
+
+- 
+Aging and stalled opportunities
+
+- 
+Forecast and next actions
+
+- 
+Lifecycle and account health
+
+Developer and design
+notes
+
+Include a lead-to-customer pipeline diagram and dashboard
+wireframe.
+
+External lead-source logos should be used only when actual
+integrations are confirmed.
+
+**WEBSITE PAGE 14**
+
+Data Center Management
+Platform
+
+**/platforms/data-center-management**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Present PMRG's infrastructure operations and data center visibility
+offer.
+Infrastructure heads, data center operations, CIO teams and
+managed-service providers.
+Request a Data Center Assessment
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Data Center Management & Operational
+Intelligence | PMRG
+
+**Meta description:** Improve data center visibility
+across assets, capacity, incidents, energy, maintenance, risk,
+compliance and executive reporting.
+
+Hero headline
+
+See the infrastructure. Understand the risk. Act with confidence.
+
+PMRG's data center management approach connects operational,
+asset, capacity and incident information into one governed view.
+
+Primary CTA: Request a Data Center Assessment | Secondary CTA:
+Explore the Capability Map
+
+Ready-to-paste page
+sections
+Asset and
+configuration visibility
+
+Create traceable views across locations, racks, equipment, ownership,
+state and service relationships.
+
+- 
+Asset register
+
+- 
+Location and rack mapping
+
+- 
+Lifecycle and warranty
+
+- 
+Dependency relationships
+
+- 
+Ownership and status
+
+Capacity and
+utilization
+
+Support planning with evidence across space, power, compute, storage
+and network capacity.
+
+- 
+Capacity thresholds
+
+- 
+Utilization trends
+
+- 
+Forecast and reservations
+
+- 
+Hotspot identification
+
+- 
+Expansion planning
+
+Incident and
+maintenance
+
+Connect alarms, incidents, actions and maintenance history.
+
+- 
+Incident intake
+
+- 
+Severity and escalation
+
+- 
+Root-cause evidence
+
+- 
+Preventive maintenance
+
+- 
+SLA and closure tracking
+
+Energy, risk and
+compliance
+
+Create management visibility across operational efficiency,
+resilience and control obligations.
+
+- 
+Energy monitoring
+
+- 
+Environmental thresholds
+
+- 
+Resilience and availability
+
+- 
+Risk register
+
+- 
+Audit and compliance evidence
+
+Integration and
+dashboards
+
+Integrate with monitoring, service, inventory and reporting systems
+according to the target architecture.
+
+- 
+NMS and monitoring
+
+- 
+ITSM
+
+- 
+CMDB and inventory
+
+- 
+IoT and environmental sensors
+
+- 
+BI and executive reporting
+
+Developer and design
+notes
+
+Use a data center topology or rack-to-dashboard visual; avoid
+unlabelled stock-server imagery.
+
+Mark real-time monitoring as dependent on source-system
+integrations.
+
+**WEBSITE PAGE 15**
+
+# **Industries Overview**
+
+**/industries**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Route visitors by sector and demonstrate that PMRG adapts
+capabilities to domain context.
+Visitors who identify first by industry rather than product.
+Select an industry path.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Industry Solutions for Telecom, Education
+& Enterprise | PMRG
+
+**Meta description:** Explore PMRG's domain-led AI
+governance, digital transformation and platform solutions for telecom,
+education and enterprise.
+
+Hero headline
+
+Domain context changes the solution. Outcomes still require accountable
+execution.
+
+PMRG combines reusable platforms with sector-specific
+processes, architecture, regulations, stakeholders and adoption
+needs.
+
+Primary CTA: Choose Your Industry | Secondary CTA: Discuss Your
+Business Context
+
+Ready-to-paste page
+sections
+
+### **Telecom & MSO**
+
+Customer lifecycle, BSS/OSS architecture, orchestration, inventory,
+billing and AI-led program governance.
+
+- 
+Link: /industries/telecom-mso
+
+### **Education**
+
+AI learning, smart campus, operations, admissions, placements,
+internships, incubation and institutional intelligence.
+
+- 
+Link: /industries/education
+
+### **Enterprise & SME**
+
+ERP, CRM, sales and lifecycle, workflow automation, AI agents,
+analytics and infrastructure visibility.
+
+- 
+Link: /industries/enterprise-sme
+
+Cross-industry
+approach
+
+PMRG starts with business context, maps the operating model, selects
+fit-for-purpose technology and governs implementation through measurable
+phases.
+
+- 
+Discover
+
+- 
+Design
+
+- 
+Validate
+
+- 
+Implement
+
+- 
+Measure and scale
+
+Developer and design
+notes
+
+Use three industry cards with distinct visuals and consistent
+structure.
+
+Do not create unsupported industry claims solely for SEO
+volume.
+
+**WEBSITE PAGE 16**
+
+Telecom & MSO
+Industry
+
+**/industries/telecom-mso**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Frame PMRG's solutions around telecom and MSO business
+outcomes.
+Operator, MSO, telecom product and partner leadership.
+Book a Telecom Architecture Session
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Telecom & MSO Digital Transformation
+Solutions | PMRG
+
+**Meta description:** Transform telecom customer
+lifecycle, fulfillment, inventory, billing and program governance with
+PMRG domain expertise.
+
+Hero headline
+
+Modernize telecom journeys without losing operational control.
+
+PMRG helps operators, MSOs and technology partners connect
+customer experience, BSS/OSS architecture and governed delivery.
+
+Primary CTA: Book a Telecom Architecture Session | Secondary
+CTA: Explore Telecom Capabilities
+
+Ready-to-paste page
+sections
+
+### **Business outcomes**
+
+Align customer, operational and technology priorities across the
+transformation.
+
+- 
+Faster and more consistent customer journeys
+
+- 
+Reduced order and provisioning fallout
+
+- 
+Clearer product and inventory alignment
+
+- 
+Stronger multi-vendor accountability
+
+- 
+Improved release and UAT visibility
+
+Relevant PMRG
+solutions
+
+Connect industry needs to the right solution pages.
+
+- 
+Telecom BSS/OSS
+
+- 
+AI-Assisted Governance
+
+- 
+AI Governance Layer
+
+- 
+Sprint & Delivery Intelligence
+
+- 
+AI Sales Tracker & CLM
+
+### **Engagement scenarios**
+
+PMRG can support the architecture, delivery or product dimensions of
+a telecom initiative.
+
+- 
+Capability and gap assessment
+
+- 
+Target solution architecture
+
+- 
+Requirements and vendor governance
+
+- 
+Product or implementation advisory
+
+- 
+UAT, release and transformation governance
+
+Developer and design
+notes
+
+Link prominently to the Telecom BSS/OSS solution page and AI
+Governance case story.
+
+Use approved anonymized use cases when client naming is
+restricted.
+
+**WEBSITE PAGE 17**
+
+# **Education Industry**
+
+**/industries/education**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Frame PMRG's education offers around institutional outcomes and
+route school/university visitors.
+School and higher-education leaders.
+Request an Institutional Workshop
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** AI & Digital Transformation for
+Education | PMRG
+
+**Meta description:** Support schools and universities
+with AI readiness, smart campus systems, employability, placements,
+incubation and digital operations.
+
+Hero headline
+
+Technology should strengthen learning, operations and career outcomes
+together.
+
+PMRG helps education leaders move from isolated initiatives to
+an institution-wide roadmap for responsible AI, digital operations,
+employability and innovation.
+
+Primary CTA: Request an Institutional Workshop | Secondary CTA:
+Choose School or University
+
+Ready-to-paste page
+sections
+
+### **For schools**
+
+Age-appropriate AI learning, teacher enablement, innovation labs,
+responsible-use policies and operational support.
+
+- 
+Link: /solutions/ai-for-schools
+
+### **For universities**
+
+Smart campus, admissions, student support, internships, placements,
+incubation, faculty enablement and dashboards.
+
+- 
+Link: /solutions/ai-for-universities
+
+Institutional
+outcomes
+
+Define measures appropriate to the institution instead of applying
+generic technology metrics.
+
+- 
+AI readiness and safe adoption
+
+- 
+Faculty and student participation
+
+- 
+Operational response and visibility
+
+- 
+Internship and placement engagement
+
+- 
+Innovation participation and prototype progress
+
+### **Collaboration model**
+
+PMRG can work with institutional leadership, academic departments,
+placement cells, incubation centers and industry partners through one
+coordinated roadmap.
+
+- 
+Discovery
+
+- 
+Blueprint
+
+- 
+Pilot programs
+
+- 
+Operational enablement
+
+- 
+Evidence and scale
+
+Developer and design
+notes
+
+Add School and University route cards immediately below the
+hero.
+
+- 
+Only list institutional logos after approval.
+
+**WEBSITE PAGE 18**
+
+Enterprise & SME
+Industry
+
+**/industries/enterprise-sme**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Translate PMRG's platforms into practical growth and operations
+outcomes for enterprises and SMEs.
+Founders, business owners, CIOs, COOs and functional heads.
+Request an Enterprise Discovery Session
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Enterprise & SME ERP, CRM and AI
+Solutions | PMRG
+
+**Meta description:** Improve enterprise and SME
+operations through ERPNext, CRM, AI automation, sales intelligence,
+analytics and data center visibility.
+
+Hero headline
+
+Practical enterprise transformation for organizations that need
+visibility and speed.
+
+PMRG connects process improvement, enterprise systems and AI
+automation through phased implementation designed around business
+priorities.
+
+Primary CTA: Request an Enterprise Discovery Session | Secondary
+CTA: Explore Enterprise Solutions
+
+Ready-to-paste page
+sections
+Common growth
+constraints
+
+Technology investment often follows symptoms rather than the
+underlying operating model.
+
+- 
+Disconnected spreadsheets and tools
+
+- 
+Manual approvals and follow-ups
+
+- 
+Limited sales and customer visibility
+
+- 
+Inconsistent master data
+
+- 
+Delayed management reporting
+
+- 
+Infrastructure and service blind spots
+
+Relevant PMRG
+capabilities
+
+Select and combine only the capabilities required for the current
+priority.
+
+- 
+ERPNext and business systems
+
+- 
+CRM and CLM
+
+- 
+AI Sales Tracker
+
+- 
+AI agents and workflow automation
+
+- 
+Data Center Management
+
+- 
+Dashboards and analytics
+
+### **Phased adoption**
+
+Protect business continuity by sequencing discovery, core
+configuration, integrations, UAT, go-live and stabilization.
+
+- 
+Prioritize
+
+- 
+Prototype or configure
+
+- 
+Validate
+
+- 
+Go live
+
+- 
+Stabilize and expand
+
+Developer and design
+notes
+
+- 
+Use a problem-to-capability matrix.
+
+Do not publish pricing on the general industry page; qualify
+scope first.
+
+**WEBSITE PAGE 19**
+
+# **Success Stories**
+
+**/success-stories**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Provide credible proof without making unverified claims.
+Buyers validating PMRG's relevance and execution approach.
+Open a case story or discuss a similar need.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** PMRG Solution Success Stories & Use
+Cases
+
+**Meta description:** Explore PMRG approaches to AI
+governance, education transformation, enterprise systems and telecom
+modernization.
+
+Hero headline
+
+Proof should show the problem, the intervention and the outcome.
+
+Explore selected PMRG use cases and engagements across
+governance, telecom, education and enterprise transformation. Named
+references and metrics are published only after approval.
+
+Primary CTA: Explore the Stories | Secondary CTA: Discuss a
+Similar Challenge
+
+Ready-to-paste page
+sections
+
+### **Case-story template**
+
+Every story should use the same evidence-based structure.
+
+- 
+Client or anonymized context
+
+- 
+Business challenge
+
+- 
+Why the existing approach was insufficient
+
+- 
+PMRG solution and architecture
+
+- 
+Implementation approach
+
+- 
+Outcome and evidence
+
+- 
+Next phase
+
+Initial story:
+AI-led delivery governance
+
+Show how PMRG structures requirements, vendors, UAT, risks, approvals
+and executive visibility for a complex enterprise delivery
+environment.
+
+Use approved customer name or label Enterprise/MSO
+Client.
+
+Do not publish confidential architecture or commercial
+information.
+
+Initial story:
+institutional AI readiness
+
+Show the path from isolated AI interest to a structured program
+across learners, faculty, operations, employability and innovation.
+
+- 
+Use approved school or university reference.
+
+Show the program model and roadmap rather than invented
+performance metrics.
+
+Initial
+story: ERP and process modernization
+
+Show how a business process was mapped, configured, validated and
+stabilized through ERPNext or related enterprise systems.
+
+- 
+Use approved scope and documented outcomes.
+
+- 
+Avoid publishing commercial terms without consent.
+
+Relationship logo
+area
+
+Separate Clients, Academic Relationships and Technology/Delivery
+Partners.
+
+- 
+All logo and naming use requires written approval.
+
+A logo must link to a relevant story or short relationship
+explanation where possible.
+
+Developer and design
+notes
+
+Build filter chips for Governance, Telecom, Education and
+Enterprise.
+
+CMS fields should include challenge, solution, architecture
+image, outcome, quote, approval status and related CTA.
+
+**WEBSITE PAGE 20**
+
+# **Partnerships**
+
+**/partnerships**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Attract credible technology, delivery, sales and academic partners
+while clarifying PMRG's contribution.
+Product companies, implementation firms, sales partners,
+institutions, incubators and ecosystem leaders.
+Explore Partnership Fit
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Technology, Delivery & Academic
+Partnerships | PMRG
+
+**Meta description:** Partner with PMRG across
+technology, delivery, account-led growth, telecom solutions, education
+and innovation programs.
+
+Hero headline
+
+Build more together—with clear roles, protected value and delivery
+accountability.
+
+PMRG collaborates with organizations that bring complementary
+products, market access, institutional reach or delivery
+capability.
+
+Primary CTA: Explore Partnership Fit | Secondary CTA: Propose an
+Opportunity
+
+Ready-to-paste page
+sections
+Technology and
+product partnerships
+
+Combine complementary platforms or specialist products with PMRG
+architecture, integration and market-facing solution design.
+
+- 
+Product integration
+
+- 
+Joint solution design
+
+- 
+Co-demonstration
+
+- 
+Implementation enablement
+
+- 
+Mutual opportunity qualification
+
+Delivery
+partnerships
+
+Extend delivery capacity while maintaining clear scope, ownership,
+governance and quality expectations.
+
+- 
+Specialist capability
+
+- 
+Implementation support
+
+- 
+Architecture and assurance
+
+- 
+Defined RACI
+
+- 
+Customer and data confidentiality
+
+Sales and account
+partnerships
+
+Work together on qualified, transparent opportunities with agreed
+commercials, account roles and delivery responsibilities.
+
+- 
+Opportunity registration
+
+- 
+Joint qualification
+
+- 
+Solution and commercial alignment
+
+- 
+Customer engagement model
+
+- 
+Payment and delivery terms through contract
+
+Academic and
+innovation partnerships
+
+Connect institutions, students, faculty, mentors and industry through
+structured programs and digital platforms.
+
+- 
+AI and smart-campus programs
+
+- 
+Internships and live projects
+
+- 
+Incubation and ideathons
+
+- 
+Faculty and student enablement
+
+- 
+Industry and CSR engagement
+
+### **What PMRG brings**
+
+PMRG contributes technology architecture, AI and enterprise
+capabilities, telecom domain expertise, program design and governed
+delivery.
+
+- 
+Solution architecture
+
+- 
+Product and platform capability
+
+- 
+Implementation and PMO
+
+- 
+Domain consulting
+
+- 
+Capability building
+
+Partnership
+principles
+
+Every partnership should protect the customer, intellectual property,
+confidential information and the responsibilities agreed by both
+parties.
+
+- 
+Clear scope and account ownership
+
+- 
+Confidentiality and IP protection
+
+- 
+Transparent commercials
+
+- 
+Quality and acceptance criteria
+
+- 
+No public logo or relationship claim without approval
+
+Developer and design
+notes
+
+Use four partnership-model cards and a dedicated partnership
+form.
+
+Partner logo carousel must be managed through an approval-status
+field.
+
+**WEBSITE PAGE 21**
+
+# **About PMRG**
+
+**/company/about**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Explain PMRG's identity, mission, positioning, values and operating
+approach.
+Prospective clients, partners, institutions, candidates and
+ecosystem stakeholders.
+Start a conversation or explore solutions.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** About PMRG Solution | AI & Digital
+Transformation
+
+**Meta description:** PMRG Solution LLP combines AI,
+telecom, enterprise platforms, smart-campus programs and governed
+delivery to create measurable transformation.
+
+Hero headline
+
+Innovate to elevate—technology that improves decisions, accountability
+and outcomes.
+
+PMRG Solution LLP is a technology and consulting company
+serving enterprises, telecom organizations, educational institutions and
+emerging businesses.
+
+Primary CTA: Start a Conversation | Secondary CTA: Explore Our
+Solutions
+
+Ready-to-paste page
+sections
+
+### **Who we are**
+
+PMRG brings together artificial intelligence, agentic AI, enterprise
+architecture, Telecom BSS/OSS, ERP/CRM, governance and education
+transformation capabilities.
+
+- 
+Technology and consulting
+
+- 
+Product and platform innovation
+
+- 
+Implementation and delivery
+
+- 
+Capability and ecosystem building
+
+### **Mission**
+
+To help organizations and institutions adopt technology responsibly,
+execute transformation with accountability and create measurable value
+for people, operations and stakeholders.
+
+### **Vision**
+
+To become a trusted transformation and innovation partner that
+connects AI capability, domain expertise and governed execution across
+enterprise and education ecosystems.
+
+How PMRG creates
+value
+
+Innovation matters only when it improves decisions, simplifies work,
+strengthens accountability and enables people to perform better.
+
+- 
+Transformation Partner
+
+- 
+Product Innovator
+
+- 
+Implementation Team
+
+- 
+Capability Builder
+
+- 
+Domain Specialist
+
+- 
+Ecosystem Enabler
+
+### **Values**
+
+PMRG's work should reflect accountability, practical innovation,
+collaboration, transparency and a commitment to client and institutional
+outcomes.
+
+- 
+Accountability
+
+- 
+Integrity
+
+- 
+Innovation with purpose
+
+- 
+Collaboration
+
+- 
+Continuous learning
+
+### **Where we work**
+
+PMRG is based in Pune, India and supports clients, institutions and
+partners through remote, hybrid and on-site engagement models based on
+project requirements.
+
+Developer and design
+notes
+
+Use founder/leadership imagery only when current professional
+photographs and biographies are approved.
+
+Add office location, email and social links in the final
+section.
+
+**WEBSITE PAGE 22**
+
+# **Careers**
+
+**/company/careers**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Attract experienced professionals, growth leaders, specialists and
+interns.
+Experienced candidates, advisors, interns and project
+specialists.
+Apply or express interest.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Careers, Internships & Expert
+Opportunities | PMRG
+
+**Meta description:** Explore careers, internships,
+advisory opportunities and specialist roles across AI, telecom,
+enterprise platforms, delivery and growth at PMRG.
+
+Hero headline
+
+Build technology, capability and businesses that solve real
+problems.
+
+PMRG works with experienced leaders, architects, delivery
+specialists, growth professionals and emerging talent across technology
+and transformation programs.
+
+Primary CTA: View Open Opportunities | Secondary CTA: Send Your
+Profile
+
+Ready-to-paste page
+sections
+Experienced
+professionals
+
+Contribute architecture, consulting, implementation, delivery and
+program leadership across PMRG solutions and client engagements.
+
+- 
+AI and enterprise architecture
+
+- 
+Telecom BSS/OSS
+
+- 
+ERP/CRM and automation
+
+- 
+Project and delivery governance
+
+- 
+Solution consulting
+
+Growth and
+partnerships
+
+Help build qualified opportunities, strategic partnerships and
+product-led ventures with clear ownership and ethical market
+engagement.
+
+- 
+Enterprise sales
+
+- 
+Strategic partnerships
+
+- 
+Academic and institutional growth
+
+- 
+Market and account development
+
+Internships and
+industry readiness
+
+PMRG internships are structured around learning, supervised work,
+project exposure and demonstrated capability—not certificates alone.
+
+- 
+Foundation and domain orientation
+
+- 
+Project allocation
+
+- 
+Live or simulated delivery
+
+- 
+Capstone and portfolio
+
+- 
+Performance-based opportunities where available
+
+### **How to apply**
+
+Send a concise profile with the role or capability area in the
+subject line.
+
+- 
+Email: hr@pmrgsolution.com
+
+Do not promise selection, placement or employment on the
+website.
+
+Developer and design
+notes
+
+Use CMS-managed vacancy cards with title, location, engagement
+type, experience and apply CTA.
+
+- 
+Add a separate internship-interest form if required.
+
+**WEBSITE PAGE 23**
+
+# **Insights**
+
+**/insights**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Build authority, organic discovery and mid-funnel engagement.
+Leaders researching AI governance, enterprise transformation,
+education and telecom topics.
+Read, download or move to a related solution.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Insights on AI Governance, Telecom &
+Education | PMRG
+
+**Meta description:** Practical perspectives from PMRG
+on AI governance, enterprise systems, telecom BSS/OSS, smart campus and
+industry readiness.
+
+Hero headline
+
+Practical thinking for governed transformation.
+
+Explore perspectives, frameworks, architecture notes and
+implementation guidance across PMRG's priority domains.
+
+Primary CTA: Explore Insights | Secondary CTA: Discuss a Topic
+with PMRG
+
+Ready-to-paste page
+sections
+
+### **AI governance**
+
+How organizations can combine intelligence with accountability,
+evidence and human decision authority.
+
+Initial article: Capability without governance is an expensive
+liability.
+
+- 
+Initial asset: AI governance maturity checklist.
+
+Smart Campus and
+education
+
+Practical approaches to responsible AI, student outcomes,
+institutional operations and industry readiness.
+
+- 
+Initial article: From AI lab to AI-ready institution.
+
+- 
+Initial asset: Smart-campus 100-day roadmap.
+
+Enterprise
+transformation
+
+Guidance for ERP, CRM, AI automation, sales intelligence and phased
+adoption.
+
+- 
+Initial article: Where enterprise AI should begin.
+
+- 
+Initial asset: ERP and AI modernization guide.
+
+### **Telecom BSS/OSS**
+
+Architecture and delivery perspectives across customer lifecycle,
+ordering, inventory, billing and orchestration.
+
+Initial article: Governing complex telecom
+transformation.
+
+- 
+Initial asset: Telecom CLM reference architecture.
+
+Developer and design
+notes
+
+CMS content types: article, guide, checklist, architecture note
+and case story.
+
+Each post needs author, published date, category, reading time,
+related solution and SEO fields.
+
+**WEBSITE PAGE 24**
+
+# **Contact**
+
+**/contact**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Capture and route qualified enquiries with minimal friction.
+All prospective clients, institutions, partners and candidates.
+Submit requirement or use direct contact details.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Contact PMRG Solution | Start a Strategy
+Conversation
+
+**Meta description:** Contact PMRG Solution about AI
+governance, smart campus, enterprise platforms, telecom BSS/OSS,
+partnerships or careers.
+
+Hero headline
+
+Bring us the business problem. We will help define the path
+forward.
+
+Tell PMRG what you are trying to improve, build or govern. We
+will route the enquiry to the relevant solution or partnership
+team.
+
+Primary CTA: Submit My Requirement | Secondary CTA: Email
+PMRG
+
+Ready-to-paste page
+sections
+
+### **Enquiry form**
+
+Use the global form fields and interest-area dropdown defined in the
+developer handoff section.
+
+- 
+Submit button: Submit My Requirement
+
+Required-field validation must be accessible and
+specific.
+
+- 
+On success, redirect to /thank-you and fire form_submit.
+
+### **Direct contact**
+
+Use direct contact details when the visitor prefers email or
+phone.
+
+- 
+General enquiries: support@pmrgsolution.com
+
+- 
+Careers: hr@pmrgsolution.com
+
+- 
+Phone: +91 9766540198
+
+- 
+Location: Pune, India
+
+- 
+Website: www.pmrgsolution.com
+
+### **What happens next**
+
+PMRG will review the enquiry, identify the relevant capability owner
+and contact the visitor using the information provided.
+
+Do not promise a fixed response time unless PMRG adopts and
+monitors that SLA.
+
+Developer and design
+notes
+
+Add spam protection, server-side validation and consent
+logging.
+
+Route Partnership and Careers enquiries separately from business
+leads.
+
+**WEBSITE PAGE 25**
+
+# **Thank-You Page**
+
+**/thank-you**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Confirm submission and guide the visitor to useful next
+content.
+Visitors who completed a contact, demo, assessment or partnership
+form.
+Continue to a related solution or insight.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Thank You | PMRG Solution
+
+**Meta description:** Thank you for contacting PMRG
+Solution.
+
+Hero headline
+
+Thank you. Your enquiry has been received.
+
+The PMRG team will review the information and route it to the
+relevant solution, institutional or partnership contact.
+
+Primary CTA: Return to Homepage | Secondary CTA: Explore PMRG
+Insights
+
+Ready-to-paste page
+sections
+
+### **Next-step message**
+
+If the matter is urgent, contact PMRG using the email or phone
+details below.
+
+- 
+support@pmrgsolution.com
+
+- 
++91 9766540198
+
+### **Recommended content**
+
+Show three cards based on the submitted interest area where consent
+and implementation allow.
+
+- 
+Relevant solution
+
+- 
+Relevant platform
+
+- 
+Relevant insight or case story
+
+Developer and design
+notes
+
+Set noindex to prevent this utility page appearing in search
+results.
+
+- 
+Do not expose submitted form data in the URL.
+
+**WEBSITE PAGE 26**
+
+# **404 Page**
+
+**/404**
+
+**Purpose**
+**Audience**
+**Page goal**
+**Status**
+
+Recover visitors from broken or outdated links.
+Any visitor reaching an unavailable URL.
+Return to a useful destination.
+Working copy — proof/legal review where noted
+
+SEO and search
+preview
+
+**SEO title:** Page Not Found | PMRG Solution
+
+**Meta description:** The requested PMRG Solution page
+could not be found.
+
+Hero headline
+
+This page could not be found—but the right solution may be one click
+away.
+
+The link may have changed or the page may no longer be
+available. Use the options below to continue.
+
+Primary CTA: Return to Homepage | Secondary CTA: Contact
+PMRG
+
+Ready-to-paste page
+sections
+
+### **Suggested links**
+
+Offer direct recovery paths.
+
+- 
+Explore Solutions
+
+- 
+Explore Platforms
+
+- 
+View Success Stories
+
+- 
+Contact PMRG
+
+Developer and design
+notes
+
+- 
+Return the correct HTTP 404 status.
+
+Log repeated broken paths so redirects can be added where
+appropriate.
+
+**DELIVERY PLAN — FIFTEEN WORKING DAYS**
+
+**Detailed Three-Week Website Execution Plan**
+
+The plan below assumes content, design and development work in
+parallel with one accountable PMRG approver. It is the approved delivery
+schedule for the website launch.
+
+**Day**
+**Activity**
+**Deliverable / exit**
+**Owner**
+
+**Day 1**
+Kickoff, existing-site audit, confirm scope, owners and final
+sitemap.
+Approved scope and decision log
+PMRG owner + Content/UX
+
+**Day 2**
+Collect logos, case evidence, platform visuals, contact data and
+legal inputs; lock SEO page map.
+Approved asset register and SEO map
+PMRG owner + Content/SEO
+
+**Day 3**
+Complete homepage and global header/footer/form copy; prepare
+desktop/mobile wireframes.
+Homepage copy and wireframes
+Content/UX
+
+**Day 4**
+Complete core solution and platform copy; map cross-links and CTA
+destinations.
+Core page content signed off
+Content + PMRG solution owners
+
+**Day 5**
+Complete industry, company, proof and utility pages; approve visual
+direction and reusable components.
+Full content pack and design direction approved
+PMRG owner + UX/UI
+
+**Day 6**
+Build design tokens, header, mega-menu, footer, buttons, cards,
+forms and content templates.
+Reusable component library
+UI + Development
+
+**Day 7**
+Build responsive homepage and global navigation/footer.
+Homepage on staging
+UI + Development
+
+**Day 8**
+Build solution and industry landing pages using approved
+templates.
+Solution and industry pages on staging
+Development
+
+**Day 9**
+Build platform, success stories, partnerships, about, careers and
+insights pages.
+Remaining commercial pages on staging
+Development
+
+**Day 10**
+Build contact and utility pages; configure forms, routing, analytics
+events and technical SEO.
+Feature-complete staging site
+Development + SEO/Analytics
+
+**Day 11**
+Load approved logos, proof, visuals and case stories; complete
+metadata and internal links.
+Content-complete staging site
+Content + Development
+
+**Day 12**
+Test desktop, mobile, tablet, forms, emails, navigation, redirects
+and analytics.
+Functional QA report
+QA + Development
+
+**Day 13**
+Run accessibility, performance, security-header, image, schema and
+SEO checks.
+Technical QA report and fixes
+QA + SEO + Development
+
+**Day 14**
+PMRG user acceptance testing, corrections, proof approval and
+production readiness review.
+Launch approval
+PMRG owner + Delivery team
+
+**Day 15**
+Deploy to production, validate tracking and forms, monitor errors
+and publish launch communication.
+Live website with verified measurement
+Development + PMRG owner
+
+Assumptions
+required to protect the three-week timeline
+
+One PMRG decision-maker provides consolidated feedback and
+approval within one working day.
+
+Existing domain, hosting or deployment environment and
+CMS/technology decision are available by Day 1.
+
+Approved logos, case evidence, screenshots and contact details
+are supplied by Day 2.
+
+The three-week scope covers the marketing website; custom product
+modules, live dashboards and complex portals are separate delivery
+items.
+
+Where final proof is unavailable, the page launches without the
+claim rather than using invented metrics or placeholder
+testimonials.
+
+Privacy, terms and cookie content is reviewed by PMRG's legal
+adviser before production publication.
+
+Launch acceptance
+criteria
+
+All approved URLs, navigation links and CTAs work on desktop,
+tablet and mobile.
+
+Forms validate correctly, route to the correct owner and record
+consent.
+
+Analytics events fire once with page, CTA and source
+context.
+
+SEO titles, descriptions, canonical URLs, sitemap and robots
+directives are verified.
+
+Accessibility review reports no unresolved critical defects;
+keyboard and form-error behavior is tested.
+
+Images are optimized, alt text is present and no confidential or
+unapproved proof is published.
+
+Production monitoring confirms no broken routes, server errors or
+failed form submissions after launch.

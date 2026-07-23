@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
                 <span className="text-gradient">governed by trust</span>
               </>
             }
-            description="Technology creates capability. Governance converts capability into trust, accountability, and measurable outcomes. We help enterprises and institutions adopt technology with the right operating model, delivery discipline, and human capability to create sustainable impact."
+            description="PMRG works as a transformation partner, product innovator, implementation team, capability builder, domain specialist and ecosystem enabler."
           />
 
           <RevealGroup className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-light-line bg-light-line sm:grid-cols-2">
