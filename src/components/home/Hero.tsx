@@ -9,6 +9,22 @@ export default function Hero() {
       data-section-theme="dark"
       className="section-dark relative overflow-hidden"
     >
+      {/* Deep blue gradient background with glassy glow */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: "linear-gradient(135deg, #020617 0%, #0f172a 42%, #172554 72%, #2563eb 100%)",
+        }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: "radial-gradient(circle at 50% -20%, rgba(56, 189, 248, 0.15), transparent 65%)",
+        }}
+      />
+
       {/* Animated gradient orbs for depth */}
       <GradientOrb
         color="blue"
@@ -38,11 +54,11 @@ export default function Hero() {
       {/* Decorative glow ring behind hero text */}
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25"
         style={{
           background:
-            "conic-gradient(from 0deg, transparent 0%, rgba(37,99,235,0.15) 25%, transparent 50%, rgba(99,102,241,0.12) 75%, transparent 100%)",
-          filter: "blur(60px)",
+            "conic-gradient(from 0deg, transparent 0%, rgba(37,99,235,0.18) 25%, transparent 50%, rgba(56,189,248,0.16) 75%, transparent 100%)",
+          filter: "blur(70px)",
         }}
       />
 
@@ -68,12 +84,12 @@ export default function Hero() {
         </Reveal>
 
         <Reveal delay={0.24}>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <Button href="/contact" size="lg">
               Book a 30-Minute Strategy Session
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Button>
-            <Button href="/solutions" variant="outline" size="lg" className="border-line-strong text-fg hover:border-fg-muted hover:bg-white/[0.02] hover:text-fg">
+            <Button href="/solutions" variant="outline" size="lg" className="border-white/40 bg-white/10 text-white hover:border-white/70 hover:bg-white/15 hover:text-white">
               Explore Solutions
             </Button>
           </div>
@@ -81,8 +97,8 @@ export default function Hero() {
 
         {/* Trust row */}
         <Reveal delay={0.34}>
-          <div className="mt-16 flex flex-col items-center gap-3 text-sm text-fg-subtle">
-            <div className="h-px w-10 bg-line" />
+            <div className="mt-16 flex flex-col items-center gap-3 text-sm text-fg-subtle">
+            <div className="h-px w-10 bg-white" />
             <span>
               Trusted across{" "}
               <span className="font-semibold text-fg">enterprise, telecom, education</span>{" "}

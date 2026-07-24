@@ -15,60 +15,60 @@ const config: Config = {
     },
     extend: {
       colors: {
-        // ── Dark surfaces ──────────────────────────────
-        ink: { DEFAULT: "#050508", 950: "#050508", 900: "#0B1020" },
-        onyx: { DEFAULT: "#0A0A0A", 950: "#0A0A0A" },
+        // ── Deep navy and blue surfaces ─────────────────
+        ink: { DEFAULT: "#020617", 950: "#020617", 900: "#0F172A" },
+        onyx: { DEFAULT: "#020617", 950: "#020617" },
         surface: {
-          DEFAULT: "#11162A",
-          1: "#11162A",
-          2: "#161C33",
-          3: "#1C2340",
+          DEFAULT: "#0F172A",
+          1: "#111827",
+          2: "#172554",
+          3: "#1E3A8A",
         },
         line: {
-          DEFAULT: "#232A44",
-          strong: "#313A5E",
+          DEFAULT: "#1E3A8A",
+          strong: "#38BDF8",
         },
 
         // ── Foreground — dark backgrounds ─────────────
         fg: {
           DEFAULT: "#F8FAFC",
-          muted: "#AAB2C8",
-          subtle: "#778099",
+          muted: "#CBD5E1",
+          subtle: "#94A3B8",
         },
 
         // ── Foreground — light backgrounds ────────────
         "fg-dark": {
           DEFAULT: "#0F172A",
-          muted: "#475569",
-          subtle: "#94A3B8",
+          muted: "#334155",
+          subtle: "#475569",
         },
 
         // ── Light surfaces ────────────────────────────
         "light-bg": {
-          DEFAULT: "#FFFFFF",
-          grey: "#F8FAFC",
-          slate: "#F1F5F9",
+          DEFAULT: "#F8FAFC",
+          grey: "#EEF4FF",
+          slate: "#E0F2FE",
         },
         "light-line": {
-          DEFAULT: "#E2E8F0",
-          strong: "#CBD5E1",
+          DEFAULT: "#BFDBFE",
+          strong: "#38BDF8",
         },
 
         // ── Brand blue palette ────────────────────────
         brand: {
           DEFAULT: "#2563EB",
-          deep: "#1E40AF",
-          light: "#3B82F6",
-          cyan: "#06B6D4",
-          soft: "rgba(37, 99, 235, 0.10)",
+          deep: "#07111F",
+          light: "#60A5FA",
+          cyan: "#38BDF8",
+          soft: "rgba(37, 99, 235, 0.16)",
         },
 
-        // ── Single accent: indigo ─────────────────────
+        // ── Accent blue ───────────────────────────────
         accent: {
-          DEFAULT: "#6366F1",
-          light: "#818CF8",
-          dark: "#4F46E5",
-          soft: "rgba(99, 102, 241, 0.14)",
+          DEFAULT: "#3B82F6",
+          light: "#93C5FD",
+          dark: "#1D4ED8",
+          soft: "rgba(59, 130, 246, 0.16)",
         },
       },
       fontFamily: {

@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
             {WHY_PMRG.map((item) => (
               <RevealItem key={item.title} as="div">
                 <div className="h-full bg-white p-6">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-light-line bg-blue-50 text-brand">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-light-line bg-gradient-to-br from-blue-50 to-cyan-50 text-brand-deep">
                     <Icon name={item.icon} className="h-5 w-5" />
                   </span>
                   <h3 className="mt-4 text-base font-semibold text-fg-dark">{item.title}</h3>

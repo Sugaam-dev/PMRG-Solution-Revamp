@@ -43,13 +43,13 @@ export default function IndustriesSection() {
         <RevealGroup className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-3 lg:grid-cols-6">
           {INDUSTRIES.map((industry) => (
             <RevealItem key={industry.name} as="div">
-              <div className="group flex h-full flex-col items-center gap-3 bg-surface p-6 text-center transition-colors hover:bg-surface-2">
-                <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-line bg-surface-2 text-fg transition-colors group-hover:border-accent/40 group-hover:text-accent">
+              <div className="group flex h-full flex-col items-center gap-3 bg-white p-6 text-center transition-colors hover:bg-blue-50">
+                <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-light-line bg-gradient-to-br from-blue-50 to-cyan-50 text-brand-deep transition-colors group-hover:border-brand/40 group-hover:text-brand-deep">
                   <Icon name={industry.icon} className="h-5 w-5" />
                 </span>
                 <div>
-                  <h3 className="text-sm font-semibold text-fg">{industry.name}</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-fg-subtle">{industry.description}</p>
+                  <h3 className="text-sm font-semibold text-fg-dark">{industry.name}</h3>
+                  <p className="mt-1 text-xs leading-relaxed text-fg-dark-muted">{industry.description}</p>
                 </div>
               </div>
             </RevealItem>

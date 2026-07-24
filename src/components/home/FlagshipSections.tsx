@@ -71,7 +71,7 @@ export function FlagshipGovernance() {
                   (agent) => (
                     <div
                       key={agent}
-                      className="flex items-center gap-2 rounded-lg border border-line bg-surface-2 p-3 text-sm font-medium text-fg"
+                      className="flex items-center gap-2 rounded-lg border border-light-line bg-light-bg-grey p-3 text-sm font-medium text-fg-dark"
                     >
                       <span className="h-2 w-2 rounded-full bg-accent" />
                       {agent}
@@ -117,7 +117,7 @@ export function FlagshipSmartCampus() {
                 ].map((mod) => (
                   <div
                     key={mod}
-                    className="flex items-center gap-2 rounded-lg border border-light-line bg-light-bg-slate p-3 text-sm font-medium text-fg-dark"
+                    className="flex items-center gap-2 rounded-lg border border-light-line bg-white p-3 text-sm font-medium text-fg-dark"
                   >
                     <span className="h-2 w-2 rounded-full bg-accent" />
                     {mod}

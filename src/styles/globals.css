@@ -10,44 +10,43 @@
 
 @layer base {
   :root {
-    /* ── Dark surfaces ── */
-    --bg: #050508;
-    --bg-navy: #0B1020;
-    --header-bg: #0a0a0a;
-    --surface: #11162a;
-    --surface-2: #161c33;
-    --surface-3: #1c2340;
-    --line: #232a44;
-    --line-strong: #313a5e;
+    /* ── Premium blue / navy theme used across the experience ── */
+    --bg: #020617;
+    --bg-navy: #0f172a;
+    --header-bg: #020617;
+    --surface: #111827;
+    --surface-2: #172554;
+    --surface-3: #2563eb;
+    --line: #1e3a8a;
+    --line-strong: #38bdf8;
 
     /* ── Light surfaces ── */
-    --light-bg: #ffffff;
-     --light-bg: #F9FBFF;           /* pure white ki jagah thoda cool tone */
-  --light-bg-grey: #F0F5FF;
-    --light-line: #E2E8F0;
-    --light-line-strong: #CBD5E1;
+    --light-bg: #f8fafc;
+    --light-bg-grey: #eef4ff;
+    --light-line: #bfdbfe;
+    --light-line-strong: #38bdf8;
 
-    /* ── Text on dark ── */
+    /* ── Text on dark backgrounds ── */
     --fg: #f8fafc;
-    --fg-muted: #aab2c8;
-    --fg-subtle: #778099;
+    --fg-muted: #cbd5e1;
+    --fg-subtle: #94a3b8;
 
-    /* ── Text on light — now darker for better contrast ── */
-    --fg-on-light: #0F172A;            /* unchanged */
-    --fg-on-light-muted: #334155;      /* was #475569 — darker */
-    --fg-on-light-subtle: #64748B;     /* was #94A3B8 — readable */
+    /* ── Text on light backgrounds ── */
+    --fg-on-light: #0f172a;
+    --fg-on-light-muted: #334155;
+    --fg-on-light-subtle: #64748b;
 
-    /* ── Accent: indigo ── */
-    --accent: #6366f1;
-    --accent-light: #818cf8;
-    --accent-dark: #4f46e5;
-    --accent-soft: rgba(99, 102, 241, 0.14);
+    /* ── Accent: blue glow ── */
+    --accent: #2563eb;
+    --accent-light: #60a5fa;
+    --accent-dark: #1d4ed8;
+    --accent-soft: rgba(37, 99, 235, 0.16);
 
     /* ── Brand blue ── */
-    --brand: #2563EB;
-    --brand-deep: #1E40AF;
-    --brand-light: #3B82F6;
-    --brand-cyan: #06B6D4;
+    --brand: #2563eb;
+    --brand-deep: #07111f;
+    --brand-light: #60a5fa;
+    --brand-cyan: #38bdf8;
 
     --header-h: 80px;
   }
@@ -64,8 +63,9 @@
 
   body {
     color: var(--fg);
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-    background-color: var(--bg);
+    background: linear-gradient(180deg, #020617 0%, #020410 45%, #07111f 100%);
   }
 
   ::selection {
