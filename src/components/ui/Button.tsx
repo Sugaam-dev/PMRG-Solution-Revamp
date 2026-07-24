@@ -6,11 +6,11 @@ type Variant = "primary" | "secondary" | "outline" | "ghost";
 type Size = "sm" | "md" | "lg";
 
 const base =
-  "group relative inline-flex items-center justify-center gap-2 rounded-full border font-semibold shadow-[0_12px_28px_rgba(15,23,42,0.16)] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:pointer-events-none disabled:opacity-50";
+  "group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full border font-semibold shadow-[0_12px_28px_rgba(15,23,42,0.16)] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:pointer-events-none disabled:opacity-50";
 
 const variants: Record<Variant, string> = {
   primary:
-    "border-transparent bg-gradient-to-r from-[#2563EB] via-[#3B82F6] to-[#38BDF8] text-white hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(37,99,235,0.24)]",
+    "border-0 bg-gradient-to-r from-[#2563EB] via-[#3B82F6] to-[#38BDF8] text-white hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(37,99,235,0.24)]",
   secondary:
     "border-[#BFDBFE] bg-white/95 text-slate-900 hover:-translate-y-0.5 hover:border-[#60A5FA] hover:bg-[#F8FAFC]",
   outline:

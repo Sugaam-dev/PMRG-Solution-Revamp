@@ -43,26 +43,26 @@ export default function TelecomMsoPage() {
     <main className="min-h-screen bg-white">
       {/* HERO */}
       <section className="bg-white">
-        <div className="container-pmrg py-16 sm:py-20">
-          <div className="max-w-4xl">
+        <div className="container-pmrg py-16 sm:py-20 text-center">
+          <div className="mx-auto max-w-4xl">
             <p className="eyebrow-light">Industries · Telecom &amp; MSO</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
               Modernize telecom journeys without losing operational control.
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
               PMRG helps operators, MSOs and technology partners connect customer
               experience, BSS/OSS architecture and governed delivery.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Button href="/contact?type=telecom">
                 Book a Telecom Architecture Session
               </Button>
-              <Link
+              <Button
                 href="/solutions/telecom-bss-oss"
-                className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
+                variant="outline" size="lg"
               >
                 Explore Telecom Capabilities
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -156,12 +156,12 @@ export default function TelecomMsoPage() {
                   Book a Session
                   <ArrowRight className="h-4 w-4" />
                 </Button>
-                <Link
+                <Button
                   href="/solutions/telecom-bss-oss"
-                  className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
+                  variant="outline" size="lg"
                 >
                   Explore Telecom Capabilities
-                </Link>
+                </Button>
               </div>
             </div>
           </GlassCard>

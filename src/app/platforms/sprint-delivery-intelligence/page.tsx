@@ -48,27 +48,27 @@ export default function SprintDeliveryIntelligencePage() {
     <main className="min-h-screen bg-white">
       {/* HERO */}
       <section className="bg-white">
-        <div className="container-pmrg py-16 sm:py-20">
-          <div className="max-w-4xl">
+        <div className="container-pmrg py-16 sm:py-20 text-center">
+          <div className="mx-auto max-w-4xl">
             <p className="eyebrow-light">Platform</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
               Move from sprint activity to delivery intelligence.
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
               Connect plans, capacity, dependencies, risks, commitments and
               outcomes so delivery leaders can act before slippage becomes status
               history.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Button href="/contact?type=demo">
                 Request a Sprint Intelligence Demo
               </Button>
-              <Link
+              <Button
                 href="/contact?type=capability-map"
-                className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
+                variant="outline" size="lg"
               >
                 Review the Capability Map
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -182,12 +182,12 @@ export default function SprintDeliveryIntelligencePage() {
                   Request a Demo
                   <ArrowRight className="h-4 w-4" />
                 </Button>
-                <Link
+                <Button
                   href="/contact?type=capability-map"
-                  className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
+                  variant="outline" size="lg"
                 >
                   Review the Capability Map
-                </Link>
+                </Button>
               </div>
             </div>
           </GlassCard>

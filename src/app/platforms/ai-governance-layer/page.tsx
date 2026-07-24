@@ -54,25 +54,25 @@ export default function AiGovernanceLayerPage() {
     <main className="min-h-screen bg-white">
       {/* HERO */}
       <section className="bg-white">
-        <div className="container-pmrg py-16 sm:py-20">
-          <div className="max-w-4xl">
+        <div className="container-pmrg py-16 sm:py-20 text-center">
+          <div className="mx-auto max-w-4xl">
             <p className="eyebrow-light">Platform</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
               One governance layer across delivery, vendors, risk and decisions.
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
               Bring evidence from existing tools into a role-based governance
               workspace that highlights exceptions, traceability and decisions
               requiring attention.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Button href="/contact?type=demo">Schedule a Platform Demo</Button>
-              <Link
+              <Button
                 href="/contact?type=fit-assessment"
-                className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
+                variant="outline" size="lg"
               >
                 Request a Fit Assessment
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -188,12 +188,12 @@ export default function AiGovernanceLayerPage() {
                   Schedule a Platform Demo
                   <ArrowRight className="h-4 w-4" />
                 </Button>
-                <Link
+                <Button
                   href="/contact?type=fit-assessment"
-                  className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
+                  variant="outline" size="lg"
                 >
                   Request a Fit Assessment
-                </Link>
+                </Button>
               </div>
             </div>
           </GlassCard>

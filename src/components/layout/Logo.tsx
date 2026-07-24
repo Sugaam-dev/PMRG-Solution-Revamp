@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 export function LogoMark({ className }: { className?: string }) {
   return (
     <Image
-      src="/logo.svg"
+      src="/logo.png"
       alt="PMRG Solution"
       width={76}
       height={32}
@@ -32,7 +32,7 @@ export function Logo({
     >
       <span className="transition-transform duration-200 group-hover:scale-105">
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt="PMRG Solution"
           width={152}
           height={64}

@@ -44,13 +44,13 @@ export default function Page() {
     <main className="min-h-screen bg-white">
       {/* Hero Section – exact copy from document */}
       <section className="bg-white">
-        <div className="container-pmrg py-16 sm:py-20">
-          <div className="max-w-4xl">
+        <div className="container-pmrg py-16 sm:py-20 text-center">
+          <div className="mx-auto max-w-4xl">
             <p className="eyebrow-light">Solutions</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
               AI agents that work inside your operating model---not outside your control.
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
               PMRG identifies high-value agentic use cases, designs the architecture and embeds human oversight, security, evidence and measurable execution.
             </p>
           </div>

@@ -49,28 +49,28 @@ export default function EducationIndustryPage() {
     <main className="min-h-screen bg-white">
       {/* HERO */}
       <section className="bg-white">
-        <div className="container-pmrg py-16 sm:py-20">
-          <div className="max-w-4xl">
+        <div className="container-pmrg py-16 sm:py-20 text-center">
+          <div className="mx-auto max-w-4xl">
             <p className="eyebrow-light">Industries · Education</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
               Technology should strengthen learning, operations and career
               outcomes together.
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
               PMRG helps education leaders move from isolated initiatives to an
               institution-wide roadmap for responsible AI, digital operations,
               employability and innovation.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Button href="/contact?type=education">
                 Request an Institutional Workshop
               </Button>
-              <Link
+              <Button
                 href="#routes"
-                className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
+                variant="outline" size="lg"
               >
                 Choose School or University
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -169,12 +169,12 @@ export default function EducationIndustryPage() {
                   Request a Workshop
                   <ArrowRight className="h-4 w-4" />
                 </Button>
-                <Link
+                <Button
                   href="/contact"
-                  className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
+                  variant="outline" size="lg"
                 >
                   Contact Us
-                </Link>
+                </Button>
               </div>
             </div>
           </GlassCard>

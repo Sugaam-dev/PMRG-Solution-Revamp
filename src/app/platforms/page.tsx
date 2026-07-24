@@ -55,25 +55,25 @@ export default function PlatformsOverviewPage() {
     <main className="min-h-screen bg-white">
       {/* HERO */}
       <section className="bg-white">
-        <div className="container-pmrg py-16 sm:py-20">
-          <div className="max-w-4xl">
+        <div className="container-pmrg py-16 sm:py-20 text-center">
+          <div className="mx-auto max-w-4xl">
             <p className="eyebrow-light">Platforms</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
               Platforms that turn operational signals into accountable action.
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-fg-dark-muted">
               PMRG&apos;s platforms support governance, execution, sales
               intelligence and infrastructure visibility while integrating with
               the tools organizations already use.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Button href="#platforms">Explore the Platforms</Button>
-              <Link
+              <Button
                 href="/contact?type=demo"
-                className="inline-flex items-center gap-1 rounded-lg border border-light-line px-6 py-3 text-sm font-medium text-fg-dark transition-colors hover:bg-[#f1f5f9]"
+                variant="outline" size="lg"
               >
                 Request a Demo
-              </Link>
+              </Button>
             </div>
           </div>
         </div>

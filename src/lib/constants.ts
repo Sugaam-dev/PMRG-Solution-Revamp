@@ -13,7 +13,7 @@ export const COMPANY = {
   foundedYear: 2014,
   email: "support@pmrgsolution.com",
   salesEmail: "support@pmrgsolution.com",
-  phone: "+91 9766540198",
+  phone: "+91 77220 17100",
   address: "E2-103, Sr No-296, Revell Orchid, Porwal Pune City, Pune-411047",
   hq: "Pune, India",
   offices: [

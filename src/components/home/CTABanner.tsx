@@ -54,8 +54,9 @@ export default function CTABanner() {
             <div className="relative mt-9 flex flex-wrap items-center justify-center gap-3">
               <Button
                 href="/contact"
+                variant="secondary"
                 size="lg"
-                className="bg-white text-brand-deep hover:bg-white/90 hover:text-brand-deep"
+                className="border-white/30 bg-white text-[var(--brand-deep)] shadow-[0_12px_28px_rgba(0,0,0,0.2)] hover:bg-white/90 hover:text-[var(--brand-deep)]"
               >
                 Book a Strategy Session
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
