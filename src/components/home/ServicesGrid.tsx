@@ -32,7 +32,7 @@ export default function ServicesGrid() {
               <Link href={`/solutions/${product.slug}`} className="group block h-full">
                 <GlassCard theme="light" className="flex h-full flex-col p-7">
                   <div className="flex items-center justify-between">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-light-line bg-blue-50 text-brand transition-colors duration-200 group-hover:border-brand/40 group-hover:bg-blue-100 group-hover:text-brand-deep">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-light-line bg-gradient-to-br from-blue-50 to-cyan-50 text-brand-deep transition-colors duration-200 group-hover:border-brand/40 group-hover:from-blue-100 group-hover:to-cyan-100 group-hover:text-brand-deep">
                       <Icon name={product.icon} className="h-5 w-5" />
                     </span>
                     <span className="rounded-full border border-brand/20 bg-brand-soft px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-brand">

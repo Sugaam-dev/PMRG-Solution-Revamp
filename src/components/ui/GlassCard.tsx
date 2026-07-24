@@ -25,14 +25,13 @@ export function GlassCard({
   return (
     <Tag
       className={cn(
-        "relative overflow-hidden rounded-xl border transition-all duration-200",
+        "relative overflow-hidden rounded-xl border border-light-line bg-white text-fg-dark shadow-card-light transition-all duration-200",
         isDark
           ? cn(
-              strong ? "bg-surface-2 border-line-strong" : "bg-surface border-line",
-              glowOnHover && "hover:border-line-strong hover:-translate-y-1 hover:shadow-card-hover"
+              strong ? "border-line-strong" : "border-light-line",
+              glowOnHover && "hover:border-brand/30 hover:-translate-y-1 hover:shadow-card-light-hover"
             )
           : cn(
-              "bg-white border-light-line shadow-card-light",
               glowOnHover && "hover:border-brand/30 hover:-translate-y-1 hover:shadow-card-light-hover"
             ),
         className

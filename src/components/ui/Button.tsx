@@ -6,19 +6,16 @@ type Variant = "primary" | "secondary" | "outline" | "ghost";
 type Size = "sm" | "md" | "lg";
 
 const base =
-  "group relative inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-ink disabled:pointer-events-none disabled:opacity-50";
+  "group relative inline-flex items-center justify-center gap-2 rounded-full border font-semibold shadow-[0_12px_28px_rgba(15,23,42,0.16)] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:pointer-events-none disabled:opacity-50";
 
 const variants: Record<Variant, string> = {
-  // Primary: solid accent — the only strong colour on screen
   primary:
-    "bg-accent text-ink hover:bg-accent-light hover:-translate-y-0.5",
-  // Secondary: light fill for high-contrast actions
+    "border-transparent bg-gradient-to-r from-[#2563EB] via-[#3B82F6] to-[#38BDF8] text-white hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(37,99,235,0.24)]",
   secondary:
-    "bg-fg text-ink hover:bg-white hover:-translate-y-0.5",
-  // Outline: subtle border — light-background default
+    "border-[#BFDBFE] bg-white/95 text-slate-900 hover:-translate-y-0.5 hover:border-[#60A5FA] hover:bg-[#F8FAFC]",
   outline:
-    "border border-light-line-strong text-fg-dark hover:border-brand/30 hover:text-brand hover:bg-brand-soft hover:-translate-y-0.5",
-  ghost: "text-fg-dark-muted hover:text-fg-dark hover:bg-black/[0.04]",
+    "border-[#BFDBFE] bg-transparent text-slate-900 hover:-translate-y-0.5 hover:border-[#60A5FA] hover:bg-[#EFF6FF]",
+  ghost: "border-0 bg-transparent text-slate-900 shadow-none hover:bg-[#EFF6FF] hover:text-slate-950",
 };
 
 const sizes: Record<Size, string> = {
