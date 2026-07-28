@@ -181,7 +181,7 @@ export default function SmartCampusEducationPage() {
             title="How PMRG works with institutions"
             description="PMRG can work with institutional leadership, academic departments, placement cells, incubation centers and industry partners through one coordinated roadmap."
           />
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
             {["Discovery", "Blueprint", "Pilot programs", "Operational enablement", "Evidence and scale"].map((step, i) => (
               <RevealItem key={step} as="div" variant="slide-up">
                 <GlassCard theme="light" className="flex h-full flex-col p-6 text-center">

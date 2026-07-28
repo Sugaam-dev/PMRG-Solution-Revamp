@@ -42,7 +42,7 @@ export function MegaMenu({ items, open, onClose }: { items: NavChild[]; open: bo
           initial="hidden"
           animate="visible"
           exit="exit"
-          className={`absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 ${isWide ? "w-[720px]" : "w-[560px]"}`}
+          className={`absolute left-1/2 top-full z-50 mt-2 w-[90vw] max-w-[90vw] -translate-x-1/2 sm:w-auto ${isWide ? "sm:max-w-[720px] lg:w-[620px] xl:w-[720px]" : "sm:max-w-[560px] lg:w-[460px] xl:w-[560px]"}`}
         >
           <div className="overflow-hidden rounded-xl border border-line-strong bg-surface-2 shadow-card-hover">
             <div className={`grid gap-1 p-2 ${isWide ? "grid-cols-2" : "grid-cols-2"}`}>

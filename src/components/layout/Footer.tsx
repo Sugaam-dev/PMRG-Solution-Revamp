@@ -5,9 +5,11 @@ import { ArrowRight } from "lucide-react";
 import { COMPANY, NAV_ITEMS } from "@/lib/constants";
 import { Logo } from "./Logo";
 
-const quickLinks = NAV_ITEMS.filter((n) => !n.children).slice(0, 7);
-const solutionNav = NAV_ITEMS.find((n) => n.label === "Solutions");
-const solutionLinks = solutionNav?.children ?? [];
+/* All 8 top-level navbar pages for the footer navigation */
+const footerNavLinks = NAV_ITEMS.map((n) => ({
+  label: n.label,
+  href: n.href,
+}));
 
 export default function Footer() {
   return (
@@ -25,29 +27,13 @@ export default function Footer() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-fg-muted">{COMPANY.description}</p>
           </div>
 
-          <div className="lg:col-span-2">
-            <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Company</h3>
-            <ul className="mt-4 space-y-3">
-              {quickLinks.map((l) => (
+          <div className="lg:col-span-5">
+            <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Quick Links</h3>
+            <ul className="mt-4 grid grid-cols-2 gap-3 sm:gap-x-6">
+              {footerNavLinks.map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="text-sm text-fg-muted transition-colors hover:text-fg">
                     {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="lg:col-span-3">
-            <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Solutions</h3>
-            <ul className="mt-4 space-y-3">
-              {solutionLinks.map((s) => (
-                <li key={s.href}>
-                  <Link
-                    href={s.href}
-                    className="text-sm text-fg-muted transition-colors hover:text-fg"
-                  >
-                    {s.label}
                   </Link>
                 </li>
               ))}

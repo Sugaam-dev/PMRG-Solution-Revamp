@@ -40,7 +40,7 @@ export default function IndustriesSection() {
           description="From telecom operators to educational institutions, enterprise platforms to startup incubators — we bring domain-specific fluency to every engagement."
         />
 
-        <RevealGroup className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-3 lg:grid-cols-6">
+        <RevealGroup className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
           {INDUSTRIES.map((industry) => (
             <RevealItem key={industry.name} as="div">
               <div className="group flex h-full flex-col items-center gap-3 bg-white p-6 text-center transition-colors hover:bg-blue-50">

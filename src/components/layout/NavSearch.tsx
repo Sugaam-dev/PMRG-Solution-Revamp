@@ -106,7 +106,7 @@ export default function NavSearch({ isOverLight }: { isOverLight: boolean }) {
             onClick={() => setOpen(true)}
             aria-label="Search"
             className={cn(
-              "flex h-9 w-9 items-center justify-center rounded-lg border transition-colors",
+              "flex h-10 w-10 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
               isOverLight
                 ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
                 : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"

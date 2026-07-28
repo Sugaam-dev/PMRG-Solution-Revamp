@@ -110,7 +110,7 @@ export default function IndustriesOverviewPage() {
               selects fit-for-purpose technology and governs implementation
               through measurable phases.
             </p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
               {CROSS_INDUSTRY_STEPS.map((step, i) => (
                 <div
                   key={step}

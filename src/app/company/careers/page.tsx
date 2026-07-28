@@ -175,7 +175,7 @@ export default function CompanyCareersPage() {
             title="Internships and industry readiness"
             description="PMRG internships are structured around learning, supervised work, project exposure and demonstrated capability—not certificates alone."
           />
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
             {INTERNSHIP_STEPS.map((step) => {
               const IconCmp = step.icon;
               return (

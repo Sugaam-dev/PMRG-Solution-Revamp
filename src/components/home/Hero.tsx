@@ -62,13 +62,13 @@ export default function Hero() {
         }}
       />
 
-      <div className="container-pmrg relative flex min-h-[80vh] flex-col items-center justify-center py-16 text-center">
+      <div className="container-pmrg relative flex min-h-[65vh] flex-col items-center justify-center py-12 text-center sm:min-h-[70vh] sm:py-14 lg:min-h-[80vh] lg:py-16">
         <Reveal variant="fade-in">
           <span className="eyebrow">AI-led · Outcome-driven · Human-accountable</span>
         </Reveal>
 
         <Reveal delay={0.08} variant="slide-up">
-          <h1 className="mt-7 max-w-4xl text-balance text-4xl font-bold leading-[1.08] tracking-tight text-fg sm:text-5xl lg:text-6xl">
+          <h1 className="mt-5 max-w-4xl text-balance text-3xl font-bold leading-[1.08] tracking-tight text-fg sm:mt-7 sm:text-4xl md:text-5xl lg:text-6xl">
             Govern complex transformation.{" "}
             <span className="text-gradient">Build AI-ready institutions.</span>{" "}
             Modernize enterprise operations.
@@ -76,7 +76,7 @@ export default function Hero() {
         </Reveal>
 
         <Reveal delay={0.16}>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-fg-muted">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-fg-muted sm:mt-6 sm:text-lg">
             From strategy to governed execution, PMRG combines AI
             platforms, enterprise systems and domain-led delivery to turn ambitious
             transformation into measurable progress.
@@ -84,7 +84,7 @@ export default function Hero() {
         </Reveal>
 
         <Reveal delay={0.24}>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+            <div className="mt-7 flex flex-col items-center gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:justify-center">
             <Button href="/contact" size="lg">
               Book a 30-Minute Strategy Session
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -97,7 +97,7 @@ export default function Hero() {
 
         {/* Trust row */}
         <Reveal delay={0.34}>
-            <div className="mt-16 flex flex-col items-center gap-3 text-sm text-fg-subtle">
+            <div className="mt-10 flex flex-col items-center gap-3 text-sm text-fg-subtle sm:mt-16">
             <div className="h-px w-10 bg-white" />
             <span>
               Trusted across{" "}

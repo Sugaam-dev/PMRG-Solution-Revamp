@@ -26,7 +26,7 @@ export default function ServicesGrid() {
           description="From governance and planning to customer lifecycle, infrastructure, education, and innovation — our platforms work together as one connected ecosystem."
         />
 
-        <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {PRODUCTS.map((product) => (
             <RevealItem key={product.id} as="div" variant="slide-up">
               <Link href={`/solutions/${product.slug}`} className="group block h-full">

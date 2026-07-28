@@ -113,7 +113,7 @@ export default function AIForUniversitiesPage() {
             title="Indicative 100-day roadmap"
             description="The roadmap shown is a service offering, separate from the three-week PMRG website build plan."
           />
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {ROADMAP.map((step) => (
               <RevealItem key={step.phase} as="div" variant="slide-up">
                 <GlassCard theme="light" className="flex h-full flex-col p-6 text-center">

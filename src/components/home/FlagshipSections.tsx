@@ -66,7 +66,7 @@ export function FlagshipGovernance() {
           {/* Right: Visual card */}
           <Reveal variant="slide-up" delay={0.1}>
             <GlassCard className="p-8">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
                 {["Requirements Agent", "PMO Agent", "Vendor Agent", "UAT Agent", "Executive Agent", "Sprint Intelligence"].map(
                   (agent) => (
                     <div
@@ -106,7 +106,7 @@ export function FlagshipSmartCampus() {
           {/* Left: Visual card */}
           <Reveal variant="slide-up">
             <GlassCard theme="light" className="p-8">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
                 {[
                   "AI Literacy Program",
                   "Faculty Enablement",
@@ -226,7 +226,7 @@ export function FlagshipEnterprise() {
           {/* Visual */}
           <Reveal variant="slide-up" delay={0.1}>
             <GlassCard theme="light" className="p-8">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
                 {[
                   "ERPNext & CRM",
                   "AI Agents & Automation",

@@ -137,7 +137,7 @@ export default function EducationIndustryPage() {
               placement cells, incubation centers and industry partners through
               one coordinated roadmap.
             </p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
               {COLLABORATION_STEPS.map((step, i) => (
                 <div
                   key={step}

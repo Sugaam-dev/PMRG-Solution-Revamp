@@ -116,7 +116,7 @@ export default function CompanyAboutPage() {
             title="Who we are"
             description="PMRG brings together artificial intelligence, agentic AI, enterprise architecture, Telecom BSS/OSS, ERP/CRM, governance and education transformation capabilities."
           />
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {WHO_WE_ARE.map((item) => {
               const IconCmp = item.icon;
               return (

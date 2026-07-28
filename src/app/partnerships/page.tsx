@@ -169,7 +169,7 @@ export default function PartnershipsPage() {
             title="What PMRG brings"
             description="PMRG contributes technology architecture, AI and enterprise capabilities, telecom domain expertise, program design and governed delivery."
           />
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {PMRG_CONTRIBUTIONS.map((item) => {
               const IconCmp = item.icon;
               return (

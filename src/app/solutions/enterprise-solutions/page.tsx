@@ -188,7 +188,7 @@ export default function Page() {
             <p className="mt-2 text-sm text-fg-dark-muted">
               Start small enough to learn and structured enough to scale.
             </p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
               {DELIVERY_STEPS.map((step) => (
                 <div
                   key={step}

@@ -112,7 +112,7 @@ export default function PlatformsOverviewPage() {
               Platforms can be assessed, demonstrated, piloted and configured
               around the client&apos;s operating model and integrations.
             </p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
               {ENGAGEMENT_STEPS.map((step, i) => (
                 <div
                   key={step}
