@@ -19,7 +19,7 @@ const OUTCOMES = [
     description:
       "Connect learning, operations, employability, innovation and institutional intelligence.",
     href: "/solutions/smart-campus-education",
-    color: "from-accent to-accent-light",
+    color: "from-brand to-brand-cyan",
   },
   {
     icon: Building2,
@@ -27,7 +27,7 @@ const OUTCOMES = [
     description:
       "Improve processes through ERP, CRM, automation, data and AI-led visibility.",
     href: "/solutions/enterprise-solutions",
-    color: "from-brand-deep to-brand",
+    color: "from-brand to-brand-cyan",
   },
   {
     icon: RadioTower,
@@ -35,7 +35,7 @@ const OUTCOMES = [
     description:
       "Modernize customer lifecycle, ordering, inventory, billing and service orchestration.",
     href: "/solutions/telecom-bss-oss",
-    color: "from-brand to-indigo-600",
+    color: "from-brand to-brand-cyan",
   },
   {
     icon: Handshake,
@@ -43,7 +43,7 @@ const OUTCOMES = [
     description:
       "Combine market access with PMRG architecture, technology and delivery capability.",
     href: "/partnerships",
-    color: "from-brand-cyan to-brand",
+    color: "from-brand to-brand-cyan",
   },
 ];
 

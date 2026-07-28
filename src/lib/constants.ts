@@ -742,8 +742,6 @@ export const CLIENTS = [
   { name: "Hathway", descriptor: "Telecom and digital services engagement" },
   { name: "MTC", descriptor: "Technology and transformation engagement" },
   { name: "Ocean Impact", descriptor: "Digital and solution collaboration" },
-  { name: "Acharya Institutes", descriptor: "Education, innovation, and industry-readiness initiatives" },
-  { name: "BPUT", descriptor: "University transformation and innovation collaboration" },
   { name: "Amddas Food", descriptor: "Enterprise and digital enablement" },
   { name: "Bali Yoga Kendra", descriptor: "Digital and customer engagement support" },
 ] as const;

@@ -32,7 +32,7 @@ const itemVariants = {
   },
 };
 
-export function MegaMenu({ items, open }: { items: NavChild[]; open: boolean }) {
+export function MegaMenu({ items, open, onClose }: { items: NavChild[]; open: boolean; onClose?: () => void }) {
   const isWide = items.length > 4;
   return (
     <AnimatePresence>
@@ -50,6 +50,7 @@ export function MegaMenu({ items, open }: { items: NavChild[]; open: boolean }) 
                 <motion.div key={item.href} variants={itemVariants}>
                   <Link
                     href={item.href}
+                    onClick={onClose}
                     className="group flex items-start gap-3 rounded-lg p-3 transition-colors hover:bg-surface-3"
                   >
                     <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-line bg-surface-3 text-fg transition-colors group-hover:border-accent/40 group-hover:text-accent">

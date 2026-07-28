@@ -155,7 +155,7 @@ const STORIES: Story[] = [
       },
     ],
     icon: GraduationCap,
-    color: "from-accent to-accent-light",
+    color: "from-brand to-brand-cyan",
   },
   {
     id: "erp-modernization",
@@ -209,7 +209,7 @@ const STORIES: Story[] = [
       },
     ],
     icon: Building2,
-    color: "from-brand-deep to-brand",
+    color: "from-brand to-brand-cyan",
   },
 ];
 

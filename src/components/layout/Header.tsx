@@ -159,7 +159,7 @@ export default function Header() {
                       />
                     )}
                   </Link>
-                  {hasChildren && <MegaMenu items={item.children!} open={openMenu === item.label} />}
+                  {hasChildren && <MegaMenu items={item.children!} open={openMenu === item.label} onClose={() => setOpenMenu(null)} />}
                 </div>
               );
             })}

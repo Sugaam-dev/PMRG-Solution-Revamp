@@ -115,7 +115,7 @@ export default function ContactForm() {
         type="tel"
         value={values.phone}
         onChange={(v) => update("phone", v)}
-        placeholder="+91 9876 543210"
+        placeholder="+91 77220 17100"
       />
       <div className="sm:col-span-2">
         <Field

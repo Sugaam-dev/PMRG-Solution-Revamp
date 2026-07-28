@@ -7,8 +7,8 @@ export function LogoMark({ className }: { className?: string }) {
     <Image
       src="/logo.png"
       alt="PMRG Solution"
-      width={76}
-      height={32}
+      width={152}
+      height={64}
       className={cn("h-8 w-auto", className)}
       priority
     />
@@ -34,16 +34,24 @@ export function Logo({
         <Image
           src="/logo.png"
           alt="PMRG Solution"
-          width={152}
-          height={64}
+          width={380}
+          height={160}
           className={cn(
             "w-auto transition-all duration-500",
-            scrolled ? "h-9" : "h-14",
+            scrolled ? "h-12" : "h-[4.2rem]",
             textClassName
           )}
+          style={{
+            filter: [
+              "drop-shadow(0px -1px 0px rgba(255,255,255,0.2))",
+              "drop-shadow(1px 2px 1px rgba(0,0,0,0.5))",
+              "drop-shadow(2px 4px 3px rgba(0,0,0,0.25))",
+            ].join(" "),
+          }}
           priority
         />
       </span>
     </Link>
   );
 }
+

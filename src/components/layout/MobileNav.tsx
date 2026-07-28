@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { X, Search, Linkedin, Instagram, Facebook } from "lucide-react";
+import { X, Search, Linkedin, Instagram, Facebook, ChevronDown } from "lucide-react";
 import { useState, useRef } from "react";
 import { NAV_ITEMS, COMPANY } from "@/lib/constants";
+import { cn } from "@/lib/utils";
 import { Logo } from "./Logo";
 
 const container = {
@@ -29,6 +30,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
   const router = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [expandedItem, setExpandedItem] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleSearch = () => {
@@ -117,21 +119,66 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
             </AnimatePresence>
 
             <motion.nav
-              className="mt-8 flex flex-col gap-0.5"
+              className="mt-8 flex flex-col gap-0.5 overflow-y-auto"
               variants={container}
               initial="hidden"
               animate="show"
             >
               {NAV_ITEMS.map((nav) => (
                 <motion.div key={nav.href} variants={item}>
-                  <Link
-                    href={nav.href}
-                    onClick={onClose}
-                    className="flex items-center justify-between rounded-lg px-4 py-3.5 text-lg font-medium text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg"
-                  >
-                    {nav.label}
-                    {nav.children && <span className="text-xs text-fg-subtle">▾</span>}
-                  </Link>
+                  <div className="flex items-center">
+                    <Link
+                      href={nav.href}
+                      onClick={onClose}
+                      className="flex flex-1 items-center rounded-lg px-4 py-3.5 text-lg font-medium text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg"
+                    >
+                      {nav.label}
+                    </Link>
+                    {nav.children && (
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setExpandedItem((prev) =>
+                            prev === nav.href ? null : nav.href
+                          )
+                        }
+                        aria-label={`Toggle ${nav.label} submenu`}
+                        className="flex h-10 w-10 items-center justify-center rounded-lg text-fg-subtle transition-colors hover:bg-surface-2 hover:text-fg"
+                      >
+                        <ChevronDown
+                          className={cn(
+                            "h-4 w-4 transition-transform duration-200",
+                            expandedItem === nav.href && "rotate-180"
+                          )}
+                        />
+                      </button>
+                    )}
+                  </div>
+                  {/* Child items (expandable) */}
+                  <AnimatePresence>
+                    {nav.children && expandedItem === nav.href && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+                        className="overflow-hidden"
+                      >
+                        <div className="ml-4 flex flex-col gap-0.5 border-l border-line pl-3 pb-2">
+                          {nav.children.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              onClick={onClose}
+                              className="rounded-md px-3 py-2.5 text-sm text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </motion.div>
               ))}
             </motion.nav>

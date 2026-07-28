@@ -56,7 +56,7 @@ const CATEGORIES = [
         title: "Smart-campus 100-day roadmap",
       },
     ],
-    color: "from-accent to-accent-light",
+    color: "from-brand to-brand-cyan",
   },
   {
     icon: Building2,
@@ -73,7 +73,7 @@ const CATEGORIES = [
         title: "ERP and AI modernization guide",
       },
     ],
-    color: "from-brand-deep to-brand",
+    color: "from-brand to-brand-cyan",
   },
   {
     icon: RadioTower,
@@ -90,7 +90,7 @@ const CATEGORIES = [
         title: "Telecom CLM reference architecture",
       },
     ],
-    color: "from-brand-cyan to-brand",
+    color: "from-brand to-brand-cyan",
   },
 ];
 
