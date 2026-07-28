@@ -84,7 +84,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "About PMRG", href: "/company/about", description: "Learn about PMRG's mission, values, domain depth and delivery approach.", icon: "Building2" },
       { label: "Careers", href: "/company/careers", description: "Join PMRG across technology, consulting, delivery, growth and internships.", icon: "Briefcase" },
       { label: "Insights", href: "/insights", description: "Read practical perspectives on AI governance, telecom, enterprise and education.", icon: "Lightbulb" },
-      { label: "Contact", href: "/contact", description: "Start a solution, platform, institutional or partnership conversation.", icon: "Mail" },
+      { label: "Our Team", href: "/company/our-team", description: "Meet the people behind PMRG's technology, consulting and delivery.", icon: "Users" },
     ],
   },
   { label: "Success Stories", href: "/success-stories" },
