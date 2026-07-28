@@ -99,9 +99,9 @@ export default function Footer() {
             © {new Date().getFullYear()} {COMPANY.legalName}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/privacy" className="text-xs text-fg-subtle transition-colors hover:text-fg">
-              Privacy Policy
-            </Link>
+            <a className="text-xs text-fg-subtle transition-colors hover:text-fg" href="/privacy-policy">
+          Privacy Policy
+             </a>
             <Link href="/terms" className="text-xs text-fg-subtle transition-colors hover:text-fg">
               Terms of Service
             </Link>

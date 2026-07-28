@@ -45,7 +45,7 @@ export default function TelecomMsoPage() {
       <section className="bg-white">
         <div className="container-pmrg py-16 sm:py-20 text-center">
           <div className="mx-auto max-w-4xl">
-            <p className="eyebrow-light">Industries · Telecom &amp; MSO</p>
+            <p className="eyebrow-light"> Telecom &amp; MSO</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
               Modernize telecom journeys without losing operational control.
             </h1>

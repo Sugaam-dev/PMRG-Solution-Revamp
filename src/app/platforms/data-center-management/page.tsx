@@ -58,7 +58,7 @@ export default function DataCenterManagementPage() {
       <section className="bg-white">
         <div className="container-pmrg py-16 sm:py-20 text-center">
           <div className="mx-auto max-w-4xl">
-            <p className="eyebrow-light">Platform</p>
+            <p className="eyebrow-light">Data Center Management </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
               See the infrastructure. Understand the risk. Act with confidence.
             </h1>

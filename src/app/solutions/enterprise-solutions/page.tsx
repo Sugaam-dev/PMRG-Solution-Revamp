@@ -65,7 +65,7 @@ export default function Page() {
       <section className="bg-white">
         <div className="container-pmrg py-16 sm:py-20 text-center">
           <div className="mx-auto max-w-4xl">
-            <p className="eyebrow-light">Solutions</p>
+            <p className="eyebrow-light">Enterprise-solution</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-fg-dark sm:text-5xl">
               Modernize processes. Automate decisions. Improve visibility.
             </h1>
