@@ -224,13 +224,13 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em];
-    color: var(--fg-subtle);
+    @apply inline-flex items-center gap-2 font-mono text-[13px] font-bold uppercase tracking-[0.22em];
+    color: var(--fg-body);
   }
 
   .eyebrow-light {
-    @apply inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em];
-    color: var(--fg-on-light-subtle);
+    @apply inline-flex items-center gap-2 font-mono text-[13px] font-bold uppercase tracking-[0.22em];
+    color: var(--fg-on-light);
   }
 
   .eyebrow::before,
@@ -412,6 +412,62 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ── Logo effects ── */
+
+/* Shared timing for all logo hover transitions */
+:root { --logo-ease: cubic-bezier(0.22, 1, 0.36, 1); }
+
+@keyframes logo-glow {
+  0%, 100% { opacity: 0.18; }
+  50%      { opacity: 0.38; }
+}
+
+/* Outer wrapper — owns perspective + hover trigger for everything */
+.logo-tilt-wrapper {
+  transition: filter 0.4s var(--logo-ease);
+}
+.logo-tilt-wrapper:hover {
+  filter: drop-shadow(0 2px 16px rgba(37, 99, 235, 0.3));
+}
+
+/* Glow ring — hidden at rest, appears on hover */
+.logo-glow-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 14px;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(37, 99, 235, 0.4) 0%,
+    rgba(56, 189, 248, 0.18) 50%,
+    transparent 80%
+  );
+  filter: blur(10px);
+  transition:
+    inset   0.4s var(--logo-ease),
+    opacity 0.4s var(--logo-ease),
+    filter  0.4s var(--logo-ease);
+}
+
+.logo-tilt-wrapper:hover .logo-glow-ring {
+  inset: -10px;
+  opacity: 0.7;
+  filter: blur(18px);
+}
+
+/* Image wrapper — brightness lift on hover, same timing */
+.logo-img-wrapper {
+  transition:
+    transform 0.4s var(--logo-ease),
+    filter    0.4s var(--logo-ease);
+  will-change: transform, filter;
+}
+
+.logo-tilt-wrapper:hover .logo-img-wrapper {
+  filter: brightness(1.12) contrast(1.05);
 }
 
 @media (prefers-reduced-motion: reduce) {

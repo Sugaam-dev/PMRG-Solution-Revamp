@@ -21,8 +21,8 @@ export const COMPANY = {
   ],
   social: {
     linkedin: "https://www.linkedin.com/company/pmrg-solution/",
-    facebook: "https://www.facebook.com/people/Sugaam-In/pfbid02MDjVo1ZDWVKJBJSR4cvnb5FYV94bXowvYji8nQeKkgez8DnuTQ9w7RE4QoSCjKNcl/",
-    instagram: "https://www.instagram.com/pmrgsolution?igsh=MWhzbDRxaWx1MXdqdw==",
+    facebook: "https://www.facebook.com/share/1Qy3Nfqa7e/?mibextid=wwXIfr",
+    instagram: "https://www.instagram.com/pmrg.solution/",
     whatsapp: "https://wa.me/917722017100",
   },
   url: "https://www.pmrgsolution.com",
