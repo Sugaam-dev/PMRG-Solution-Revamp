@@ -14,6 +14,10 @@ const config: Config = {
       screens: { "2xl": "1280px" },
     },
     extend: {
+      screens: {
+        /* Intermediate desktop breakpoint — smooth step between lg (1024) and xl (1280) */
+        lgx: "1152px",
+      },
       colors: {
         // ── Deep navy and blue surfaces ─────────────────
         ink: { DEFAULT: "#020617", 950: "#020617", 900: "#0F172A" },

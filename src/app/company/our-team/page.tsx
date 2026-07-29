@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/animations/Reveal";
 import { RevealGroup, RevealItem } from "@/components/animations/Reveal";
+import TeamCardGrid from "@/components/home/TeamCardGrid";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -101,7 +102,7 @@ export default function OurTeamPage() {
             description="Every member of PMRG brings domain expertise, technical depth and a commitment to client outcomes."
           />
 
-          <RevealGroup className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <TeamCardGrid className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {TEAM_MEMBERS.map((member) => (
               <RevealItem key={member.name} as="div" variant="slide-up">
                 <div className="team-card group relative flex flex-col items-center text-center">
@@ -147,7 +148,7 @@ export default function OurTeamPage() {
                 </div>
               </RevealItem>
             ))}
-          </RevealGroup>
+          </TeamCardGrid>
         </div>
       </section>
 

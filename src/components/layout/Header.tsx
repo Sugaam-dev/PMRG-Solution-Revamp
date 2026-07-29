@@ -128,7 +128,7 @@ export default function Header() {
         >
           <Logo scrolled={scrolled} />
 
-          <nav className="hidden items-center lg:flex lg:gap-0 xl:gap-0.5 2xl:gap-1">
+          <nav className="hidden items-center lg:flex lg:gap-0 lgx:gap-0.5 xl:gap-0.5 2xl:gap-1">
             {NAV_ITEMS.map((item) => {
               const active = isActive(item.href);
               const hasChildren = !!item.children;
@@ -143,7 +143,7 @@ export default function Header() {
                     href={item.href}
                     data-active={active}
                     className={cn(
-                      "link-underline flex items-center gap-0.5 whitespace-nowrap rounded-md px-1.5 py-1.5 text-[0.7rem] font-medium transition-colors duration-400 lg:px-2 lg:py-1.5 lg:text-[0.68rem] xl:gap-1 xl:px-3 xl:py-2 xl:text-[0.8rem] 2xl:text-sm",
+                      "link-underline flex items-center gap-0.5 whitespace-nowrap rounded-md px-1.5 py-1.5 text-[0.7rem] font-medium transition-colors duration-400 lg:px-2 lg:py-1.5 lg:text-[0.68rem] lgx:px-2.5 lgx:py-1.5 lgx:text-[0.74rem] xl:gap-1 xl:px-3 xl:py-2 xl:text-[0.8rem] 2xl:text-sm",
                       active
                         ? textColor
                         : cn(textMutedColor, isOverLight ? "hover:text-gray-900" : "hover:text-fg")
@@ -165,18 +165,18 @@ export default function Header() {
             })}
           </nav>
 
-          <div className="flex items-center gap-1 sm:gap-1.5 lg:gap-1.5 xl:gap-2.5">
+          <div className="flex items-center gap-1 sm:gap-1.5 lg:gap-1.5 lgx:gap-2 xl:gap-2.5">
             <NavSearch isOverLight={isOverLight} />
 
             {/* Social Icons */}
-            <div className="hidden items-center gap-1 lg:flex lg:gap-1 xl:gap-1.5">
+            <div className="hidden items-center gap-1 lg:flex lg:gap-1 lgx:gap-1 xl:gap-1.5">
               <a
                 href={COMPANY.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className={cn(
-                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
+                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
                   isOverLight
                     ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"
@@ -190,7 +190,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 aria-label="Instagram"
                 className={cn(
-                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
+                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
                   isOverLight
                     ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"
@@ -204,7 +204,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 aria-label="Facebook"
                 className={cn(
-                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
+                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
                   isOverLight
                     ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"
@@ -218,7 +218,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
                 className={cn(
-                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
+                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
                   isOverLight
                     ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"

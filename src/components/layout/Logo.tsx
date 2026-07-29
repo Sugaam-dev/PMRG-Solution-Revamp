@@ -39,8 +39,8 @@ export function Logo({
           className={cn(
             "w-auto transition-all duration-500",
             scrolled
-              ? "h-7 sm:h-8 md:h-9 lg:h-10 xl:h-11"
-              : "h-9 sm:h-10 md:h-11 lg:h-12 xl:h-14",
+              ? "h-7 sm:h-8 md:h-9 lg:h-10 lgx:h-[2.375rem] xl:h-11"
+              : "h-9 sm:h-10 md:h-11 lg:h-12 lgx:h-[3.25rem] xl:h-14",
             textClassName
           )}
           style={{
