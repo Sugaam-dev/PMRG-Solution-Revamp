@@ -13,12 +13,24 @@ import NavSearch from "./NavSearch";
 
 /**
  * Detect the theme of the section currently under the header.
- * Iterates backwards so the last section whose top edge is ≤ the
- * header-bottom wins (i.e. the one visually "behind" the header).
+ *
+ * During popLayout transitions, both old and new pages coexist as sibling
+ * motion.divs, each containing its own <main class="flex-1">.
+ * We always inspect the *last* one, which is the incoming page.
  */
 function detectCurrentTheme(): "light" | "dark" {
   const HEADER_BOTTOM = 80;
-  const sections = document.querySelectorAll("[data-section-theme]");
+
+  // During transitions, multiple <main class="flex-1"> exist.
+  // The LAST one is always the incoming (new) page.
+  const allMains = document.querySelectorAll("main.flex-1");
+  const incomingMain = allMains.length > 0
+    ? (allMains[allMains.length - 1] as HTMLElement)
+    : null;
+  if (!incomingMain) return "dark";
+
+  // 1. Check [data-section-theme] inside the incoming page
+  const sections = incomingMain.querySelectorAll("[data-section-theme]");
   for (let i = sections.length - 1; i >= 0; i--) {
     const el = sections[i] as HTMLElement;
     const rect = el.getBoundingClientRect();
@@ -31,6 +43,44 @@ function detectCurrentTheme(): "light" | "dark" {
       ? "light"
       : "dark";
   }
+
+  // 2. Fallback: check class-name hints on the page content.
+  //    Covers pages that don't use PageHero / data-section-theme
+  //    (industries, platforms, etc. which set bg-white on their own <main>).
+
+  // Check nested <main> elements (pages wrap content in <main class="bg-white">)
+  const innerMains = incomingMain.querySelectorAll("main");
+  for (const m of innerMains) {
+    const cls = m.className || "";
+    if (cls.includes("bg-white") || cls.includes("bg-[#f8fafc]") || cls.includes("section-light")) {
+      return "light";
+    }
+  }
+
+  // Check the first <section> for background class hints
+  const firstSection = incomingMain.querySelector("section") as HTMLElement | null;
+  if (firstSection) {
+    const cls = firstSection.className || "";
+    const style = firstSection.getAttribute("style") || "";
+    if (
+      cls.includes("bg-white") ||
+      cls.includes("bg-[#f8fafc]") ||
+      cls.includes("bg-slate-50") ||
+      cls.includes("section-light") ||
+      (style.includes("background") && (style.includes("white") || style.includes("#f8")))
+    ) {
+      return "light";
+    }
+    if (
+      cls.includes("section-dark") ||
+      cls.includes("bg-[#0") ||
+      cls.includes("bg-ink") ||
+      cls.includes("bg-onyx")
+    ) {
+      return "dark";
+    }
+  }
+
   return "dark";
 }
 
@@ -55,6 +105,9 @@ export default function Header() {
       });
     }
 
+    // Reset scroll state for new page (browser scrolls to top on navigation)
+    setScrollProgress(0);
+
     // Run once immediately
     onScroll();
 
@@ -65,18 +118,52 @@ export default function Header() {
     };
   }, [pathname]);
 
-  // Re-detect after route change (DOM may not be ready immediately)
+  // Re-detect after route change — the new page's DOM may not be ready yet.
+  // Uses a MutationObserver to catch when the new page content renders,
+  // plus fallback timeouts as a safety net.
   useEffect(() => {
-    const theme = detectCurrentTheme();
-    setIsOverLight(theme === "light");
+    const redetect = () => {
+      // Use rAF to ensure styles are painted before sampling
+      requestAnimationFrame(() => {
+        setIsOverLight(detectCurrentTheme() === "light");
+      });
+    };
 
-    // Re-check after Next.js finishes rendering the new page
-    const t1 = setTimeout(() => setIsOverLight(detectCurrentTheme() === "light"), 50);
-    const t2 = setTimeout(() => setIsOverLight(detectCurrentTheme() === "light"), 200);
+    // Immediate attempt (may still see old DOM or empty)
+    redetect();
+
+    // Fallback timeouts covering a range of render speeds
+    const t1 = setTimeout(redetect, 50);
+    const t2 = setTimeout(redetect, 150);
+    const t3 = setTimeout(redetect, 400);
+    const t4 = setTimeout(redetect, 800);
+
+    // MutationObserver: fires redetect on ANY DOM change (covers pages
+    // with or without data-section-theme). Debounced to avoid thrashing.
+    let observer: MutationObserver | null = null;
+    let debounceTimer: ReturnType<typeof setTimeout>;
+    let detectCount = 0;
+    observer = new MutationObserver(() => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        redetect();
+        detectCount++;
+        // After a few successful detections, the page is stable — disconnect
+        if (detectCount >= 3) observer?.disconnect();
+      }, 30);
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Auto-disconnect after 2s to avoid lingering observers
+    const tCleanup = setTimeout(() => observer?.disconnect(), 2000);
 
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
+      clearTimeout(t3);
+      clearTimeout(t4);
+      clearTimeout(tCleanup);
+      observer?.disconnect();
     };
   }, [pathname]);
 
@@ -87,12 +174,22 @@ export default function Header() {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  // Glassmorphism values
-  const blurAmount = Math.max(scrollProgress * 20, 12);
-  const bgOpacity = scrolled
-    ? (isOverLight ? 0.92 : 0.75)   // light section pe 92% opaque
-    : (isOverLight ? 0.70 : 0.40);
-  const borderOpacity = scrolled ? 0.08 : 0.04;
+  // ── Continuously interpolated glassmorphism ──
+  // t ramps from 0 → 1 as scrollProgress goes from 0 → 0.15 (ease-out curve)
+  const rawT = Math.min(scrollProgress / 0.15, 1);
+  const t = 1 - (1 - rawT) * (1 - rawT); // ease-out quadratic
+
+  const blurAmount = 12 + t * 12;   // 12px → 24px
+  const bgOpacity = isOverLight
+    ? 0.70 + t * 0.22    // 0.70 → 0.92
+    : 0.40 + t * 0.35;   // 0.40 → 0.75
+  const borderOpacity = 0.04 + t * 0.04; // 0.04 → 0.08
+
+  // Float effect: margin, border-radius, top offset, shadow
+  const marginPx = t * 8;        // 0 → 8px
+  const radiusPx = t * 16;       // 0 → 16px (rounded-2xl)
+  const topPx = t * 8;           // 0 → 8px
+  const shadowOpacity = t * 0.15; // 0 → 0.15
 
   // Colors adapt based on section theme
   const textColor = isOverLight ? "text-gray-900" : "text-fg";
@@ -108,16 +205,18 @@ export default function Header() {
     <>
       <header
         ref={headerRef}
-        className={cn(
-          "fixed inset-x-0 top-0 z-50 transition-all duration-500",
-          scrolled && "top-2 mx-2 rounded-2xl sm:mx-3 md:mx-4 lg:mx-5"
-        )}
+        className="fixed inset-x-0 z-50"
         style={{
+          top: `${topPx}px`,
+          marginLeft: `${marginPx}px`,
+          marginRight: `${marginPx}px`,
+          borderRadius: `${radiusPx}px`,
           backgroundColor: bgColor,
           backdropFilter: `blur(${blurAmount}px) saturate(140%)`,
           WebkitBackdropFilter: `blur(${blurAmount}px) saturate(140%)`,
-          borderBottom: scrolled ? "none" : `1px solid ${borderColor}`,
-          border: scrolled ? `1px solid ${borderColor}` : undefined,
+          border: `1px solid ${borderColor}`,
+          boxShadow: t > 0.01 ? `0 4px 30px rgba(0, 0, 0, ${shadowOpacity.toFixed(3)})` : "none",
+          transition: "background-color 500ms ease, border-color 500ms ease",
         }}
       >
         <div
@@ -143,7 +242,7 @@ export default function Header() {
                     href={item.href}
                     data-active={active}
                     className={cn(
-                      "link-underline flex items-center gap-0.5 whitespace-nowrap rounded-md px-1.5 py-1.5 text-[0.7rem] font-medium transition-colors duration-400 lg:px-2 lg:py-1.5 lg:text-[0.68rem] lgx:px-2.5 lgx:py-1.5 lgx:text-[0.74rem] xl:gap-1 xl:px-3 xl:py-2 xl:text-[0.8rem] 2xl:text-sm",
+                      "link-underline flex items-center gap-0.5 whitespace-nowrap rounded-md px-1.5 py-1.5 text-[0.7rem] font-medium transition-colors duration-500 lg:px-2 lg:py-1.5 lg:text-[0.68rem] lgx:px-2.5 lgx:py-1.5 lgx:text-[0.74rem] xl:gap-1 xl:px-3 xl:py-2 xl:text-[0.8rem] 2xl:text-sm",
                       active
                         ? textColor
                         : cn(textMutedColor, isOverLight ? "hover:text-gray-900" : "hover:text-fg")
@@ -176,7 +275,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className={cn(
-                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
+                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors duration-500 lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
                   isOverLight
                     ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"
@@ -190,7 +289,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 aria-label="Instagram"
                 className={cn(
-                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
+                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors duration-500 lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
                   isOverLight
                     ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"
@@ -204,7 +303,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 aria-label="Facebook"
                 className={cn(
-                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
+                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors duration-500 lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
                   isOverLight
                     ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"
@@ -218,7 +317,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
                 className={cn(
-                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
+                  "flex h-7 w-7 items-center justify-center rounded-lg border transition-colors duration-500 lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
                   isOverLight
                     ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"
@@ -234,7 +333,7 @@ export default function Header() {
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
               className={cn(
-                "flex h-10 w-10 items-center justify-center rounded-lg border transition-colors lg:hidden",
+                "flex h-10 w-10 items-center justify-center rounded-lg border transition-colors duration-500 lg:hidden",
                 isOverLight
                   ? "border-gray-300 text-gray-700 hover:bg-gray-100"
                   : "border-line text-fg hover:bg-surface"
