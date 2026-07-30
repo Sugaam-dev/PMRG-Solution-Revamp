@@ -508,3 +508,55 @@
     scroll-behavior: auto !important;
   }
 }
+
+
+.phone-wrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 1px solid #dbe4ef;
+  border-radius: 0.75rem;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  padding: 0.75rem 1rem;
+}
+
+.phone-wrap:focus-within {
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+.phone-wrap-error {
+  border-color: #fca5a5;
+}
+
+.phone-country {
+  border: none;
+  background: transparent;
+  font-size: 0.875rem;
+  color: #0f172a;
+  margin-right: 0.5rem;
+  outline: none;
+}
+
+.phone-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  color: #0f172a;
+  background: transparent;
+  padding: 0;
+}
+
+.phone-input::placeholder {
+  color: #94a3b8;
+}
+
+.phone-input-error {
+  color: #0f172a;
+}
+
+.phone-country-error {
+  color: #0f172a;
+}
