@@ -2,11 +2,14 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { COMPANY, NAV_ITEMS, SERVICE_PILLARS } from "@/lib/constants";
+import { COMPANY, NAV_ITEMS } from "@/lib/constants";
 import { Logo } from "./Logo";
 
-const quickLinks = NAV_ITEMS.filter((n) => !n.children).slice(0, 7);
-const serviceLinks = SERVICE_PILLARS;
+/* All 8 top-level navbar pages for the footer navigation */
+const footerNavLinks = NAV_ITEMS.map((n) => ({
+  label: n.label,
+  href: n.href,
+}));
 
 export default function Footer() {
   return (
@@ -24,29 +27,13 @@ export default function Footer() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-fg-muted">{COMPANY.description}</p>
           </div>
 
-          <div className="lg:col-span-2">
-            <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Company</h3>
-            <ul className="mt-4 space-y-3">
-              {quickLinks.map((l) => (
+          <div className="lg:col-span-5">
+            <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Quick Links</h3>
+            <ul className="mt-4 grid grid-cols-2 gap-3 sm:gap-x-6">
+              {footerNavLinks.map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="text-sm text-fg-muted transition-colors hover:text-fg">
                     {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="lg:col-span-3">
-            <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Services</h3>
-            <ul className="mt-4 space-y-3">
-              {serviceLinks.map((s) => (
-                <li key={s.id}>
-                  <Link
-                    href={`/services/${s.id}`}
-                    className="text-sm text-fg-muted transition-colors hover:text-fg"
-                  >
-                    {s.title}
                   </Link>
                 </li>
               ))}
@@ -98,9 +85,9 @@ export default function Footer() {
             © {new Date().getFullYear()} {COMPANY.legalName}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/privacy" className="text-xs text-fg-subtle transition-colors hover:text-fg">
-              Privacy Policy
-            </Link>
+            <a className="text-xs text-fg-subtle transition-colors hover:text-fg" href="/privacy-policy">
+          Privacy Policy
+             </a>
             <Link href="/terms" className="text-xs text-fg-subtle transition-colors hover:text-fg">
               Terms of Service
             </Link>

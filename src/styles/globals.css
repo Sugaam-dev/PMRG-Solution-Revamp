@@ -10,44 +10,43 @@
 
 @layer base {
   :root {
-    /* ── Dark surfaces ── */
-    --bg: #050508;
-    --bg-navy: #0B1020;
-    --header-bg: #0a0a0a;
-    --surface: #11162a;
-    --surface-2: #161c33;
-    --surface-3: #1c2340;
-    --line: #232a44;
-    --line-strong: #313a5e;
+    /* ── Premium blue / navy theme used across the experience ── */
+    --bg: #020617;
+    --bg-navy: #0f172a;
+    --header-bg: #020617;
+    --surface: #111827;
+    --surface-2: #172554;
+    --surface-3: #2563eb;
+    --line: #1e3a8a;
+    --line-strong: #38bdf8;
 
     /* ── Light surfaces ── */
-    --light-bg: #ffffff;
-     --light-bg: #F9FBFF;           /* pure white ki jagah thoda cool tone */
-  --light-bg-grey: #F0F5FF;
-    --light-line: #E2E8F0;
-    --light-line-strong: #CBD5E1;
+    --light-bg: #f8fafc;
+    --light-bg-grey: #eef4ff;
+    --light-line: #bfdbfe;
+    --light-line-strong: #38bdf8;
 
-    /* ── Text on dark ── */
+    /* ── Text on dark backgrounds ── */
     --fg: #f8fafc;
-    --fg-muted: #aab2c8;
-    --fg-subtle: #778099;
+    --fg-muted: #cbd5e1;
+    --fg-subtle: #94a3b8;
 
-    /* ── Text on light — now darker for better contrast ── */
-    --fg-on-light: #0F172A;            /* unchanged */
-    --fg-on-light-muted: #334155;      /* was #475569 — darker */
-    --fg-on-light-subtle: #64748B;     /* was #94A3B8 — readable */
+    /* ── Text on light backgrounds ── */
+    --fg-on-light: #0f172a;
+    --fg-on-light-muted: #334155;
+    --fg-on-light-subtle: #64748b;
 
-    /* ── Accent: indigo ── */
-    --accent: #6366f1;
-    --accent-light: #818cf8;
-    --accent-dark: #4f46e5;
-    --accent-soft: rgba(99, 102, 241, 0.14);
+    /* ── Accent: blue glow ── */
+    --accent: #2563eb;
+    --accent-light: #60a5fa;
+    --accent-dark: #1d4ed8;
+    --accent-soft: rgba(37, 99, 235, 0.16);
 
     /* ── Brand blue ── */
-    --brand: #2563EB;
-    --brand-deep: #1E40AF;
-    --brand-light: #3B82F6;
-    --brand-cyan: #06B6D4;
+    --brand: #2563eb;
+    --brand-deep: #07111f;
+    --brand-light: #60a5fa;
+    --brand-cyan: #38bdf8;
 
     --header-h: 80px;
   }
@@ -60,12 +59,15 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
   }
 
   body {
     color: var(--fg);
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-    background-color: var(--bg);
+    background: linear-gradient(180deg, #020617 0%, #020410 45%, #07111f 100%);
+    overflow-x: hidden;
   }
 
   ::selection {
@@ -222,13 +224,13 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em];
-    color: var(--fg-subtle);
+    @apply inline-flex items-center gap-2 font-mono text-[13px] font-bold uppercase tracking-[0.22em];
+    color: var(--fg-body);
   }
 
   .eyebrow-light {
-    @apply inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em];
-    color: var(--fg-on-light-subtle);
+    @apply inline-flex items-center gap-2 font-mono text-[13px] font-bold uppercase tracking-[0.22em];
+    color: var(--fg-on-light);
   }
 
   .eyebrow::before,
@@ -240,7 +242,7 @@
   }
 
   .section {
-    @apply py-20 sm:py-24 lg:py-28;
+    @apply py-14 sm:py-16 lg:py-20;
   }
 
   .link-underline {
@@ -349,6 +351,123 @@
 }
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.25);
+}
+
+/* ── Team card circle-reveal effect ─────────────────────────── */
+
+/* Avatar container: a 180px circle that scales + morphs on expand */
+.team-card-avatar {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08),
+              0 0 0 3px rgba(37, 99, 235, 0.08);
+  transition: border-radius 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.4s ease,
+              box-shadow 0.4s ease;
+  flex-shrink: 0;
+}
+
+/* Bio reveal — collapsed by default */
+.team-card-bio {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(8px);
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.45s ease 0.1s,
+              transform 0.45s ease 0.1s;
+}
+
+/* ── Desktop (≥ 768px): hover-triggered expand ───────────── */
+@media (min-width: 768px) {
+  .team-card:hover .team-card-avatar {
+    border-radius: 16px;
+    transform: scale(1.35);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+  .team-card:hover .team-card-bio {
+    max-height: 10rem;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Mobile / tablet (< 768px): scroll- or tap-triggered expand
+     JS toggles .team-card--active via IntersectionObserver ──── */
+@media (max-width: 767px) {
+  .team-card--active .team-card-avatar {
+    border-radius: 16px;
+    transform: scale(1.35);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+  .team-card--active .team-card-bio {
+    max-height: 10rem;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Logo effects ── */
+
+/* Shared timing for all logo hover transitions */
+:root { --logo-ease: cubic-bezier(0.22, 1, 0.36, 1); }
+
+@keyframes logo-glow {
+  0%, 100% { opacity: 0.18; }
+  50%      { opacity: 0.38; }
+}
+
+/* Outer wrapper — owns perspective + hover trigger for everything */
+.logo-tilt-wrapper {
+  transition: filter 0.4s var(--logo-ease);
+}
+.logo-tilt-wrapper:hover {
+  filter: drop-shadow(0 2px 16px rgba(37, 99, 235, 0.3));
+}
+
+/* Glow ring — hidden at rest, appears on hover */
+.logo-glow-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 14px;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(37, 99, 235, 0.4) 0%,
+    rgba(56, 189, 248, 0.18) 50%,
+    transparent 80%
+  );
+  filter: blur(10px);
+  transition:
+    inset   0.4s var(--logo-ease),
+    opacity 0.4s var(--logo-ease),
+    filter  0.4s var(--logo-ease);
+}
+
+.logo-tilt-wrapper:hover .logo-glow-ring {
+  inset: -10px;
+  opacity: 0.7;
+  filter: blur(18px);
+}
+
+/* Image wrapper — brightness lift on hover, same timing */
+.logo-img-wrapper {
+  transition:
+    transform 0.4s var(--logo-ease),
+    filter    0.4s var(--logo-ease);
+  will-change: transform, filter;
+}
+
+.logo-tilt-wrapper:hover .logo-img-wrapper {
+  filter: brightness(1.12) contrast(1.05);
 }
 
 @media (prefers-reduced-motion: reduce) {

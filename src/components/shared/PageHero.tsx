@@ -36,7 +36,7 @@ export default function PageHero({
           className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[700px] -translate-x-1/2 opacity-60"
           style={{
             background:
-              "radial-gradient(ellipse at center, rgba(37,99,235,0.12) 0%, transparent 70%)",
+              "radial-gradient(ellipse at center, rgba(56,189,248,0.16) 0%, rgba(37,99,235,0.08) 45%, transparent 70%)",
           }}
         />
       )}

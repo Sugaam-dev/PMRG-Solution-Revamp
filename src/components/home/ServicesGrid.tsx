@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Icon } from "@/components/ui/Icon";
 import { RevealGroup, RevealItem } from "@/components/animations/Reveal";
+import { IconPress } from "@/components/animations/IconPress";
 
 export default function ServicesGrid() {
   return (
@@ -26,15 +27,15 @@ export default function ServicesGrid() {
           description="From governance and planning to customer lifecycle, infrastructure, education, and innovation — our platforms work together as one connected ecosystem."
         />
 
-        <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {PRODUCTS.map((product) => (
             <RevealItem key={product.id} as="div" variant="slide-up">
               <Link href={`/solutions/${product.slug}`} className="group block h-full">
                 <GlassCard theme="light" className="flex h-full flex-col p-7">
                   <div className="flex items-center justify-between">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-light-line bg-blue-50 text-brand transition-colors duration-200 group-hover:border-brand/40 group-hover:bg-blue-100 group-hover:text-brand-deep">
+                    <IconPress className="flex h-11 w-11 items-center justify-center rounded-lg border border-light-line bg-gradient-to-br from-blue-50 to-cyan-50 text-brand-deep transition-colors duration-200 group-hover:border-brand/40 group-hover:from-blue-100 group-hover:to-cyan-100 group-hover:text-brand-deep">
                       <Icon name={product.icon} className="h-5 w-5" />
-                    </span>
+                    </IconPress>
                     <span className="rounded-full border border-brand/20 bg-brand-soft px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-brand">
                       {product.tag}
                     </span>

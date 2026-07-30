@@ -3,18 +3,20 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { X, Search, Linkedin, Instagram, Facebook } from "lucide-react";
+import { X, Search, ChevronDown } from "lucide-react";
 import { useState, useRef } from "react";
 import { NAV_ITEMS, COMPANY } from "@/lib/constants";
+import { cn } from "@/lib/utils";
 import { Logo } from "./Logo";
+import { FacebookBrandIcon, InstagramBrandIcon, LinkedInBrandIcon, WhatsAppBrandIcon } from "./SocialBrandIcons";
 
 const container = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.04, delayChildren: 0.08 } },
+  show: { transition: { staggerChildren: 0.06, delayChildren: 0.15 } },
 };
 const item = {
   hidden: { opacity: 0, y: 14 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] as const } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -29,13 +31,14 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
   const router = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [expandedItem, setExpandedItem] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleSearch = () => {
     if (searchOpen && searchQuery.trim()) {
       // Navigate to blog page as a simple search destination
       onClose();
-      router.push("/blog");
+      router.push("/insights");
     } else {
       setSearchOpen(true);
       setTimeout(() => inputRef.current?.focus(), 100);
@@ -43,7 +46,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
   };
 
   const iconClass =
-    "flex h-10 w-10 items-center justify-center rounded-lg border border-line text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg";
+    "group flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 text-gray-600 transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:border-sky-200 hover:bg-sky-50/80 hover:text-gray-900 hover:shadow-md hover:shadow-sky-200/50";
 
   return (
     <AnimatePresence>
@@ -53,23 +56,23 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.3 }}
         >
-          <div className="absolute inset-0 bg-ink/80 backdrop-blur-xl" onClick={onClose} />
+          <div className="absolute inset-0 bg-slate-950/55 backdrop-blur-xl" onClick={onClose} />
 
           <motion.div
-            className="absolute right-0 top-0 flex h-full w-full max-w-sm flex-col border-l border-line bg-surface p-6"
+            className="absolute right-0 top-0 flex h-full w-full max-w-sm flex-col border-l border-gray-200 bg-white p-6 text-gray-900 shadow-2xl"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="flex items-center justify-between">
               <Logo />
               <button
                 onClick={onClose}
                 aria-label="Close menu"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-line text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg"
+                className="flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900"
               >
                 <X className="h-5 w-5" />
               </button>
@@ -85,19 +88,19 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
                   transition={{ duration: 0.2 }}
                   className="overflow-hidden"
                 >
-                  <div className="mt-4 flex items-center gap-2 rounded-lg border border-line bg-surface-2 px-3 py-2">
-                    <Search className="h-4 w-4 shrink-0 text-fg-subtle" />
+                  <div className="mt-4 flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2">
+                    <Search className="h-4 w-4 shrink-0 text-gray-400" />
                     <input
                       ref={inputRef}
                       type="text"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       placeholder="Search…"
-                      className="w-full bg-transparent text-sm text-fg placeholder:text-fg-subtle focus:outline-none"
+                      className="w-full bg-transparent text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none"
                       onKeyDown={(e) => {
                         if (e.key === "Enter" && searchQuery.trim()) {
                           onClose();
-                          router.push("/blog");
+                          router.push("/insights");
                         }
                         if (e.key === "Escape") {
                           setSearchOpen(false);
@@ -107,7 +110,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
                     />
                     <button
                       onClick={() => { setSearchOpen(false); setSearchQuery(""); }}
-                      className="shrink-0 text-fg-subtle hover:text-fg"
+                      className="shrink-0 text-gray-400 hover:text-gray-700"
                     >
                       <X className="h-3.5 w-3.5" />
                     </button>
@@ -117,21 +120,66 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
             </AnimatePresence>
 
             <motion.nav
-              className="mt-8 flex flex-col gap-0.5"
+              className="mt-8 flex flex-col gap-0.5 overflow-y-auto"
               variants={container}
               initial="hidden"
               animate="show"
             >
               {NAV_ITEMS.map((nav) => (
                 <motion.div key={nav.href} variants={item}>
-                  <Link
-                    href={nav.href}
-                    onClick={onClose}
-                    className="flex items-center justify-between rounded-lg px-4 py-3.5 text-lg font-medium text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg"
-                  >
-                    {nav.label}
-                    {nav.children && <span className="text-xs text-fg-subtle">▾</span>}
-                  </Link>
+                  <div className="flex items-center">
+                    <Link
+                      href={nav.href}
+                      onClick={onClose}
+                      className="flex flex-1 items-center rounded-lg px-4 py-3.5 text-lg font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900"
+                    >
+                      {nav.label}
+                    </Link>
+                    {nav.children && (
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setExpandedItem((prev) =>
+                            prev === nav.href ? null : nav.href
+                          )
+                        }
+                        aria-label={`Toggle ${nav.label} submenu`}
+                        className="flex h-10 w-10 items-center justify-center rounded-lg text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900"
+                      >
+                        <ChevronDown
+                          className={cn(
+                            "h-4 w-4 transition-transform duration-200",
+                            expandedItem === nav.href && "rotate-180"
+                          )}
+                        />
+                      </button>
+                    )}
+                  </div>
+                  {/* Child items (expandable) */}
+                  <AnimatePresence>
+                    {nav.children && expandedItem === nav.href && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+                        className="overflow-hidden"
+                      >
+                        <div className="ml-4 flex flex-col gap-0.5 border-l border-gray-200 pl-3 pb-2">
+                          {nav.children.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              onClick={onClose}
+                              className="rounded-md px-3 py-2.5 text-sm text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </motion.div>
               ))}
             </motion.nav>
@@ -149,7 +197,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
                   aria-label="Search"
                   className={iconClass}
                 >
-                  <Search className="h-4.5 w-4.5" />
+                  <Search className="h-4.5 w-4.5 transition-transform duration-300 group-hover:scale-110" />
                 </button>
                 <a
                   href={COMPANY.social.linkedin}
@@ -158,7 +206,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
                   aria-label="LinkedIn"
                   className={iconClass}
                 >
-                  <Linkedin className="h-4.5 w-4.5" />
+                  <LinkedInBrandIcon className="h-4.5 w-4.5 transition-transform duration-300 group-hover:scale-110" />
                 </a>
                 <a
                   href={COMPANY.social.instagram || "#"}
@@ -167,7 +215,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
                   aria-label="Instagram"
                   className={iconClass}
                 >
-                  <Instagram className="h-4.5 w-4.5" />
+                  <InstagramBrandIcon className="h-4.5 w-4.5 transition-transform duration-300 group-hover:scale-110" />
                 </a>
                 <a
                   href={COMPANY.social.facebook}
@@ -176,7 +224,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
                   aria-label="Facebook"
                   className={iconClass}
                 >
-                  <Facebook className="h-4.5 w-4.5" />
+                  <FacebookBrandIcon className="h-4.5 w-4.5 transition-transform duration-300 group-hover:scale-110" />
                 </a>
                 <a
                   href={COMPANY.social.whatsapp}
@@ -185,7 +233,7 @@ export default function MobileNav({ open, onClose }: { open: boolean; onClose: (
                   aria-label="WhatsApp"
                   className={iconClass}
                 >
-                  <WhatsAppIcon className="h-4.5 w-4.5" />
+                  <WhatsAppBrandIcon className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
                 </a>
               </div>
             </motion.div>

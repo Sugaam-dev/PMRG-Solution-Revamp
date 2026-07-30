@@ -1,0 +1,406 @@
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  22•Multi-vendor governance
+•UAT and release readiness
+•SLA and dependency intelligence
+•Executive program dashboards
+Why PMRG
+Senior telecom architecture experience combined with practical delivery and AI transformation capability.
+•Business-to-technology translation
+•End-to-end BSS/OSS perspective
+•Architecture and implementation alignment
+•Governed delivery across stakeholders
+Developer and design notes
+•Use an end-to-end telecom capability map from Channel to Billing and Assurance.
+•Do not publish confidential customer program details or unapproved names.
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  23WEBSITE PAGE 10
+Platforms Overview
+/platforms
+Purpose Audience Page goal Status
+Present PMRG's productized capabilities and route visitors to focused platform pages.Buyers seeking product-led or platform-enabled engagements.Select a platform or request a demonstration.Working copy — proof/legal review where noted
+SEO and search preview
+SEO title: AI Governance & Enterprise Platforms | PMRG
+Meta description: Explore PMRG platforms for governance, sprint intelligence, sales and customer lifecycle, and data center management.
+Hero headline
+Platforms that turn operational signals into accountable action.
+PMRG's platforms support governance, execution, sales intelligence and infrastructure visibility while integrating with the tools 
+organizations already use.
+Primary CTA: Explore the Platforms   |   Secondary CTA: Request a Demo
+Ready-to-paste page sections
+AI Governance Layer
+Connect delivery evidence, risks, decisions and accountability across management levels.
+•Link: /platforms/ai-governance-layer
+Sprint & Delivery Intelligence
+Plan, track and govern delivery across sprints, milestones, teams and vendors.
+•Link: /platforms/sprint-delivery-intelligence
+AI Sales Tracker & CLM
+Connect external leads, qualification, follow-up, opportunity progress and lifecycle insight.
+•Link: /platforms/ai-sales-tracker-clm
+Data Center Management
+Improve visibility across assets, capacity, incidents, energy, risk and operational readiness.
+•Link: /platforms/data-center-management
+Platform engagement
+Platforms can be assessed, demonstrated, piloted and configured around the client's operating model and integrations.
+•Discovery
+•Demonstration
+•Fit-gap
+•Pilot
+•Implementation and support
+Developer and design notes
+•Use four equal platform cards with screenshot or diagram placeholders.
+•Each card must show problem, capability and CTA.
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  24WEBSITE PAGE 11
+AI Governance Layer Platform
+/platforms/ai-governance-layer
+Purpose Audience Page goal Status
+Provide product-oriented detail for the AI governance platform.PMO, transformation, delivery, governance and technology leaders.Schedule a Platform DemoWorking copy — proof/legal review where noted
+SEO and search preview
+SEO title: AI Governance Layer for Delivery & Decisions | PMRG
+Meta description: A configurable governance layer for requirements, sprints, vendors, risks, approvals, UAT, releases and executive 
+intelligence.
+Hero headline
+One governance layer across delivery, vendors, risk and decisions.
+Bring evidence from existing tools into a role-based governance workspace that highlights exceptions, traceability and decisions requiring 
+attention.
+Primary CTA: Schedule a Platform Demo   |   Secondary CTA: Request a Fit Assessment
+Ready-to-paste page sections
+Platform modules
+Configure the platform around the governance areas that matter most.
+•Requirement governance
+•Program and sprint oversight
+•RAID and dependencies
+•Vendor and SLA governance
+•Approvals and decisions
+•Testing, UAT and release
+•Document evidence
+•Executive dashboards
+AI-supported intelligence
+Use AI to summarize evidence, detect gaps and recommend actions while retaining human accountability.
+•Completeness and consistency checks
+•Trend and exception detection
+•Impact and dependency analysis
+•Status-quality checks
+•Executive narrative generation
+•Decision and escalation prompts
+Integration model
+Connect through APIs, events or controlled batch ingestion according to enterprise constraints.
+•Project and work management
+•Source control and CI/CD
+•Testing and defect tools
+•Document repositories
+•Communication platforms
+•BI and reporting
+Deployment and controls
+Deployment architecture is selected with the client's security, data and operational requirements.
+•Role-based access
+•Identity integration
+•Audit and observability
+•Data retention
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  25•Model and prompt controls
+•Human approval
+Developer and design notes
+•Use product screenshots only when current and approved; otherwise label visuals Conceptual View.
+•Add Demo and Fit Assessment form variants.
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  26WEBSITE PAGE 12
+Sprint & Delivery Intelligence Platform
+/platforms/sprint-delivery-intelligence
+Purpose Audience Page goal Status
+Explain PMRG's sprint planning and delivery-governance capability.Delivery heads, PMOs, product leaders, scrum teams and vendor managers.Request a Sprint Intelligence DemoWorking copy — proof/legal review where noted
+SEO and search preview
+SEO title: Sprint Planning & Delivery Intelligence Platform | PMRG
+Meta description: Plan sprints, track commitments, expose dependencies and improve delivery governance across teams, milestones and 
+vendors.
+Hero headline
+Move from sprint activity to delivery intelligence.
+Connect plans, capacity, dependencies, risks, commitments and outcomes so delivery leaders can act before slippage becomes status 
+history.
+Primary CTA: Request a Sprint Intelligence Demo   |   Secondary CTA: Review the Capability Map
+Ready-to-paste page sections
+Planning
+Create a governed planning view across priorities, capacity and dependencies.
+•Backlog and priority view
+•Capacity and allocation
+•Dependency mapping
+•Milestone alignment
+•Definition of ready
+Execution intelligence
+Surface progress, exceptions and evidence across teams and vendors.
+•Commitment versus completion
+•Blocked and aging work
+•Dependency exposure
+•Risk and issue trends
+•Vendor commitments
+Quality and readiness
+Connect development activity to testing, acceptance and release readiness.
+•Defect trends
+•UAT status
+•Acceptance evidence
+•Release criteria
+•Readiness scorecards
+Leadership dashboards
+Provide different views for teams, PMO, delivery leadership and executives.
+•Sprint dashboard
+•Program dashboard
+•Vendor dashboard
+•Risk and dependency dashboard
+•Executive summary
+Developer and design notes
+•Visualize one sprint dashboard and one cross-program dependency view.
+•Do not position the platform as a Jira replacement; position it as an intelligence and governance layer.
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  27WEBSITE PAGE 13
+AI Sales Tracker & Customer Lifecycle Platform
+/platforms/ai-sales-tracker-clm
+Purpose Audience Page goal Status
+Explain lead-to-lifecycle intelligence and generate demos.Sales leaders, founders, revenue operations, account teams and customer lifecycle owners.Request a Sales Tracker DemoWorking copy — proof/legal review where noted
+SEO and search preview
+SEO title: AI Sales Tracker & Customer Lifecycle Platform | PMRG
+Meta description: Connect external lead sources, qualification, follow-ups, opportunity progress, customer lifecycle and revenue visibility.
+Hero headline
+Turn scattered leads and follow-ups into a visible, accountable sales journey.
+PMRG's AI-led sales tracker connects lead sources, activities, opportunities, next actions and customer lifecycle intelligence in one 
+management view.
+Primary CTA: Request a Sales Tracker Demo   |   Secondary CTA: Discuss Your Lead Pipeline
+Ready-to-paste page sections
+Lead capture and integration
+Bring leads into one governed pipeline from approved internal and external sources.
+•Website and campaign forms
+•Partner and referral leads
+•Imported lists
+•External lead-generation integrations
+•Deduplication and source tracking
+Qualification and prioritization
+Apply defined business rules and AI-assisted signals without hiding the basis of prioritization.
+•Fit and intent fields
+•Lead scoring
+•Priority and aging
+•Duplicate and incomplete lead detection
+•Human review and reassignment
+Activity and opportunity management
+Make ownership, follow-up and next action visible.
+•Calls, meetings and notes
+•Tasks and reminders
+•Opportunity stages
+•Proposal and commercial milestones
+•Dormancy and escalation alerts
+Customer lifecycle intelligence
+Extend visibility beyond initial conversion into onboarding, service, growth and retention.
+•Customer 360
+•Onboarding milestones
+•Service and issue history
+•Renewal and growth signals
+•Account health and risks
+Management dashboards
+Provide evidence for action, not vanity metrics.
+•Source and stage funnel
+•Owner and team performance
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  28•Aging and stalled opportunities
+•Forecast and next actions
+•Lifecycle and account health
+Developer and design notes
+•Include a lead-to-customer pipeline diagram and dashboard wireframe.
+•External lead-source logos should be used only when actual integrations are confirmed.
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  29WEBSITE PAGE 14
+Data Center Management Platform
+/platforms/data-center-management
+Purpose Audience Page goal Status
+Present PMRG's infrastructure operations and data center visibility offer.Infrastructure heads, data center operations,  CIO teams and managed-service providers.Request a Data Center AssessmentWorking copy — proof/legal review where noted
+SEO and search preview
+SEO title: Data Center Management & Operational Intelligence | PMRG
+Meta description: Improve data center visibility across assets, capacity, incidents, energy, maintenance, risk, compliance and executive 
+reporting.
+Hero headline
+See the infrastructure. Understand the risk. Act with confidence.
+PMRG's data center management approach connects operational, asset, capacity and incident information into one governed view.
+Primary CTA: Request a Data Center Assessment   |   Secondary CTA: Explore the Capability Map
+Ready-to-paste page sections
+Asset and configuration visibility
+Create traceable views across locations, racks, equipment, ownership, state and service relationships.
+•Asset register
+•Location and rack mapping
+•Lifecycle and warranty
+•Dependency relationships
+•Ownership and status
+Capacity and utilization
+Support planning with evidence across space, power, compute, storage and network capacity.
+•Capacity thresholds
+•Utilization trends
+•Forecast and reservations
+•Hotspot identification
+•Expansion planning
+Incident and maintenance
+Connect alarms, incidents, actions and maintenance history.
+•Incident intake
+•Severity and escalation
+•Root-cause evidence
+•Preventive maintenance
+•SLA and closure tracking
+Energy, risk and compliance
+Create management visibility across operational efficiency, resilience and control obligations.
+•Energy monitoring
+•Environmental thresholds
+•Resilience and availability
+•Risk register
+•Audit and compliance evidence
+Integration and dashboards
+Integrate with monitoring, service, inventory and reporting systems according to the target architecture.
+•NMS and monitoring
+•ITSM
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  30•CMDB and inventory
+•IoT and environmental sensors
+•BI and executive reporting
+Developer and design notes
+•Use a data center topology or rack-to-dashboard visual; avoid unlabelled stock-server imagery.
+•Mark real-time monitoring as dependent on source-system integrations.
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  31WEBSITE PAGE 15
+Industries Overview
+/industries
+Purpose Audience Page goal Status
+Route visitors by sector and demonstrate that PMRG adapts capabilities to domain context.Visitors who identify first by industry rather than product.Select an industry path.Working copy — proof/legal review where noted
+SEO and search preview
+SEO title: Industry Solutions for Telecom, Education & Enterprise | PMRG
+Meta description: Explore PMRG's domain-led AI governance, digital transformation and platform solutions for telecom, education and 
+enterprise.
+Hero headline
+Domain context changes the solution. Outcomes still require accountable execution.
+PMRG combines reusable platforms with sector-specific processes, architecture, regulations, stakeholders and adoption needs.
+Primary CTA: Choose Your Industry   |   Secondary CTA: Discuss Your Business Context
+Ready-to-paste page sections
+Telecom & MSO
+Customer lifecycle, BSS/OSS architecture, orchestration, inventory, billing and AI-led program governance.
+•Link: /industries/telecom-mso
+Education
+AI learning, smart campus, operations, admissions, placements, internships, incubation and institutional intelligence.
+•Link: /industries/education
+Enterprise & SME
+ERP, CRM, sales and lifecycle, workflow automation, AI agents, analytics and infrastructure visibility.
+•Link: /industries/enterprise-sme
+Cross-industry approach
+PMRG starts with business context, maps the operating model, selects fit-for-purpose technology and governs implementation through 
+measurable phases.
+•Discover
+•Design
+•Validate
+•Implement
+•Measure and scale
+Developer and design notes
+•Use three industry cards with distinct visuals and consistent structure.
+•Do not create unsupported industry claims solely for SEO volume.
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  32WEBSITE PAGE 16
+Telecom & MSO Industry
+/industries/telecom-mso
+Purpose Audience Page goal Status
+Frame PMRG's solutions around telecom and MSO business outcomes.Operator, MSO, telecom product and partner  leadership.Book a Telecom Architecture SessionWorking copy — proof/legal review where noted
+SEO and search preview
+SEO title: Telecom & MSO Digital Transformation Solutions | PMRG
+Meta description: Transform telecom customer lifecycle, fulfillment, inventory, billing and program governance with PMRG domain expertise.
+Hero headline
+Modernize telecom journeys without losing operational control.
+PMRG helps operators, MSOs and technology partners connect customer experience, BSS/OSS architecture and governed delivery.
+Primary CTA: Book a Telecom Architecture Session   |   Secondary CTA: Explore Telecom Capabilities
+Ready-to-paste page sections
+Business outcomes
+Align customer, operational and technology priorities across the transformation.
+•Faster and more consistent customer journeys
+•Reduced order and provisioning fallout
+•Clearer product and inventory alignment
+•Stronger multi-vendor accountability
+•Improved release and UAT visibility
+Relevant PMRG solutions
+Connect industry needs to the right solution pages.
+•Telecom BSS/OSS
+•AI-Assisted Governance
+•AI Governance Layer
+•Sprint & Delivery Intelligence
+•AI Sales Tracker & CLM
+Engagement scenarios
+PMRG can support the architecture, delivery or product dimensions of a telecom initiative.
+•Capability and gap assessment
+•Target solution architecture
+•Requirements and vendor governance
+•Product or implementation advisory
+•UAT, release and transformation governance
+Developer and design notes
+•Link prominently to the Telecom BSS/OSS solution page and AI Governance case story.
+•Use approved anonymized use cases when client naming is restricted.
+
+--- PAGE BREAK ---
+
+    WEBSITE STRATEGY
+Confidential working blueprint  •  July 2026  •  33WEBSITE PAGE 17
+Education Industry
+/industries/education
+Purpose Audience Page goal Status
+Frame PMRG's education offers around institutional outcomes and route school/university visitors.School and higher-education leaders. Request an Institutional WorkshopWorking copy — proof/legal review where noted
+SEO and search preview
+SEO title: AI & Digital Transformation for Education | PMRG
+Meta description: Support schools and universities with AI readiness, smart campus systems, employability, placements, incubation and digital 
+operations.
+Hero headline
+Technology should strengthen learning, operations and career outcomes together.
+PMRG helps education leaders move from isolated initiatives to an institution-wide roadmap for responsible AI, digital operations, 
+employability and innovation.
+Primary CTA: Request an Institutional Workshop   |   Secondary CTA: Choose School or University
+Ready-to-paste page sections
+For schools
+Age-appropriate AI learning, teacher enablement, innovation labs, responsible-use policies and operational support.
+•Link: /solutions/ai-for-schools
+For universities
+Smart campus, admissions, student support, internships, placements, incubation, faculty enablement and dashboards.
+•Link: /solutions/ai-for-universities
+Institutional outcomes
+Define measures appropriate to the institution instead of applying generic technology metrics.
+•AI readiness and safe adoption
+•Faculty and student participation
+•Operational response and visibility
+•Internship and placement engagement
+•Innovation participation and prototype progress
+Collaboration model
+PMRG can work with institutional leadership, academic departments, placement cells, incubation centers and industry partners through one 
+coordinated roadmap.
+•Discovery
+•Blueprint
+•Pilot programs
+•Operational enablement
+•Evidence and scale
+Developer and design notes
+•Add School and University route cards immediately below the hero.
+•Only list institutional logos after approval.
