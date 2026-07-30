@@ -8,6 +8,7 @@ import ScrollProgress from "@/components/ui/ScrollProgress";
 import BackToTop from "@/components/shared/BackToTop";
 import CookieConsent from "@/components/shared/CookieConsent";
 import PageTransition from "@/components/animations/PageTransition";
+import ClickBurst from "@/components/animations/ClickBurst";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -111,6 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
+        <ClickBurst />
         <ScrollProgress />
         <div className="relative flex min-h-screen flex-col">
           <Header />

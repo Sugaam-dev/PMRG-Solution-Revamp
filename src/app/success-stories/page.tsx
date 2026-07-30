@@ -101,7 +101,7 @@ const STORIES: Story[] = [
       },
     ],
     icon: ShieldCheck,
-    color: "from-brand to-brand-cyan",
+    color: "from-blue-600 to-blue-500",
   },
   {
     id: "ai-readiness",
@@ -155,7 +155,7 @@ const STORIES: Story[] = [
       },
     ],
     icon: GraduationCap,
-    color: "from-brand to-brand-cyan",
+    color: "from-blue-600 to-blue-500",
   },
   {
     id: "erp-modernization",
@@ -209,7 +209,7 @@ const STORIES: Story[] = [
       },
     ],
     icon: Building2,
-    color: "from-brand to-brand-cyan",
+    color: "from-blue-600 to-blue-500",
   },
 ];
 
@@ -237,14 +237,14 @@ const RELATIONSHIPS = [
 
 export default function SuccessStoriesPage() {
   return (
-    <>
+    <div className="bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(246,252,255,0.96)_16%,rgba(224,242,254,0.72)_52%,rgba(239,246,255,0.9)_82%,rgba(255,255,255,1)_100%)]">
       {/* ── Hero ──────────────────────────────────────────── */}
       <PageHero
         eyebrow="Success Stories"
         title={
           <>
             Proof should show the problem, the intervention and{" "}
-            <span className="text-gradient">the outcome.</span>
+            <span className="text-fg-dark">the outcome.</span>
           </>
         }
         description="Explore selected PMRG use cases and engagements across governance, telecom, education and enterprise transformation. Named references and metrics are published only after approval."
@@ -264,7 +264,7 @@ export default function SuccessStoriesPage() {
       <section
         id="stories"
         data-section-theme="light"
-        className="section-light section"
+        className="section bg-transparent"
       >
         <div className="container-pmrg">
 
@@ -274,9 +274,9 @@ export default function SuccessStoriesPage() {
               const IconCmp = story.icon;
               return (
                 <Reveal key={story.id}>
-                  <GlassCard theme="light" className="overflow-hidden">
+                  <GlassCard theme="light" className="overflow-hidden bg-white/95">
                     {/* Story header */}
-                    <div className="border-b border-light-line bg-light-bg-slate p-6 sm:p-8">
+                    <div className="border-b border-slate-200 bg-white/95 p-6 sm:p-8">
                       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-5">
                         <span
                           className={cn(
@@ -288,10 +288,10 @@ export default function SuccessStoriesPage() {
                         </span>
                         <div>
                           <div className="flex items-center gap-3">
-                            <span className="rounded-full border border-brand/20 bg-brand-soft px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider text-brand">
+                            <span className="rounded-full border border-slate-200 bg-slate-100 px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-700">
                               {story.category}
                             </span>
-                            <span className="text-xs font-medium text-fg-dark-muted">
+                            <span className="text-xs font-medium text-fg-dark-subtle">
                               {story.client}
                             </span>
                           </div>
@@ -307,14 +307,14 @@ export default function SuccessStoriesPage() {
 
                     {/* 7-point case-story sections */}
                     <div className="p-6 sm:p-8">
-                      <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-light-line bg-light-line md:grid-cols-2 lg:grid-cols-3">
+                      <div className="grid grid-cols-1 gap-4 rounded-xl border border-slate-200 bg-transparent md:grid-cols-2 lg:grid-cols-3">
                         {story.sections.map((section, sIdx) => {
                           const SectionIcon = section.icon;
                           return (
                             <div
                               key={section.label}
                               className={cn(
-                                "bg-white p-5",
+                                "rounded-xl border border-slate-200 bg-white p-5 shadow-sm",
                                 /* last item spans full width if odd count */
                                 sIdx === story.sections.length - 1 &&
                                   story.sections.length % 3 !== 0 &&
@@ -322,7 +322,7 @@ export default function SuccessStoriesPage() {
                               )}
                             >
                               <div className="flex items-center gap-2">
-                                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-light-bg-slate text-brand">
+                                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-500 text-white">
                                   <SectionIcon className="h-3.5 w-3.5" />
                                 </span>
                                 <span className="text-xs font-bold uppercase tracking-wider text-fg-dark-subtle">
@@ -343,7 +343,7 @@ export default function SuccessStoriesPage() {
                           href="/contact"
                           variant="ghost"
                           size="sm"
-                          className="gap-1.5 px-0 text-brand hover:bg-transparent"
+                          className="gap-1.5 px-0 text-slate-700 hover:bg-transparent hover:text-slate-900"
                         >
                           Discuss a similar challenge
                           <ArrowRight className="h-4 w-4" />
@@ -361,7 +361,7 @@ export default function SuccessStoriesPage() {
       {/* ── Relationship Logo Area ──────────────────────────── */}
       <section
         data-section-theme="light"
-        className="section-light section border-t border-light-line bg-light-bg-slate"
+        className="section border-t border-slate-200 bg-transparent"
       >
         <div className="container-pmrg">
           <SectionHeading
@@ -378,7 +378,7 @@ export default function SuccessStoriesPage() {
                     theme="light"
                     className="flex h-full flex-col p-6 text-center sm:p-8"
                   >
-                    <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl border border-light-line bg-white text-fg-dark-subtle shadow-sm">
+                    <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-white text-fg-dark-subtle shadow-sm">
                       <IconCmp className="h-5 w-5" />
                     </span>
                     <h3 className="mt-5 text-base font-semibold text-fg-dark">
@@ -397,7 +397,7 @@ export default function SuccessStoriesPage() {
                         {[1, 2, 3].map((n) => (
                           <div
                             key={n}
-                            className="flex h-10 items-center justify-center rounded-lg border border-dashed border-light-line-strong bg-light-bg-slate text-[9px] font-medium text-fg-dark-subtle"
+                            className="flex h-10 items-center justify-center rounded-lg border border-dashed border-slate-200 bg-white text-[9px] font-medium text-fg-dark-subtle"
                           >
                             Logo
                           </div>
@@ -415,7 +415,7 @@ export default function SuccessStoriesPage() {
       {/* ── Bottom CTA ────────────────────────────────────── */}
       <section
         data-section-theme="light"
-        className="section-light section border-t border-light-line"
+        className="section border-t border-slate-200 bg-transparent"
       >
         <div className="container-pmrg text-center">
           <Reveal>
@@ -431,6 +431,6 @@ export default function SuccessStoriesPage() {
           </Reveal>
         </div>
       </section>
-    </>
+    </div>
   );
 }

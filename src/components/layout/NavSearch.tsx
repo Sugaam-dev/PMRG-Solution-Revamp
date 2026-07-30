@@ -6,6 +6,7 @@ import { Search, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { NAV_ITEMS, PRODUCTS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { IconPress } from "@/components/animations/IconPress";
 
 type SearchItem = { label: string; href: string; category: string };
 
@@ -103,16 +104,17 @@ export default function NavSearch({ isOverLight }: { isOverLight: boolean }) {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.15 }}
+            whileTap={{ scale: 0.92 }}
             onClick={() => setOpen(true)}
             aria-label="Search"
             className={cn(
-              "flex h-10 w-10 items-center justify-center rounded-lg border transition-colors duration-500 lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
-              isOverLight
-                ? "border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                : "border-line text-fg-subtle hover:border-line-strong hover:text-fg"
+              "group flex h-10 w-10 items-center justify-center rounded-lg border transition-all duration-300 lg:h-7 lg:w-7 lgx:h-[1.875rem] lgx:w-[1.875rem] xl:h-8 xl:w-8 2xl:h-9 2xl:w-9",
+              "border-gray-200 text-gray-500 hover:-translate-y-0.5 hover:scale-110 hover:border-sky-300 hover:bg-sky-50/90 hover:text-sky-700 hover:shadow-md hover:shadow-sky-200/60"
             )}
           >
-            <Search className="h-4 w-4" />
+            <IconPress>
+              <Search className="h-4 w-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+            </IconPress>
           </motion.button>
         ) : (
           <motion.div
@@ -123,13 +125,11 @@ export default function NavSearch({ isOverLight }: { isOverLight: boolean }) {
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className={cn(
               "flex items-center gap-2 overflow-hidden rounded-lg border px-3",
-              isOverLight
-                ? "border-gray-200 bg-white/80 backdrop-blur-sm"
-                : "border-line bg-surface/80 backdrop-blur-sm"
+              "border-gray-200 bg-white/80 backdrop-blur-sm"
             )}
             style={{ height: 36 }}
           >
-            <Search className={cn("h-3.5 w-3.5 shrink-0", isOverLight ? "text-gray-400" : "text-fg-subtle")} />
+            <Search className="h-3.5 w-3.5 shrink-0 text-gray-400" />
             <input
               ref={inputRef}
               type="text"
@@ -138,9 +138,7 @@ export default function NavSearch({ isOverLight }: { isOverLight: boolean }) {
               placeholder="Search…"
               className={cn(
                 "w-full bg-transparent text-sm outline-none placeholder:text-sm",
-                isOverLight
-                  ? "text-gray-900 placeholder:text-gray-400"
-                  : "text-fg placeholder:text-fg-subtle"
+                "text-gray-900 placeholder:text-gray-400"
               )}
               onKeyDown={(e) => {
                 if (e.key === "Enter" && results.length > 0) {
@@ -153,7 +151,7 @@ export default function NavSearch({ isOverLight }: { isOverLight: boolean }) {
               aria-label="Close search"
               className={cn(
                 "shrink-0 rounded p-0.5 transition-colors",
-                isOverLight ? "text-gray-400 hover:text-gray-600" : "text-fg-subtle hover:text-fg"
+                "text-gray-400 hover:text-gray-600"
               )}
             >
               <X className="h-3.5 w-3.5" />

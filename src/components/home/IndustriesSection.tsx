@@ -3,6 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Icon } from "@/components/ui/Icon";
 import { RevealGroup, RevealItem } from "@/components/animations/Reveal";
 import GradientOrb from "@/components/animations/GradientOrb";
+import { IconPress } from "@/components/animations/IconPress";
 
 export default function IndustriesSection() {
   return (
@@ -44,9 +45,9 @@ export default function IndustriesSection() {
           {INDUSTRIES.map((industry) => (
             <RevealItem key={industry.name} as="div">
               <div className="group flex h-full flex-col items-center gap-3 bg-white p-6 text-center transition-colors hover:bg-blue-50">
-                <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-light-line bg-gradient-to-br from-blue-50 to-cyan-50 text-brand-deep transition-colors group-hover:border-brand/40 group-hover:text-brand-deep">
+                <IconPress className="flex h-11 w-11 items-center justify-center rounded-lg border border-light-line bg-gradient-to-br from-blue-50 to-cyan-50 text-brand-deep transition-colors group-hover:border-brand/40 group-hover:text-brand-deep">
                   <Icon name={industry.icon} className="h-5 w-5" />
-                </span>
+                </IconPress>
                 <div>
                   <h3 className="text-sm font-semibold text-fg-dark">{industry.name}</h3>
                   <p className="mt-1 text-xs leading-relaxed text-fg-dark-muted">{industry.description}</p>
