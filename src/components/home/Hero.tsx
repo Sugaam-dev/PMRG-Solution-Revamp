@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/animations/Reveal";
 import GradientOrb from "@/components/animations/GradientOrb";
+import { IconPress } from "@/components/animations/IconPress";
 
 export default function Hero() {
   return (
@@ -14,14 +15,14 @@ export default function Hero() {
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
-          background: "linear-gradient(135deg, #020617 0%, #0f172a 42%, #172554 72%, #2563eb 100%)",
+          background: "linear-gradient(135deg, #020617 0%, #081022 30%, #122040 65%, #172554 100%)",
         }}
       />
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
-          background: "radial-gradient(circle at 50% -20%, rgba(56, 189, 248, 0.15), transparent 65%)",
+          background: "radial-gradient(circle at 50% -20%, rgba(56, 189, 248, 0.20), transparent 55%)",
         }}
       />
 
@@ -84,10 +85,12 @@ export default function Hero() {
         </Reveal>
 
         <Reveal delay={0.24}>
-            <div className="mt-7 flex flex-col items-center gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:justify-center">
-            <Button href="/contact" size="lg">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+            <Button href="/contact" size="lg" className="shadow-[0_16px_34px_rgba(37,99,235,0.28)]">
               Book a 30-Minute Strategy Session
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              <IconPress>
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              </IconPress>
             </Button>
             <Button href="/solutions" variant="outline" size="lg" className="border-white/40 bg-white/10 text-white hover:border-white/70 hover:bg-white/15 hover:text-white">
               Explore Solutions

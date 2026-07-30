@@ -3,6 +3,7 @@ import { ArrowUpRight, ShieldCheck, GraduationCap, Building2, RadioTower, Handsh
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { RevealGroup, RevealItem } from "@/components/animations/Reveal";
+import { IconPress } from "@/components/animations/IconPress";
 
 const OUTCOMES = [
   {
@@ -73,11 +74,11 @@ export default function OutcomeCards() {
               <RevealItem key={item.title} as="div" variant="slide-up">
                 <Link href={item.href} className="group block h-full">
                   <GlassCard theme="light" className="flex h-full flex-col p-7">
-                    <span
+                    <IconPress
                       className={`flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br text-white shadow-md transition-transform duration-200 group-hover:-translate-y-0.5 ${item.color}`}
                     >
                       <IconCmp className="h-5 w-5" />
-                    </span>
+                    </IconPress>
                     <h3 className="mt-5 text-base font-semibold text-fg-dark leading-snug">
                       {item.title}
                     </h3>

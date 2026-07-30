@@ -4,6 +4,7 @@ import { WHY_PMRG } from "@/lib/constants";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Icon } from "@/components/ui/Icon";
 import { RevealGroup, RevealItem } from "@/components/animations/Reveal";
+import { IconPress } from "@/components/animations/IconPress";
 
 export default function WhyChooseUs() {
   return (
@@ -29,9 +30,9 @@ export default function WhyChooseUs() {
           {WHY_PMRG.map((item) => (
             <RevealItem key={item.title} as="div">
               <div className="h-full bg-white p-6">
-                <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-light-line bg-blue-50 text-brand">
+                <IconPress className="flex h-10 w-10 items-center justify-center rounded-lg border border-light-line bg-blue-50 text-brand">
                   <Icon name={item.icon} className="h-5 w-5" />
-                </span>
+                </IconPress>
                 <h3 className="mt-4 text-base font-semibold text-fg-dark">{item.title}</h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-fg-dark-muted">{item.description}</p>
               </div>
