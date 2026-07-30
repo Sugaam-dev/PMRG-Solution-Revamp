@@ -119,8 +119,8 @@ export function Logo({
             className={cn(
               "w-auto transition-all duration-500",
               scrolled
-                ? "h-[58px]"
-                : "h-12 sm:h-14 md:h-[4.5rem] lg:h-[76px] lgx:h-[76px] xl:h-[76px]",
+                ? "h-[52px]"
+                : "h-[74px]",
               textClassName
             )}
             priority
