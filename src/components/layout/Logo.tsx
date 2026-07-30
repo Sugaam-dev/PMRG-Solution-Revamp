@@ -86,7 +86,7 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={cn("group inline-flex items-center gap-2.5", className)}
+      className={cn("group inline-flex items-center gap-2.5 translate-y-0.5", className)}
       aria-label="PMRG Solution — home"
     >
       <span
@@ -119,8 +119,8 @@ export function Logo({
             className={cn(
               "w-auto transition-all duration-500",
               scrolled
-                ? "h-8 sm:h-9 md:h-10 lg:h-11 lgx:h-[2.75rem] xl:h-12"
-                : "h-10 sm:h-11 md:h-12 lg:h-14 lgx:h-[3.75rem] xl:h-16",
+                ? "h-[58px]"
+                : "h-12 sm:h-14 md:h-[4.5rem] lg:h-[76px] lgx:h-[76px] xl:h-[76px]",
               textClassName
             )}
             priority

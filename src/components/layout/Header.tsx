@@ -97,7 +97,7 @@ export default function Header() {
         <div
           className="mx-auto flex w-full max-w-[1440px] items-center justify-between px-3 transition-all duration-300 sm:px-5 md:px-6 lg:px-8 xl:px-12"
           style={{
-            height: `clamp(52px, ${76 - scrollProgress * 16}px, ${76 - scrollProgress * 16}px)`,
+            height: `clamp(56px, ${80 - scrollProgress * 16}px, ${80 - scrollProgress * 16}px)`,
           }}
         >
           <Logo scrolled={scrolled} />
@@ -225,7 +225,7 @@ export default function Header() {
         </div>
       </header>
 
-      <div aria-hidden className="h-[52px] sm:h-[60px] md:h-[68px] lg:h-[76px]" />
+      <div aria-hidden className="h-[56px] sm:h-[64px] md:h-[72px] lg:h-[80px]" />
 
       <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} />
     </>
