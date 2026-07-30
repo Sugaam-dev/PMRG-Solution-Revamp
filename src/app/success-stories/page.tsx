@@ -4,8 +4,6 @@ import {
   ShieldCheck,
   GraduationCap,
   Building2,
-  Server,
-  Building,
   Target,
   Settings,
   TrendingUp,
@@ -213,25 +211,6 @@ const STORIES: Story[] = [
   },
 ];
 
-/* ── Relationships Data ──────────────────────────────────────── */
-
-const RELATIONSHIPS = [
-  {
-    title: "Clients",
-    icon: Building,
-    desc: "Enterprises, telecom operators and institutions executing governed transformation.",
-  },
-  {
-    title: "Academic Relationships",
-    icon: GraduationCap,
-    desc: "Universities and schools building practical capability and industry readiness.",
-  },
-  {
-    title: "Technology & Delivery Partners",
-    icon: Server,
-    desc: "Platform providers and specialist firms extending implementation capacity.",
-  },
-];
 
 /* ── Page component ──────────────────────────────────────────── */
 
@@ -358,59 +337,6 @@ export default function SuccessStoriesPage() {
         </div>
       </section>
 
-      {/* ── Relationship Logo Area ──────────────────────────── */}
-      <section
-        data-section-theme="light"
-        className="section border-t border-slate-200 bg-transparent"
-      >
-        <div className="container-pmrg">
-          <SectionHeading
-            theme="light"
-            title="Trusted Relationships"
-            description="Separate Clients, Academic Relationships and Technology/Delivery Partners. All logo and naming use requires written approval."
-          />
-          <RevealGroup className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-3">
-            {RELATIONSHIPS.map((rel) => {
-              const IconCmp = rel.icon;
-              return (
-                <RevealItem key={rel.title} as="div" variant="slide-up">
-                  <GlassCard
-                    theme="light"
-                    className="flex h-full flex-col p-6 text-center sm:p-8"
-                  >
-                    <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-white text-fg-dark-subtle shadow-sm">
-                      <IconCmp className="h-5 w-5" />
-                    </span>
-                    <h3 className="mt-5 text-base font-semibold text-fg-dark">
-                      {rel.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-fg-dark-muted">
-                      {rel.desc}
-                    </p>
-
-                    {/* Logo placeholders — link to relevant story where possible */}
-                    <div className="mt-auto pt-8">
-                      <p className="mb-3 text-[10px] font-medium uppercase tracking-wider text-fg-dark-subtle">
-                        Logos published after approval
-                      </p>
-                      <div className="grid grid-cols-3 gap-2">
-                        {[1, 2, 3].map((n) => (
-                          <div
-                            key={n}
-                            className="flex h-10 items-center justify-center rounded-lg border border-dashed border-slate-200 bg-white text-[9px] font-medium text-fg-dark-subtle"
-                          >
-                            Logo
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </GlassCard>
-                </RevealItem>
-              );
-            })}
-          </RevealGroup>
-        </div>
-      </section>
 
       {/* ── Bottom CTA ────────────────────────────────────── */}
       <section
