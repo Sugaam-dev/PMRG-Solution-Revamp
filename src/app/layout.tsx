@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+
 import { COMPANY } from "@/lib/constants";
 import "@/styles/globals.css";
+
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/ui/ScrollProgress";
@@ -37,11 +39,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(COMPANY.url),
+
   title: {
     default: `${COMPANY.name} — ${COMPANY.tagline}`,
     template: `%s · ${COMPANY.name}`,
   },
+
   description: COMPANY.description,
+
   keywords: [
     "AI governance",
     "Sprint planning",
@@ -55,9 +60,14 @@ export const metadata: Metadata = {
     "Digital transformation",
     "PMRG Solution",
   ],
+
   authors: [{ name: COMPANY.name }],
   creator: COMPANY.name,
-  alternates: { canonical: "/" },
+
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -66,17 +76,24 @@ export const metadata: Metadata = {
     title: `${COMPANY.name} — ${COMPANY.tagline}`,
     description: COMPANY.description,
   },
+
   twitter: {
     card: "summary_large_image",
     title: `${COMPANY.name} — ${COMPANY.tagline}`,
     description: COMPANY.description,
     creator: "@pmrgsolution",
   },
+
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
   },
+
   icons: {
     icon: [{ url: "/favicon.png", type: "image/png" }],
   },
@@ -92,6 +109,7 @@ const organizationJsonLd = {
   foundingDate: String(COMPANY.foundedYear),
   email: COMPANY.email,
   telephone: COMPANY.phone,
+
   address: {
     "@type": "PostalAddress",
     streetAddress: "E2-103, Sr No-296, Revell Orchid, Porwal Pune City",
@@ -100,28 +118,44 @@ const organizationJsonLd = {
     postalCode: "411047",
     addressCountry: "IN",
   },
+
   sameAs: [COMPANY.social.linkedin, COMPANY.social.facebook],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className={`${inter.variable} ${jakarta.variable} ${jetbrains.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${jakarta.variable} ${jetbrains.variable}`}
+    >
       <body className="min-h-screen bg-[#050508] text-fg antialiased">
-
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
         />
+
         <ClickBurst />
         <ScrollProgress />
+
         <div className="relative flex min-h-screen flex-col">
           <Header />
+
           <PageTransition>
             <main className="flex-1">{children}</main>
           </PageTransition>
+
           <Footer />
         </div>
+
         <BackToTop />
+
+        {/* Cookie banner */}
         <CookieConsent />
       </body>
     </html>
