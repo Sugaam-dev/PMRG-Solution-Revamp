@@ -21,15 +21,15 @@ export default function Footer() {
       />
 
       <div className="container-pmrg relative py-16">
-        <div className="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-12">
-          <div className="col-span-2 lg:col-span-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-12">
+          <div className="sm:col-span-2 md:col-span-3 lg:col-span-4">
             <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-fg-muted">{COMPANY.description}</p>
           </div>
 
-          <div className="lg:col-span-5">
+          <div className="sm:col-span-1 lg:col-span-5">
             <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Quick Links</h3>
-            <ul className="mt-4 grid grid-cols-2 gap-3 sm:gap-x-6">
+            <ul className="mt-4 grid grid-cols-1 gap-3 min-[400px]:grid-cols-2 sm:gap-x-6">
               {footerNavLinks.map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="text-sm text-fg-muted transition-colors hover:text-fg">
@@ -40,7 +40,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-span-2 lg:col-span-3">
+          <div className="sm:col-span-2 md:col-span-3 lg:col-span-3">
             <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-subtle">Get in touch</h3>
             <ul className="mt-4 space-y-3 text-sm text-fg-muted">
               <li>
