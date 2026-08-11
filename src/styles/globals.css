@@ -497,6 +497,333 @@
   filter: brightness(1.12) contrast(1.05);
 }
 
+/* ══════════════════════════════════════════════════════════════
+   Meet the Team — Cinematic Showcase v2
+   Framer Motion driven · Floating glass card · Animated names
+   ══════════════════════════════════════════════════════════════ */
+
+:root {
+  --mt-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --mt-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Layout container ─────────────────────────────────────────── */
+.meet-team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .meet-team-container {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+/* ── Image showcase ───────────────────────────────────────────── */
+.meet-team-showcase {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #060a14;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.5),
+    0 0 50px rgba(37, 99, 235, 0.04);
+}
+
+@media (min-width: 1024px) {
+  .meet-team-showcase {
+    flex: 1 1 0%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+  }
+}
+
+/* ── Image layer (Framer Motion manages opacity/transform) ────── */
+.meet-team-img {
+  position: absolute;
+  inset: 0;
+  will-change: opacity, transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.meet-team-img--active {
+  z-index: 1;
+}
+
+/* ── Gradient overlay ─────────────────────────────────────────── */
+.meet-team-img-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      to top,
+      rgba(2, 6, 23, 0.88) 0%,
+      rgba(2, 6, 23, 0.35) 28%,
+      rgba(2, 6, 23, 0.08) 50%,
+      transparent 65%
+    ),
+    linear-gradient(
+      to right,
+      rgba(2, 6, 23, 0.15) 0%,
+      transparent 30%
+    );
+}
+
+/* ── Floating glassmorphic name card ──────────────────────────── */
+.meet-team-floating-card {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 24px 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 1px 0 rgba(255, 255, 255, 0.06) inset;
+  min-width: 180px;
+  max-width: 320px;
+}
+
+@media (min-width: 640px) {
+  .meet-team-floating-card {
+    bottom: 32px;
+    left: 32px;
+    padding: 18px 28px 20px;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .meet-team-floating-card {
+    bottom: 36px;
+    left: 36px;
+    padding: 20px 32px 22px;
+  }
+}
+
+.meet-team-floating-role {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brand-cyan);
+  line-height: 1.4;
+}
+
+.meet-team-floating-name {
+  font-family: var(--font-jakarta), var(--font-inter), sans-serif;
+  font-size: clamp(1.05rem, 0.85rem + 1vw, 1.45rem);
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+/* ── Glassmorphic sidebar ─────────────────────────────────────── */
+.meet-team-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  padding: 8px 0;
+}
+
+@media (min-width: 1024px) {
+  .meet-team-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    padding: 24px 0;
+    background: rgba(6, 10, 22, 0.7);
+    backdrop-filter: blur(28px) saturate(140%);
+    -webkit-backdrop-filter: blur(28px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: stretch;
+    box-shadow:
+      0 16px 60px rgba(0, 0, 0, 0.4),
+      0 0 40px rgba(37, 99, 235, 0.03);
+  }
+}
+
+@media (min-width: 1280px) {
+  .meet-team-sidebar {
+    width: 320px;
+  }
+}
+
+/* ── Sidebar item (no numbers — just names) ───────────────────── */
+.meet-team-sidebar-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px 14px 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .meet-team-sidebar-item {
+    padding: 16px 24px 16px 28px;
+  }
+}
+
+/* Hover background glow */
+.meet-team-sidebar-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 99, 235, 0.07) 0%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s var(--mt-ease);
+  pointer-events: none;
+}
+
+.meet-team-sidebar-item:hover::before {
+  opacity: 1;
+}
+
+.meet-team-sidebar-item--active::before {
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 99, 235, 0.12) 0%,
+    rgba(37, 99, 235, 0.02) 100%
+  );
+}
+
+/* ── Left accent line (animated via Framer Motion) ────────────── */
+.meet-team-accent-line {
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  left: 0;
+  width: 3px;
+  border-radius: 0 4px 4px 0;
+  background: linear-gradient(180deg, var(--brand) 0%, var(--brand-cyan) 100%);
+  transform-origin: center;
+}
+
+/* ── Active indicator dot (animated via Framer Motion) ────────── */
+.meet-team-sidebar-dot {
+  position: absolute;
+  left: 12px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 8px var(--brand), 0 0 18px rgba(37, 99, 235, 0.3);
+}
+
+@media (min-width: 1024px) {
+  .meet-team-sidebar-dot {
+    left: 14px;
+  }
+}
+
+/* ── Name wrapper ─────────────────────────────────────────────── */
+.meet-team-sidebar-name-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 4px;
+}
+
+/* ── Full name — active vs inactive states ────────────────────── */
+.meet-team-sidebar-fullname {
+  font-family: var(--font-jakarta), var(--font-inter), sans-serif;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0 5px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  /* Inactive state: visible but muted */
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.45);
+  transition:
+    font-size 0.5s var(--mt-ease),
+    font-weight 0.4s var(--mt-ease),
+    color 0.45s var(--mt-ease),
+    letter-spacing 0.4s var(--mt-ease);
+}
+
+/* Active state: larger, bold, bright white */
+.meet-team-sidebar-fullname--active {
+  font-size: 1.2rem;
+  color: #f8fafc;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 1280px) {
+  .meet-team-sidebar-fullname--active {
+    font-size: 1.35rem;
+  }
+}
+
+.meet-team-sidebar-fname {
+  transition: font-weight 0.4s var(--mt-ease);
+}
+
+.meet-team-sidebar-fullname--active .meet-team-sidebar-fname {
+  font-weight: 800;
+}
+
+.meet-team-sidebar-lname {
+  font-weight: 400;
+  transition: font-weight 0.4s var(--mt-ease);
+}
+
+.meet-team-sidebar-fullname--active .meet-team-sidebar-lname {
+  font-weight: 500;
+}
+
+/* Hover on inactive */
+.meet-team-sidebar-item:not(.meet-team-sidebar-item--active):hover .meet-team-sidebar-fullname {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── Role text (expands on active via Framer Motion) ──────────── */
+.meet-team-sidebar-role {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--brand-cyan);
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+
 @media (prefers-reduced-motion: reduce) {
 
   *,
