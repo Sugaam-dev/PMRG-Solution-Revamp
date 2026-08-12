@@ -14,6 +14,8 @@ import NavSearch from "./NavSearch";
 import { FacebookBrandIcon, InstagramBrandIcon, LinkedInBrandIcon, WhatsAppBrandIcon } from "./SocialBrandIcons";
 import { IconPress } from "@/components/animations/IconPress";
 
+const MotionLink = motion(Link);
+
 export default function Header() {
   const pathname = usePathname();
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -113,11 +115,18 @@ export default function Header() {
                   onMouseEnter={() => hasChildren && setOpenMenu(item.label)}
                   onMouseLeave={() => hasChildren && setOpenMenu(null)}
                 >
-                  <Link
+                  <MotionLink
                     href={item.href}
                     data-active={active}
+                    whileHover={{ y: -1, scale: 1.01 }}
+                    whileTap={{
+                      scale: 0.96,
+                      y: 1,
+                      boxShadow: "0 0 0 1px rgba(125, 211, 252, 0.42), 0 10px 24px rgba(14, 165, 233, 0.18)",
+                    }}
+                    transition={{ type: "spring", stiffness: 680, damping: 32, mass: 0.55 }}
                     className={cn(
-                      "link-underline flex items-center gap-0.5 whitespace-nowrap rounded-md px-1.5 py-1.5 text-[0.7rem] font-bold transition-colors duration-500 lg:px-2 lg:py-1.5 lg:text-[0.68rem] lgx:px-2.5 lgx:py-1.5 lgx:text-[0.74rem] xl:gap-1 xl:px-3 xl:py-2 xl:text-[0.8rem] 2xl:text-sm",
+                      "link-underline flex items-center gap-0.5 whitespace-nowrap rounded-md px-1.5 py-1.5 text-[0.7rem] font-bold transition-colors duration-500 will-change-transform lg:px-2 lg:py-1.5 lg:text-[0.68rem] lgx:px-2.5 lgx:py-1.5 lgx:text-[0.74rem] xl:gap-1 xl:px-3 xl:py-2 xl:text-[0.8rem] 2xl:text-sm",
                       active
                         ? textColor
                         : cn(textMutedColor, "hover:text-black")
@@ -132,7 +141,7 @@ export default function Header() {
                         )}
                       />
                     )}
-                  </Link>
+                  </MotionLink>
                   {hasChildren && <MegaMenu items={item.children!} open={openMenu === item.label} onClose={() => setOpenMenu(null)} />}
                 </div>
               );
@@ -214,13 +223,16 @@ export default function Header() {
               </motion.a>
             </div>
 
-            <button
+            <motion.button
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
+              whileHover={{ y: -1, scale: 1.03 }}
+              whileTap={{ scale: 0.92, y: 1, rotate: -2 }}
+              transition={{ type: "spring", stiffness: 700, damping: 30, mass: 0.55 }}
               className="flex h-10 w-10 items-center justify-center rounded-lg border border-gray-300 text-gray-700 transition-colors duration-500 hover:bg-gray-100 lg:hidden"
             >
               <Menu className="h-5 w-5" />
-            </button>
+            </motion.button>
           </div>
         </div>
       </header>
