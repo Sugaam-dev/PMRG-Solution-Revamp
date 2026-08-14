@@ -23,6 +23,7 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "Ghosh",
     position: "Co-Founder",
     image: "/team/debaabrata-ghosh.jpg",
+    description: "Visionary leader driving PMRG's mission in AI governance and enterprise transformation with over two decades of industry expertise.",
   },
   {
     name: "Pratima Mishra",
@@ -30,6 +31,7 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "Mishra",
     position: "Joint Director",
     image: "/team/pratima-mishra.jpeg",
+    description: "Strategic operations leader ensuring seamless delivery and client success across PMRG's portfolio of enterprise solutions.",
   },
   {
     name: "Rekha Ghosh",
@@ -37,6 +39,7 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "Ghosh",
     position: "Joint Director",
     image: "/team/rekha-ghosh.jpeg",
+    description: "Driving institutional partnerships and organizational growth with a focus on sustainable innovation and governance.",
   },
   {
     name: "Shilpa Amminabhavi",
@@ -44,6 +47,7 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "Amminabhavi",
     position: "Senior Developer",
     image: "/team/Shilpa Amminabhavi-Senior Developer.jpeg",
+    description: "Full-stack expert architecting scalable platforms and leading technical delivery across mission-critical projects.",
   },
   {
     name: "Dhurjoti Ghosh",
@@ -51,6 +55,7 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "Ghosh",
     position: "Web Developer",
     image: "/team/Dhurjoti Ghosh-Web Developer.png",
+    description: "Crafting performant, pixel-perfect web experiences with modern frameworks and a keen eye for design detail.",
   },
   {
     name: "Pamir Nayak",
@@ -58,6 +63,7 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "Nayak",
     position: "Web Developer",
     image: "/team/pamir-nayak.jpeg",
+    description: "Building responsive, accessible interfaces and contributing to PMRG's front-end engineering excellence.",
   },
   {
     name: "Udesh",
@@ -65,6 +71,7 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "",
     position: "Developer",
     image: "/team/Udesh-Developer.jpeg?v=2",
+    description: "Versatile developer delivering robust solutions across the stack with a focus on clean code and reliability.",
   },
   {
     name: "Govind Maskare",
@@ -72,6 +79,7 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "Maskare",
     position: "Intern",
     image: "/team/Govind Maskare-Intern.jpeg",
+    description: "Ambitious engineering intern contributing fresh ideas and learning rapidly across development workflows.",
   },
   {
     name: "Mahek Mishra",
@@ -79,6 +87,7 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "Mishra",
     position: "Intern",
     image: "/team/Mahek Mishra-Intern.jpeg",
+    description: "Enthusiastic intern bringing creativity and energy to front-end development and team collaboration.",
   },
   {
     name: "Omkar Ghumare",
@@ -86,8 +95,10 @@ const TEAM_MEMBERS: MeetTeamMember[] = [
     lastName: "Ghumare",
     position: "Intern",
     image: "/team/Omkar Ghumare-Intern.jpeg",
+    description: "Driven intern exploring full-stack development and gaining hands-on experience in real-world projects.",
   },
 ];
+
 
 /* ── Page component ──────────────────────────────────────────── */
 

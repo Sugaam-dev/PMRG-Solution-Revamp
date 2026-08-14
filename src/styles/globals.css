@@ -579,12 +579,41 @@
     );
 }
 
-/* ── Floating glassmorphic name card ──────────────────────────── */
-.meet-team-floating-card {
+/* ── Bottom info area (name card + description) ──────────────── */
+.meet-team-bottom-info {
   position: absolute;
   bottom: 24px;
   left: 24px;
+  right: 24px;
   z-index: 8;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+@media (min-width: 640px) {
+  .meet-team-bottom-info {
+    bottom: 32px;
+    left: 32px;
+    right: 32px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .meet-team-bottom-info {
+    bottom: 36px;
+    left: 36px;
+    right: 36px;
+    gap: 18px;
+  }
+}
+
+/* ── Floating glassmorphic name card ──────────────────────────── */
+.meet-team-floating-card {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -600,12 +629,11 @@
     0 1px 0 rgba(255, 255, 255, 0.06) inset;
   min-width: 180px;
   max-width: 320px;
+  flex-shrink: 0;
 }
 
 @media (min-width: 640px) {
   .meet-team-floating-card {
-    bottom: 32px;
-    left: 32px;
     padding: 18px 28px 20px;
     border-radius: 20px;
   }
@@ -613,8 +641,6 @@
 
 @media (min-width: 1024px) {
   .meet-team-floating-card {
-    bottom: 36px;
-    left: 36px;
     padding: 20px 32px 22px;
   }
 }
@@ -636,6 +662,66 @@
   letter-spacing: -0.015em;
   line-height: 1.25;
 }
+
+/* ── Description panel (with typing animation) ────────────────── */
+.meet-team-floating-desc {
+  flex: 1 1 0%;
+  min-width: 0;
+  padding: 14px 20px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px) saturate(130%);
+  -webkit-backdrop-filter: blur(16px) saturate(130%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.02) inset;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .meet-team-floating-desc {
+    padding: 16px 24px 18px;
+    border-radius: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .meet-team-floating-desc {
+    padding: 18px 26px 20px;
+    max-width: 420px;
+  }
+}
+
+/* ── Typing text ──────────────────────────────────────────────── */
+.meet-team-typing-text {
+  font-size: clamp(0.72rem, 0.65rem + 0.35vw, 0.85rem);
+  font-weight: 400;
+  color: rgba(248, 250, 252, 0.72);
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  display: inline;
+}
+
+/* ── Typing cursor ────────────────────────────────────────────── */
+.meet-team-typing-cursor {
+  display: inline-block;
+  width: 1.5px;
+  height: 1em;
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  background: var(--brand-cyan);
+  border-radius: 1px;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.meet-team-typing-cursor--visible {
+  opacity: 1;
+}
+
 
 /* ── Glassmorphic sidebar ─────────────────────────────────────── */
 .meet-team-sidebar {

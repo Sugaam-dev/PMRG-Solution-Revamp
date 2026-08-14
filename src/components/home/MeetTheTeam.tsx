@@ -12,6 +12,8 @@ export interface MeetTeamMember {
   lastName: string;
   position: string;
   image: string;
+  /** Short description / bio (shown with typing animation) */
+  description?: string;
 }
 
 interface MeetTheTeamProps {
@@ -23,6 +25,44 @@ interface MeetTheTeamProps {
 /* ── Easing curves ────────────────────────────────────────────── */
 const smoothEase = [0.22, 1, 0.36, 1] as const;
 const gentleEase = [0.4, 0, 0.2, 1] as const;
+
+/* ── Typing text sub-component ───────────────────────────────── */
+
+function TypingText({ text, speed = 28 }: { text: string; speed?: number }) {
+  const [displayedCount, setDisplayedCount] = useState(0);
+
+  /* Reset & type out whenever `text` changes */
+  useEffect(() => {
+    setDisplayedCount(0);
+
+    if (!text) return;
+
+    let frame: number;
+    let count = 0;
+    const total = text.length;
+
+    const tick = () => {
+      count += 1;
+      setDisplayedCount(count);
+      if (count < total) {
+        frame = window.setTimeout(tick, speed + Math.random() * 14);
+      }
+    };
+    frame = window.setTimeout(tick, speed + 180);
+
+    return () => {
+      window.clearTimeout(frame);
+    };
+  }, [text, speed]);
+
+  if (!text || displayedCount === 0) return null;
+
+  return (
+    <span className="meet-team-typing-text" aria-label={text}>
+      <span aria-hidden="true">{text.slice(0, displayedCount)}</span>
+    </span>
+  );
+}
 
 /* ── Component ───────────────────────────────────────────────── */
 
@@ -123,6 +163,28 @@ export default function MeetTheTeam({
     },
   };
 
+  /* ── Description card variants ───────────────────────────── */
+  const descVariants = {
+    enter: {
+      opacity: 0,
+      y: 16,
+      x: 10,
+      scale: 0.96,
+    },
+    center: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      scale: 1,
+    },
+    exit: {
+      opacity: 0,
+      y: -8,
+      x: -5,
+      scale: 0.98,
+    },
+  };
+
   return (
     <div
       className="meet-team-container"
@@ -161,24 +223,48 @@ export default function MeetTheTeam({
         {/* Gradient overlay for readability */}
         <div className="meet-team-img-overlay" />
 
-        {/* ── Floating glassmorphic name card ─────────────────── */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={`card-${activeIndex}`}
-            variants={cardVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{
-              duration: 0.5,
-              ease: smoothEase as unknown as number[],
-            }}
-            className="meet-team-floating-card"
-          >
-            <span className="meet-team-floating-role">{active.position}</span>
-            <h3 className="meet-team-floating-name">{active.name}</h3>
-          </motion.div>
-        </AnimatePresence>
+        {/* ── Bottom info area: name card + description ─────── */}
+        <div className="meet-team-bottom-info">
+          {/* ── Floating glassmorphic name card ─────────────── */}
+          <AnimatePresence mode="popLayout">
+            <motion.div
+              key={`card-${activeIndex}`}
+              variants={cardVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                duration: 0.5,
+                ease: smoothEase as unknown as number[],
+              }}
+              className="meet-team-floating-card"
+            >
+              <span className="meet-team-floating-role">{active.position}</span>
+              <h3 className="meet-team-floating-name">{active.name}</h3>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* ── Description with typing animation ──────────── */}
+          {active.description && (
+            <AnimatePresence mode="popLayout">
+              <motion.div
+                key={`desc-${activeIndex}`}
+                variants={descVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  duration: 0.55,
+                  ease: smoothEase as unknown as number[],
+                  delay: 0.12,
+                }}
+                className="meet-team-floating-desc"
+              >
+                <TypingText key={`typing-${activeIndex}`} text={active.description} speed={22} />
+              </motion.div>
+            </AnimatePresence>
+          )}
+        </div>
       </div>
 
       {/* ── Name sidebar ────────────────────────────────────── */}
@@ -270,3 +356,4 @@ export default function MeetTheTeam({
     </div>
   );
 }
+
